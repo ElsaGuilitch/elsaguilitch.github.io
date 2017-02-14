@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html class="page-{{ page.html_class }}">
-<head>
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-  <link rel="stylesheet" href="/css/main.css">
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <meta name="description" content="{{ site.description }}">
+        <meta name="geo.placename" content="Paris, Île de France, France">
+        <meta name="robots" content="index,follow">
 
-  
-</head>
-<body>
-    test
-{{ page.content }}
-</body>
+        <meta property="place:street_adress" content="Boulevard de Rochechouart">
+        <meta property="place:locality" content="Paris">
+        <meta property="place:region" content="Ile-de-France">
+        <meta property="place:country_name" content="France">
+
+        <meta name="author" content="Elsa Guilitch" />
+        <meta name="copyright" content="Elsa Guilitch" />
+
+        <!-- Favicon -->
+        <!-- html5Shiv -->
+        <!-- OG Fb -->
+        <!-- OG twitter -->
+
+        <link rel="stylesheet" href="/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    </head>
+
+    <body>
+        {% include header.html %}
+
+        {{ page.content }}
+    </body>
 </html>
