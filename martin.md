@@ -38,6 +38,15 @@ html_class: martin project-page
         </ul>
     </section>
 
+    <section class="typographies-wrapper project-section">
+        <h2 class="custom-title center white">Technologies</h2>
+        <p class="custom-description center white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <p class="typo-lato">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Yy Zz - 0123456789
+            <span>Lato Light</span>
+        </p>
+    </section>
+
 
 
 </section>
