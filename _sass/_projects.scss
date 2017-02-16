@@ -1,12 +1,25 @@
 html.project-page {
 
   section.project-wrapper {
-    
+    $margin: 150px;
+    $margin-mobile: 80px;
+    $gray: #F4F4F4;
+
+    // Generic
+    section.project-section {
+      background-color: $gray;
+      margin-top: 4px;
+      padding: $margin 7%;
+      @media #{$mobile} { padding: $margin-mobile 7%; }
+    }
+
+    // Header
     section.header-wrapper {
       height: 400px;
       line-height: 400px;
       text-align: center;
-      background-color: #30b9c2;
+      background-color: $gray;
+      @media #{$mobile} { height: 260px; line-height: 260px; }
 
       .multiline {
         display: inline-block;
@@ -23,7 +36,91 @@ html.project-page {
         text-align: center;
         line-height: 1.4em;
         text-transform: uppercase;
+        @media #{$mobile} { font-size: 26px; }
+      }
+    }
+
+    // Presentation
+    section.concept-wrapper {
+      $size-mobile: 260px;
+  
+      position: relative;
+      @media #{$mobile} { width: 100%; margin-left: 0; padding-bottom: $size-mobile; }
+
+      .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        font-size: 1rem;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: top;
+
+        @media #{$mobile} {
+          top: auto;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: $size-mobile;
+        }
+      }
+
+      .content-inner {
+        width: 50%;
+        margin-left: 50%;
+        font-size: 1rem;
+        vertical-align: top;
+        padding: 210px 3% 210px 10%;
+        box-sizing: border-box;
+        background-color: #fcfdfe;
+        @media #{$mobile} { width: 100%; margin-left: 0; }
+
+        .custom-description {
+          max-width: 100%;
+          font-size: 18px;
+          color: #232323;
+          line-height: 1.7em;
+          
+          span {
+            display: block;
+            font-size: 15px;
+            font-weight: 300;
+            color: #424141;
+            line-height: 1.7em;
+          }
+        }
+      }
+    }
+
+    // Technoligies
+    section.technoligies-wrapper {
+
+      .technoligies-list {
+        text-align: center;
+        margin-top: 60px;
+        @media #{$mobile} { margin-top: 40px; }
+
+        .item {
+          display: inline-block;
+          height: 60px;
+          margin-left: 2%;
+          margin-right: 2%;
+          margin-top: 60px;
+          @media #{$mobile} { height: 40px; margin-top: 40px; }
+
+          img { height: 100%; }
+        }
       }
     }
   }
+}
+
+// ----------------------------------------------------------------------------------
+
+
+html.page-martin section.project-wrapper {
+  section.header-wrapper { background-color: #30b9c2; }
 }

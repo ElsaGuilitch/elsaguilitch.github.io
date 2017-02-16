@@ -1,0 +1,10 @@
+$ipad: "only screen and (min-width: 768px) and (max-width: 1024px)";
+$ipad-landscape: "only screen and (min-width: 960px) and (max-width: 1024px)";
+$ipad-portrait: "only screen and (min-width: 768px) and (max-width: 959px)";
+
+$mobile: "only screen and (max-width: 767px)";
+$mobile-portrait: "only screen and (max-width: 479px)";
+$mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
+
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 2)", "only screen and (min-device-pixel-ratio: 2)";
+$large-screen: "only screen and (min-width: 1440px)";
