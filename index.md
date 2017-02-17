@@ -6,3 +6,16 @@ layout: default
 title: Développeur Web fullstack
 html_class: homepage
 ---
+
+<section class="presentation-wrapper">
+    
+</section>
+
+<section class="last-project-wrapper">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</section>

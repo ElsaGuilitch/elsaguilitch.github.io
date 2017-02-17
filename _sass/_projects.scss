@@ -46,6 +46,7 @@ html.project-page {
   
       position: relative;
       background-color: #fcfdfe;
+      padding: 0;
       @media #{$mobile} { width: 100%; margin-left: 0; padding-bottom: $size-mobile; }
 
       .background {
@@ -114,6 +115,11 @@ html.project-page {
           img { height: 100%; }
         }
       }
+    }
+
+    // Photographies
+    section.photography-wrapper {
+
     }
   }
 }

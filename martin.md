@@ -23,7 +23,9 @@ html_class: martin project-page
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
             </p>
         </div>
+    </section>
 
+    <section class="in-situ-wrapper">
     </section>
 
     <section class="technoligies-wrapper project-section">
@@ -47,6 +49,8 @@ html_class: martin project-page
         </p>
     </section>
 
-
-
+    <section class="photography-wrapper project-section">
+        <h2 class="custom-title center black">Technologies</h2>
+        <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
 </section>
