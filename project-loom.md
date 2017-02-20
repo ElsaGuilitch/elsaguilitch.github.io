@@ -15,42 +15,29 @@ body_class: loom project-page
 
 
     <section class="mosaic-wrapper full-width">
-
-
         <ul class="mosaic-list">
-            <li class="mosaic-item first">
-                <div class="mosaic-item-image hanger"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+            <li class="mosaic-item">
+                <div class="mosaic-item-image hanger">
+                    <div class="content" style="background-image:url('/static/images/projects/loom/loom-hanger.jpg');"></div>
                 </div>
-                <div class="mosaic-item-image loom1"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                <div class="mosaic-item-image shirt-w">
+                    <div class="content" style="background-image:url('/static/images/projects/loom/loom-shirt-w.jpg');"></div>
                 </div>
-                <div class="mosaic-item-image loom2"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                <div class="mosaic-item-image shirt-b">
+                    <div class="content" style="background-image:url('/static/images/projects/loom/loom-shirt-b.jpg');"></div>
                 </div>
             </li>
-            <li class="mosaic-item second">
-                <div class="mosaic-item-image up"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+            <li class="mosaic-item">
+                <div class="mosaic-item-image shirt-g">
+                    <div class="content" style="background-image:url('/static/images/projects/loom/loom-shirt-g.jpg');"></div>
+                </div>
+            </li>
+            <li class="mosaic-item">
+                <div class="mosaic-item-image coil">
+                    <div class="content" style="background-image:url('/static/images/projects/loom/loom-coil.jpg');"></div>
                 </div>
             </li>
         </ul>
-
-        <!-- <ul class="mosaic-list">
-            <li class="mosaic-item">
-                <ul>
-                    <li class="mosaic-item-image hanger" ></li>
-                    <li class="mosaic-item-image loom1" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
-                    <li class="mosaic-item-image loom2" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
-                </ul>
-            </li>
-            <li class="mosaic-item">
-                <ul>
-                    <li class="mosaic-item-image up" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></li>
-                </ul>
-            </li>
-            <li class="mosaic-item">
-                <ul>
-                    <li class="mosaic-item-image wirereel" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></li>
-                </ul>
-            </li>
-        </ul> -->
     </section>
 
     <section class="concept-wrapper padding-section">

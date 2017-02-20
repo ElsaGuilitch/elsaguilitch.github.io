@@ -3,10 +3,7 @@ body.page-loom section.project-wrapper {
 
   section.header-wrapper { background-color: $loom-color; }
 
-
   section.mosaic-wrapper {
-    $margin-mosaic: 3px;
-
     padding-top: 0;
 
     ul.mosaic-list {
@@ -16,22 +13,13 @@ body.page-loom section.project-wrapper {
 
       li.mosaic-item {
         display: inline-block;
-        vertical-align: top;
-
-        &.first {
-          width: 60%;
-          box-sizing: border-box;
-        }
-        &.second { width: 40%; }
+        
+        &:first-of-type { width: 60%; vertical-align: bottom; }
+        &:nth-child(2) { width: 40%; vertical-align: bottom; }
+        &:last-of-type { width: 100%; text-align: right; vertical-align: top; }
 
         div.mosaic-item-image {
           position: relative;
-
-          &:before {
-            display: inline-block;
-            content: "";
-            width: 100%;
-          }
 
           > .content {
             position: absolute;
@@ -45,13 +33,19 @@ body.page-loom section.project-wrapper {
             background-color: $gray;
           }
 
+          &:before {
+            display: inline-block;
+            content: "";
+            width: 100%;
+          }
+
           &.hanger:before {
-            $height: 200px;
-            $width: 410px;
+            $height: 550px;
+            $width: 830px;
             padding-top: ($height / $width) * 100%;
           }
 
-          &.loom1  {
+          &.shirt-w  {
             display: inline-block;
             width: 50%;
             padding-right: 3px;
@@ -59,12 +53,12 @@ body.page-loom section.project-wrapper {
 
              &:before {
               $height: 490px;
-              $width: 410px;
+              $width: 412px;
               padding-top: ($height / $width) * 100%;
             }
           }
 
-          &.loom2 {
+          &.shirt-b {
             display: inline-block;
             width: 50%;
             padding-left: 3px;
@@ -72,97 +66,31 @@ body.page-loom section.project-wrapper {
 
             &:before {
               $height: 490px;
-              $width: 410px;
+              $width: 412px;
               padding-top: ($height / $width) * 100%;
             }
           }
 
-          &.up:before {
-            $height: 490px;
-            $width: 410px;
+          &.shirt-g:before {
+            $height: 1200px;
+            $width: 540px;
             padding-top: ($height / $width) * 100%;
+          }
+
+          &.coil {
+            display: inline-block;
+            width: 70%;
+            padding-right: 3px;
+            box-sizing: border-box;
+
+             &:before {
+              $height: 245px;
+              $width: 505px;
+              padding-top: ($height / $width) * 100%;
+            }
           }
         }
       }
     }
   }
-
-
-  // section.mosaic-wrapper {
-  //   $margin: 3px;
-
-  //   padding-top: 0;
-
-  //   ul.mosaic-list {
-  //     font-size: 0;
-  //     margin: 0 -$margin;
-
-  //     li.mosaic-item {
-  //       display: inline-block;
-  //       vertical-align: top;
-
-  //       // width: (100% / 3);
-  //       font-size: 1rem;
-  //       box-sizing: border-box;
-  //       padding: 0 $margin;
-
-  //       @media #{$mobile-portrait} {
-  //         width: 50%;
-  //         &:last-child { width: 100%; }
-  //         &:first-child { vertical-align: bottom; }
-  //       }
-
-  //       &:first-child {
-  //         width: 60%;
-  //         font-size: 0;
-  //       }
-  //     }
-
-  //     .mosaic-item-image {
-  //       position: relative;
-  //       background-repeat: no-repeat;
-  //       background-size: cover;
-  //       background-position: center center;
-  //       margin-bottom: $margin * 2;
-  //       background-color: $gray;
-
-  //       &:before {
-  //         display: inline-block;
-  //         content: "";
-  //         width: 100%;
-  //       }
-
-  //       &.hanger:before {
-  //         $height: 550px;
-  //         $width: 830px;
-  //         padding-top: ($height / $width) * 100%;
-  //       }
-
-  //       &.loom1 {
-  //         display: inline-block;
-  //         width: calc(50% - 3px);
-  //         margin-right: $margin;
-
-  //         &:before {
-  //           $height: 490px;
-  //           $width: 410px;
-  //           padding-top: ($height / $width) * 100%;
-  //         }
-  //       }
-
-  //       &.loom2 {
-  //         display: inline-block;
-  //         width: 50%;
-  //         width: calc(50% - 3px);
-  //         margin-left: $margin;
-
-  //         &:before {
-  //           $height: 490px;
-  //           $width: 410px;
-  //           padding-top: ($height / $width) * 100%;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
