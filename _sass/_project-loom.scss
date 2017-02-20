@@ -4,48 +4,23 @@ body.page-loom section.project-wrapper {
   section.header-wrapper { background-color: $loom-color; }
 
   section.mosaic-wrapper {
-    padding-top: 0;
-
     ul.mosaic-list {
-      font-size: 0;
-      margin-left: -$margin-mosaic;
-      margin-right: -$margin-mosaic;
-
+     
       li.mosaic-item {
-        display: inline-block;
-        
         &:first-of-type {
           width: 60%;
           vertical-align: bottom;
           @media #{$mobile-portrait} { width: 100%; }
         }
+
         &:nth-child(2) {
           width: 40%; vertical-align: bottom;
           @media #{$mobile-portrait} { display: none; }
         }
+        
         &:last-of-type { width: 100%; text-align: right; vertical-align: top; }
 
         div.mosaic-item-image {
-          position: relative;
-
-          > .content {
-            position: absolute;
-            top: $margin-mosaic;
-            left: $margin-mosaic;
-            right: $margin-mosaic;
-            bottom: $margin-mosaic;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            background-color: $gray;
-          }
-
-          &:before {
-            display: inline-block;
-            content: "";
-            width: 100%;
-          }
-
           &.hanger:before {
             $height: 550px;
             $width: 830px;

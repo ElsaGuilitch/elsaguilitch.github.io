@@ -34,16 +34,11 @@ body.page-martin section.project-wrapper {
   }
 
   section.mosaic-wrapper {
-    padding-top: 0;
-
     ul.mosaic-list {
-      font-size: 0;
-      margin-left: -$margin-mosaic;
-      margin-right: -$margin-mosaic;
-
+      
       li.mosaic-item {
-        display: inline-block;
         width: (100% / 3);
+        vertical-align: top;
        
         @media #{$mobile-portrait} {
           width: 50%;
@@ -52,26 +47,6 @@ body.page-martin section.project-wrapper {
         }
 
         div.mosaic-item-image {
-          position: relative;
-
-          > .content {
-            position: absolute;
-            top: $margin-mosaic;
-            left: $margin-mosaic;
-            right: $margin-mosaic;
-            bottom: $margin-mosaic;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            background-color: $gray;
-          }
-
-          &:before {
-            display: inline-block;
-            content: "";
-            width: 100%;
-          }
-
           &.cake:before {
             $height: 1374px;
             $width: 716px;
