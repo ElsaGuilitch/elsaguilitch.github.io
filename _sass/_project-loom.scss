@@ -14,8 +14,15 @@ body.page-loom section.project-wrapper {
       li.mosaic-item {
         display: inline-block;
         
-        &:first-of-type { width: 60%; vertical-align: bottom; }
-        &:nth-child(2) { width: 40%; vertical-align: bottom; }
+        &:first-of-type {
+          width: 60%;
+          vertical-align: bottom;
+          @media #{$mobile-portrait} { width: 100%; }
+        }
+        &:nth-child(2) {
+          width: 40%; vertical-align: bottom;
+          @media #{$mobile-portrait} { display: none; }
+        }
         &:last-of-type { width: 100%; text-align: right; vertical-align: top; }
 
         div.mosaic-item-image {
@@ -48,8 +55,6 @@ body.page-loom section.project-wrapper {
           &.shirt-w  {
             display: inline-block;
             width: 50%;
-            padding-right: 3px;
-            box-sizing: border-box;
 
              &:before {
               $height: 490px;
@@ -61,8 +66,6 @@ body.page-loom section.project-wrapper {
           &.shirt-b {
             display: inline-block;
             width: 50%;
-            padding-left: 3px;
-            box-sizing: border-box;
 
             &:before {
               $height: 490px;
@@ -80,8 +83,7 @@ body.page-loom section.project-wrapper {
           &.coil {
             display: inline-block;
             width: 70%;
-            padding-right: 3px;
-            box-sizing: border-box;
+            @media #{$mobile-portrait} { width: 100%; }
 
              &:before {
               $height: 245px;

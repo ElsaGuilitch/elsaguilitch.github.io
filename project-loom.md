@@ -13,6 +13,28 @@ body_class: loom project-page
         </span>
     </section>
 
+    <section class="concept-wrapper padding-section">
+        <div class="background" style="background-image: url('http://bit.ly/2m0axvo');"></div>
+
+        <div class="content-inner">
+            <h2 class="custom-title">Le projet</h2>
+            <p class="custom-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            <br><br>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="technoligies-wrapper padding-section">
+        <h2 class="custom-title center black">Technologies</h2>
+        <p class="custom-description center gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <ul class="technoligies-list">
+            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
+            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
+            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
+        </ul>
+    </section>
 
     <section class="mosaic-wrapper full-width">
         <ul class="mosaic-list">
@@ -37,29 +59,6 @@ body_class: loom project-page
                     <div class="content" style="background-image:url('/static/images/projects/loom/loom-coil.jpg');"></div>
                 </div>
             </li>
-        </ul>
-    </section>
-
-    <section class="concept-wrapper padding-section">
-        <div class="background" style="background-image: url('http://bit.ly/2m0axvo');"></div>
-
-        <div class="content-inner">
-            <h2 class="custom-title">Le projet</h2>
-            <p class="custom-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            <br><br>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
-            </p>
-        </div>
-    </section>
-
-    <section class="technoligies-wrapper padding-section">
-        <h2 class="custom-title center black">Technologies</h2>
-        <p class="custom-description center gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        <ul class="technoligies-list">
-            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
-            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
-            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
         </ul>
     </section>
 
