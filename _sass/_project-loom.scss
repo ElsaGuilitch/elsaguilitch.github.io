@@ -11,37 +11,41 @@ body.page-loom section.project-wrapper {
 
     ul.mosaic-list {
       font-size: 0;
-       // margin: 0 -$margin;
+      margin-left: -$margin-mosaic;
+      margin-right: -$margin-mosaic;
 
-       li.mosaic-item {
+      li.mosaic-item {
         display: inline-block;
         vertical-align: top;
-        
+
         &.first {
           width: 60%;
-          padding-right: $margin-mosaic * 2;
           box-sizing: border-box;
         }
         &.second { width: 40%; }
-        
+
         div.mosaic-item-image {
           position: relative;
-          margin-bottom: $margin-mosaic * 2;
 
-          .content {
+          &:before {
+            display: inline-block;
+            content: "";
+            width: 100%;
+          }
+
+          > .content {
+            position: absolute;
+            top: $margin-mosaic;
+            left: $margin-mosaic;
+            right: $margin-mosaic;
+            bottom: $margin-mosaic;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
             background-color: $gray;
-            
-            &:before {
-              display: inline-block;
-              content: "";
-              width: 100%;
-            }
           }
-          
-          &.hanger .content:before {
+
+          &.hanger:before {
             $height: 200px;
             $width: 410px;
             padding-top: ($height / $width) * 100%;
@@ -53,7 +57,7 @@ body.page-loom section.project-wrapper {
             padding-right: 3px;
             box-sizing: border-box;
 
-             .content:before {
+             &:before {
               $height: 490px;
               $width: 410px;
               padding-top: ($height / $width) * 100%;
@@ -66,19 +70,17 @@ body.page-loom section.project-wrapper {
             padding-left: 3px;
             box-sizing: border-box;
 
-            .content:before {
+            &:before {
               $height: 490px;
               $width: 410px;
               padding-top: ($height / $width) * 100%;
             }
           }
 
-          &.up  {
-             .content:before {
-              $height: 490px;
-              $width: 410px;
-              padding-top: ($height / $width) * 100%;
-            }
+          &.up:before {
+            $height: 490px;
+            $width: 410px;
+            padding-top: ($height / $width) * 100%;
           }
         }
       }

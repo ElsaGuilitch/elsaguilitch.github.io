@@ -19,19 +19,15 @@ body_class: loom project-page
 
         <ul class="mosaic-list">
             <li class="mosaic-item first">
-                <div class="mosaic-item-image hanger">
-                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                <div class="mosaic-item-image hanger"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
                 </div>
-                <div class="mosaic-item-image loom1">
-                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                <div class="mosaic-item-image loom1"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
                 </div>
-                <div class="mosaic-item-image loom2">
-                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                <div class="mosaic-item-image loom2"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
                 </div>
             </li>
             <li class="mosaic-item second">
-                <div class="mosaic-item-image up">
-                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                <div class="mosaic-item-image up"><div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
                 </div>
             </li>
         </ul>
