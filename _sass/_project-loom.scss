@@ -1,0 +1,93 @@
+body.page-loom section.project-wrapper {
+  $loom-color: #2f3f56;
+
+  section.header-wrapper { background-color: $loom-color; }
+
+  section.mosaic-wrapper {
+    $margin: 6px;
+
+    padding-top: 0;
+
+    .mosaic-list {
+      font-size: 0;
+      margin: 0 -$margin / 2;
+
+      .mosaic-list-item {
+        vertical-align: top;
+        display: inline-block;
+
+        width: (100% / 3);
+        font-size: 1rem;
+        box-sizing: border-box;
+        padding: 0 $margin / 2;
+
+        @media #{$mobile-portrait} {
+          width: 50%;
+          &:last-child { width: 100%; }
+          &:first-child { vertical-align: bottom; }
+        }
+      }
+
+      .mosaic-image-item {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-bottom: $margin;
+        background-color: $gray;
+
+        &:before {
+          display: block;
+          content: "";
+          width: 100%;
+        }
+
+        &.cake:before {
+          $height: 1374px;
+          $width: 716px;
+          padding-top: ($height / $width) * 100%;
+        }
+
+        &.chocolate {
+          margin-top: 90px;
+          @media #{$mobile-portrait} { margin-top: 0; }
+
+          &:before {
+            $height: 370px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+          }
+        }
+
+        &.oyster:before {
+          $height: 600px;
+          $width: 450px;
+          padding-top: ($height / $width) * 100%;
+        }
+
+        &.fromage {
+          margin-top: 30px;
+          @media #{$mobile-portrait} { display: none; }
+
+          &:before {
+            $height: 560px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+          }
+        }
+
+        &.cookies:before {
+          $height: 360px;
+          $width: 450px;
+          padding-top: ($height / $width) * 100%;
+
+          @media #{$mobile-portrait} {
+            $height: 300px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+          }
+        }
+      }
+    }
+  }
+}

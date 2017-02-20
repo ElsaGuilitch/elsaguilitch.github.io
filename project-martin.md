@@ -2,7 +2,7 @@
 layout: default
 title: Mélanie Martin
 permalink: /martin/
-html_class: martin project-page
+body_class: martin project-page
 ---
 
 <section class="project-wrapper">
@@ -49,8 +49,30 @@ html_class: martin project-page
         </p>
     </section>
 
-    <section class="photography-wrapper project-section">
-        <h2 class="custom-title center black">Technologies</h2>
+    <section class="mosaic-description-wrapper padding-section">
+        <h2 class="custom-title center black">Photographies</h2>
         <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+
+    <section class="mosaic-wrapper full-width">
+        <ul class="mosaic-list">
+            <li class="mosaic-list-item">
+                <ul>
+                    <li class="mosaic-image-item cake" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
+                </ul>
+            </li>
+            <li class="mosaic-list-item">
+                <ul>
+                    <li class="mosaic-image-item chocolate" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></li>
+                    <li class="mosaic-image-item oyster" style="background-image:url('/static/images/projects/martin/melanie-martin-oyster.jpg');"></li>
+                </ul>
+            </li>
+            <li class="mosaic-list-item">
+                <ul>
+                    <li class="mosaic-image-item fromage" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></li>
+                    <li class="mosaic-image-item cookies" style="background-image:url('/static/images/projects/martin/melanie-martin-cookies.jpg');"></li>
+                </ul>
+            </li>
+        </ul>
     </section>
 </section>
