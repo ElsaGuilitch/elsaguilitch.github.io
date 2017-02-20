@@ -56,21 +56,21 @@ body_class: martin project-page
 
     <section class="mosaic-wrapper full-width">
         <ul class="mosaic-list">
-            <li class="mosaic-list-item">
+            <li class="mosaic-item">
                 <ul>
-                    <li class="mosaic-image-item cake" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
+                    <li class="mosaic-item-image cake" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
                 </ul>
             </li>
-            <li class="mosaic-list-item">
+            <li class="mosaic-item">
                 <ul>
-                    <li class="mosaic-image-item chocolate" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></li>
-                    <li class="mosaic-image-item oyster" style="background-image:url('/static/images/projects/martin/melanie-martin-oyster.jpg');"></li>
+                    <li class="mosaic-item-image chocolate" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></li>
+                    <li class="mosaic-item-image oyster" style="background-image:url('/static/images/projects/martin/melanie-martin-oyster.jpg');"></li>
                 </ul>
             </li>
-            <li class="mosaic-list-item">
+            <li class="mosaic-item">
                 <ul>
-                    <li class="mosaic-image-item fromage" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></li>
-                    <li class="mosaic-image-item cookies" style="background-image:url('/static/images/projects/martin/melanie-martin-cookies.jpg');"></li>
+                    <li class="mosaic-item-image fromage" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></li>
+                    <li class="mosaic-item-image cookies" style="background-image:url('/static/images/projects/martin/melanie-martin-cookies.jpg');"></li>
                 </ul>
             </li>
         </ul>

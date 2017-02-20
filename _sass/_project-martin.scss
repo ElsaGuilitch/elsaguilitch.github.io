@@ -38,11 +38,11 @@ body.page-martin section.project-wrapper {
 
     padding-top: 0;
 
-    .mosaic-list {
+    ul.mosaic-list {
       font-size: 0;
       margin: 0 -$margin / 2;
 
-      .mosaic-list-item {
+      li.mosaic-item {
         vertical-align: top;
         display: inline-block;
 
@@ -58,7 +58,7 @@ body.page-martin section.project-wrapper {
         }
       }
 
-      .mosaic-image-item {
+      .mosaic-item-image {
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;

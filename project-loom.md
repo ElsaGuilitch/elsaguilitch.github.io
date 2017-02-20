@@ -13,6 +13,50 @@ body_class: loom project-page
         </span>
     </section>
 
+
+    <section class="mosaic-wrapper full-width">
+
+
+        <ul class="mosaic-list">
+            <li class="mosaic-item first">
+                <div class="mosaic-item-image hanger">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                </div>
+                <div class="mosaic-item-image loom1">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                </div>
+                <div class="mosaic-item-image loom2">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                </div>
+            </li>
+            <li class="mosaic-item second">
+                <div class="mosaic-item-image up">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- <ul class="mosaic-list">
+            <li class="mosaic-item">
+                <ul>
+                    <li class="mosaic-item-image hanger" ></li>
+                    <li class="mosaic-item-image loom1" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
+                    <li class="mosaic-item-image loom2" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
+                </ul>
+            </li>
+            <li class="mosaic-item">
+                <ul>
+                    <li class="mosaic-item-image up" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></li>
+                </ul>
+            </li>
+            <li class="mosaic-item">
+                <ul>
+                    <li class="mosaic-item-image wirereel" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></li>
+                </ul>
+            </li>
+        </ul> -->
+    </section>
+
     <section class="concept-wrapper padding-section">
         <div class="background" style="background-image: url('http://bit.ly/2m0axvo');"></div>
 
@@ -33,28 +77,6 @@ body_class: loom project-page
             <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
             <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
             <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
-        </ul>
-    </section>
-
-    <section class="mosaic-wrapper full-width">
-        <ul class="mosaic-list">
-            <li class="mosaic-list-item">
-                <ul>
-                    <li class="mosaic-image-item cake" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
-                    <li class="mosaic-image-item cake" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
-                    <li class="mosaic-image-item cake" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
-                </ul>
-            </li>
-            <li class="mosaic-list-item">
-                <ul>
-                    <li class="mosaic-image-item chocolate" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></li>
-                </ul>
-            </li>
-            <li class="mosaic-list-item">
-                <ul>
-                    <li class="mosaic-image-item fromage" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></li>
-                </ul>
-            </li>
         </ul>
     </section>
 
