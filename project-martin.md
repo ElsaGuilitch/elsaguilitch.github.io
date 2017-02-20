@@ -57,6 +57,32 @@ body_class: martin project-page
     <section class="mosaic-wrapper full-width">
         <ul class="mosaic-list">
             <li class="mosaic-item">
+                <div class="mosaic-item-image cake">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
+                </div>
+            </li>
+            <li class="mosaic-item">
+                <div class="mosaic-item-image chocolate">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></div>
+                </div>
+                <div class="mosaic-item-image oyster">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-oyster.jpg');"></div>
+                </div>
+            </li>
+            <li class="mosaic-item">
+                <div class="mosaic-item-image fromage">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></div>
+                </div>
+                <div class="mosaic-item-image cookies">
+                    <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cookies.jpg');"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="mosaic-wrapper full-width">
+        <ul class="mosaic-list">
+            <li class="mosaic-item">
                 <ul>
                     <li class="mosaic-item-image cake" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></li>
                 </ul>
