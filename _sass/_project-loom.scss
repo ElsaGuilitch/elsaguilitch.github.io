@@ -3,6 +3,37 @@ body.page-loom section.project-wrapper {
 
   section.header-wrapper { background-color: $loom-color; }
 
+  section.technoligies-wrapper {
+    background-color: $gray;
+
+    .technoligies-list {
+      text-align: center;
+      margin-top: 60px;
+      @media #{$mobile} { margin-top: 40px; }
+
+      .item {
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 3%;
+        margin-right: 3%;
+        img { height: 100%; }
+
+        &.shopify { height: 130px; }
+        &.sass    { height: 100px; }
+        &.stripe  { height: 90px; }
+
+        @media #{$mobile} {
+          margin-top: 40px;
+          margin-left: 8%;
+          margin-right: 8%;
+          &.shopify { height: 60px; }
+          &.sass    { height: 60px; }
+          &.stripe  { height: 50px; }
+        }
+      }
+    }
+  }
+
   section.mosaic-wrapper {
     ul.mosaic-list {
      
@@ -17,7 +48,7 @@ body.page-loom section.project-wrapper {
           width: 40%; vertical-align: bottom;
           @media #{$mobile-portrait} { display: none; }
         }
-        
+
         &:last-of-type { width: 100%; text-align: right; vertical-align: top; }
 
         div.mosaic-item-image {

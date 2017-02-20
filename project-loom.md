@@ -30,9 +30,9 @@ body_class: loom project-page
         <p class="custom-description center gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
         <ul class="technoligies-list">
-            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
-            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
-            <li class="item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/1280px-JQuery_logo.svg.png" alt="###"></li>
+            <li class="item shopify"><img src="/static/images/projects/shopify.png" alt="Shopify"></li>
+            <li class="item sass"><img src="/static/images/projects/sass.png" alt="Sass"></li>
+            <li class="item stripe"><img src="/static/images/projects/stripe.png" alt="Stripe"></li>
         </ul>
     </section>
 
