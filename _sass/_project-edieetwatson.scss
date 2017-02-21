@@ -1,0 +1,45 @@
+body.edieetwatson {
+  
+  section.header-project-wrapper {
+    background-color: $edieetwatson-color;
+  }
+
+  section.concept-wrapper {
+    background-color: $gray;
+  }
+
+  section.roles-wrapper {
+    background-color: $gray;
+  }
+
+  section.technoligies-wrapper {
+    background-color: $gray;
+
+    .technoligies-list {
+      text-align: left;
+      margin-top: 60px;
+      @media #{$mobile} { margin-top: 40px; }
+
+      .item {
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 3%;
+        margin-right: 3%;
+        img { height: 100%; }
+
+        &.shopify { height: 130px; }
+        &.sass    { height: 100px; }
+        &.stripe  { height: 90px; }
+
+        @media #{$mobile} {
+          margin-top: 40px;
+          margin-left: 8%;
+          margin-right: 8%;
+          &.shopify { height: 60px; }
+          &.sass    { height: 60px; }
+          &.stripe  { height: 50px; }
+        }
+      }
+    }
+  }
+}

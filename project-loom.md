@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Loom
+title: LOOM
+description: lakrjflkajer
 permalink: /loom/
 body_class: loom project-page
 ---
@@ -23,6 +24,17 @@ body_class: loom project-page
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
             </p>
         </div>
+    </section>
+
+    <section class="roles-wrapper padding-section">
+        <h2 class="custom-title">Le projet</h2>
+        <p class="custom-description">
+            Gestion de projet technique<br>
+            Création et intégration de la stack e-commerce<br>
+            Intégration du service de logistique<br>
+            Création d’opérations commeriales<br>
+            UX Designer
+        </p>
     </section>
 
     <section class="screen-insitu-wrapper padding-section">

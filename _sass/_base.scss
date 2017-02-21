@@ -105,6 +105,7 @@ body {
     vertical-align: middle;
     @include appearance(none);
     box-sizing: border-box;
+    @include transition(all 0.224s ease-in-out); 
 
     &.full.loom {
       color: $white;
@@ -112,11 +113,36 @@ body {
       box-shadow: 0 4px 6px rgba($loom-color, 0.11), 0 1px 3px rgba($loom-color, 0.08);
       background-color: $loom-color;
 
-      @include transition(all 0.224s ease-in-out); 
       &:hover {
         background-color: darken($loom-color, 3%);
         transform: translateY(-2px);
         box-shadow: 0 7px 14px rgba($loom-color, 0.1), 0 3px 6px rgba($loom-color, 0.08);
+      }
+    }
+
+    &.full.edieetwatson {
+      color: $white;
+      text-shadow: 0 1px 3px darken($edieetwatson-color, 0.6);
+      box-shadow: 0 4px 6px rgba($edieetwatson-color, 0.11), 0 1px 3px rgba($edieetwatson-color, 0.08);
+      background-color: $edieetwatson-color;
+
+      &:hover {
+        background-color: darken($edieetwatson-color, 3%);
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba($edieetwatson-color, 0.1), 0 3px 6px rgba($edieetwatson-color, 0.08);
+      }
+    }
+
+    &.full.marius {
+      color: $white;
+      text-shadow: 0 1px 3px darken($marius-color, 0.6);
+      box-shadow: 0 4px 6px rgba($marius-color, 0.11), 0 1px 3px rgba($marius-color, 0.08);
+      background-color: $marius-color;
+
+      &:hover {
+        background-color: darken($marius-color, 3%);
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba($marius-color, 0.1), 0 3px 6px rgba($marius-color, 0.08);
       }
     }
 

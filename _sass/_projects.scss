@@ -4,156 +4,148 @@ $margin-mosaic: 3px;
 
 body.project-page {
 
-  section.project-wrapper {
+  section.padding-section {
+    margin-top: 4px;
+    background-color: $gray;
+    padding: $section-padding 7%;
+    @media #{$mobile} { padding: $section-padding-mobile 7%; }
+  }
 
-    // Generic
-    section.project-section {
-      background-color: $gray;
-      margin-top: 4px;
-      padding: $section-padding 7%;
-      @media #{$mobile} { padding: $section-padding-mobile 7%; }
+  section.full-width {
+    margin-top: 4px;
+    padding: $section-padding 0;
+    @media #{$mobile} { padding: $section-padding-mobile 0; }
+  }
+
+
+  // ---------------------------------------------
+
+
+  // Header
+  section.header-project-wrapper {
+    height: 440px;
+    line-height: 440px;
+    text-align: center;
+    @media #{$mobile} { height: 260px; line-height: 260px; }
+
+    .multiline {
+      display: inline-block;
+      line-height: normal;
+      vertical-align: middle;
     }
 
-    section.padding-section {
-      margin-top: 4px;
-      padding: $section-padding 7%;
-      @media #{$mobile} { padding: $section-padding-mobile 7%; }
-    }
-
-    section.full-width {
-      background-color: white;
-      margin-top: 4px;
-      padding: $section-padding 0;
-      @media #{$mobile} { padding: $section-padding-mobile 0; }
-    }
-
-    // Header
-    section.header-wrapper {
-      height: 400px;
-      line-height: 400px;
+    h1 {
+      font-family: 'Lato', sans-serif;
+      font-size: 60px;
+      color: white;
+      font-weight: 900;
+      letter-spacing: 0.05em;
       text-align: center;
-      background-color: $gray;
-      @media #{$mobile} { height: 260px; line-height: 260px; }
-
-      .multiline {
-        display: inline-block;
-        line-height: normal;
-        vertical-align: middle;
-      }
-
-      h1 {
-        font-family: 'Lato', sans-serif;
-        font-size: 60px;
-        color: white;
-        font-weight: 900;
-        letter-spacing: 0.05em;
-        text-align: center;
-        line-height: 1.4em;
-        text-transform: uppercase;
-        @media #{$mobile} { font-size: 26px; }
-      }
+      line-height: 1.4em;
+      text-transform: uppercase;
+      @media #{$mobile} { font-size: 26px; }
     }
+  }
 
-    // Presentation
-    section.concept-wrapper {
-      $size-mobile: 260px;
-  
-      position: relative;
-      background-color: #fcfdfe;
-      padding: 0;
-      @media #{$mobile} { width: 100%; margin-left: 0; padding-bottom: $size-mobile; }
+  // Presentation
+  section.concept-wrapper {
+    $size-mobile: 260px;
 
-      .background {
-        position: absolute;
-        top: 0;
+    position: relative;
+    padding: 0;
+    @media #{$mobile} { width: 100%; margin-left: 0; padding-bottom: $size-mobile; }
+
+    .background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      font-size: 1rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: top;
+
+      @media #{$mobile} {
+        top: auto;
         bottom: 0;
-        left: 0;
-        width: 50%;
-        font-size: 1rem;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        vertical-align: top;
-
-        @media #{$mobile} {
-          top: auto;
-          bottom: 0;
-          right: 0;
-          width: 100%;
-          height: $size-mobile;
-        }
+        right: 0;
+        width: 100%;
+        height: $size-mobile;
       }
+    }
 
-      .content-inner {
-        width: 50%;
-        margin-left: 50%;
-        font-size: 1rem;
-        vertical-align: top;
-        padding: 210px 3% 210px 10%;
-        box-sizing: border-box;
-        @media #{$mobile} { width: 100%; margin-left: 0; }
+    .content-inner {
+      width: 50%;
+      margin-left: 50%;
+      font-size: 1rem;
+      vertical-align: top;
+      padding: 210px 3% 210px 10%;
+      box-sizing: border-box;
+      @media #{$mobile} { width: 100%; margin-left: 0; }
 
-        .custom-description {
-          max-width: 100%;
-          font-size: 18px;
-          color: #232323;
+      .custom-description {
+        max-width: 100%;
+        font-size: 18px;
+        color: #232323;
+        line-height: 1.7em;
+        
+        span {
+          display: block;
+          font-size: 15px;
+          font-weight: 300;
+          color: #424141;
           line-height: 1.7em;
-          
-          span {
-            display: block;
-            font-size: 15px;
-            font-weight: 300;
-            color: #424141;
-            line-height: 1.7em;
-          }
         }
       }
     }
+  }
 
-    section.screen-insitu-wrapper {
-      text-align: center;
-      
-      padding-bottom: $section-padding - 20px;
-      .custom-button { margin-top: $section-padding / 2; }
+  // In Situ
+  section.screen-insitu-wrapper {
+    text-align: center;
+    
+    padding-bottom: $section-padding - 20px;
+    .custom-button { margin-top: $section-padding / 2; }
 
-      .screen-wrapper {
-        .screen { max-width: 100%; }
-        .website {}
-      }
+    .screen-wrapper {
+      .screen { max-width: 100%; }
+      .website {}
     }
+  }
 
-    // Photographies
-    section.mosaic-wrapper {
-      padding-top: 0;
+  // Photographies
+  section.mosaic-wrapper {
+    padding-top: 0;
 
-      ul.mosaic-list {
-        font-size: 0;
-        margin-left: -$margin-mosaic;
-        margin-right: -$margin-mosaic;
+    ul.mosaic-list {
+      font-size: 0;
+      margin-left: -$margin-mosaic;
+      margin-right: -$margin-mosaic;
 
-        li.mosaic-item {
-          display: inline-block;
-         
-          div.mosaic-item-image {
-            position: relative;
+      li.mosaic-item {
+        display: inline-block;
+       
+        div.mosaic-item-image {
+          position: relative;
 
-            > .content {
-              position: absolute;
-              top: $margin-mosaic;
-              left: $margin-mosaic;
-              right: $margin-mosaic;
-              bottom: $margin-mosaic;
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center center;
-              background-color: $gray;
-            }
+          > .content {
+            position: absolute;
+            top: $margin-mosaic;
+            left: $margin-mosaic;
+            right: $margin-mosaic;
+            bottom: $margin-mosaic;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-color: $gray;
+          }
 
-            &:before {
-              display: inline-block;
-              content: "";
-              width: 100%;
-            }
+          &:before {
+            display: inline-block;
+            content: "";
+            width: 100%;
           }
         }
       }

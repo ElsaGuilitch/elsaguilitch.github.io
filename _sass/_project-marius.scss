@@ -1,0 +1,65 @@
+body.marius {
+  
+  section.header-project-wrapper {
+    background-color: $marius-color;
+  }
+
+  section.concept-wrapper {
+    background-color: $gray;
+  }
+
+  section.roles-wrapper {
+    background-color: $gray;
+  }
+
+  section.technoligies-wrapper {
+    background-color: $gray;
+    font-size: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+
+    .content-inner {
+      display: inline-block;
+      width: 60%;
+      font-size: 1rem;
+      margin-right: 10%;
+      vertical-align: top;
+background-color: rgba(255, 255, 255, 0.8);
+      .custom-description { max-width: 70%; }
+
+
+    }
+
+
+
+    .technoligies-list {
+      display: inline-block;
+      width: 30%;
+      font-size: 1rem;
+      text-align: right;
+      vertical-align: top;
+      background-color: rgba(255, 142, 255, 0.8);
+      @media #{$mobile} { margin-top: 40px; }
+
+      .item {
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+        img { height: 100%; }
+
+        &.shopify { height: 130px; }
+        &.sass    { height: 100px; }
+        &.stripe  { height: 90px; }
+
+        @media #{$mobile} {
+          margin-bottom: 40px;
+          margin-left: 8%;
+          margin-right: 8%;
+          &.shopify { height: 60px; }
+          &.sass    { height: 60px; }
+          &.stripe  { height: 50px; }
+        }
+      }
+    }
+  }
+}
