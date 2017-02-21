@@ -1,6 +1,5 @@
 body.page-loom section.project-wrapper {
-  $loom-color: #2f3f56;
-
+  
   section.header-wrapper { background-color: $loom-color; }
 
   section.technoligies-wrapper {
@@ -38,6 +37,7 @@ body.page-loom section.project-wrapper {
     ul.mosaic-list {
      
       li.mosaic-item {
+        
         &:first-of-type {
           width: 60%;
           vertical-align: bottom;
@@ -50,52 +50,53 @@ body.page-loom section.project-wrapper {
         }
 
         &:last-of-type { width: 100%; text-align: right; vertical-align: top; }
+      }
 
-        div.mosaic-item-image {
-          &.hanger:before {
-            $height: 550px;
-            $width: 830px;
+      div.mosaic-item-image {
+
+        &.hanger:before {
+          $height: 550px;
+          $width: 830px;
+          padding-top: ($height / $width) * 100%;
+        }
+
+        &.shirt-w  {
+          display: inline-block;
+          width: 50%;
+
+           &:before {
+            $height: 490px;
+            $width: 412px;
             padding-top: ($height / $width) * 100%;
           }
+        }
 
-          &.shirt-w  {
-            display: inline-block;
-            width: 50%;
+        &.shirt-b {
+          display: inline-block;
+          width: 50%;
 
-             &:before {
-              $height: 490px;
-              $width: 412px;
-              padding-top: ($height / $width) * 100%;
-            }
-          }
-
-          &.shirt-b {
-            display: inline-block;
-            width: 50%;
-
-            &:before {
-              $height: 490px;
-              $width: 412px;
-              padding-top: ($height / $width) * 100%;
-            }
-          }
-
-          &.shirt-g:before {
-            $height: 1200px;
-            $width: 540px;
+          &:before {
+            $height: 490px;
+            $width: 412px;
             padding-top: ($height / $width) * 100%;
           }
+        }
 
-          &.coil {
-            display: inline-block;
-            width: 70%;
-            @media #{$mobile-portrait} { width: 100%; }
+        &.shirt-g:before {
+          $height: 1200px;
+          $width: 540px;
+          padding-top: ($height / $width) * 100%;
+        }
 
-             &:before {
-              $height: 245px;
-              $width: 505px;
-              padding-top: ($height / $width) * 100%;
-            }
+        &.coil {
+          display: inline-block;
+          width: 70%;
+          @media #{$mobile-portrait} { width: 100%; }
+
+           &:before {
+            $height: 245px;
+            $width: 505px;
+            padding-top: ($height / $width) * 100%;
           }
         }
       }

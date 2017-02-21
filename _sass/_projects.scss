@@ -110,24 +110,15 @@ body.project-page {
       }
     }
 
-    // Technoligies
-    section.technoligies-wrapper {
+    section.screen-insitu-wrapper {
+      text-align: center;
+      
+      padding-bottom: $section-padding - 20px;
+      .custom-button { margin-top: $section-padding / 2; }
 
-      .technoligies-list {
-        text-align: center;
-        margin-top: 60px;
-        @media #{$mobile} { margin-top: 40px; }
-
-        .item {
-          display: inline-block;
-          // height: 60px;
-          margin-left: 2%;
-          margin-right: 2%;
-          margin-top: 60px;
-          @media #{$mobile} { height: 40px; margin-top: 40px; }
-
-          img { height: 100%; }
-        }
+      .screen-wrapper {
+        .screen { max-width: 100%; }
+        .website {}
       }
     }
 

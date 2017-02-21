@@ -1,8 +1,11 @@
 ---
 ---
-@import "_reset";
-@import "_media-queries";
 @import "_env";
+
+@import "_reset";
+@import "_functions";
+@import "_media-queries";
+
 @import "_base";
 
 @import "_homepage";

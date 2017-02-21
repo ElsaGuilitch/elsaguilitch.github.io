@@ -25,6 +25,15 @@ body_class: loom project-page
         </div>
     </section>
 
+    <section class="screen-insitu-wrapper padding-section">
+        <div class="screen-wrapper">
+            <img class="screen" src="/static/images/projects/screen.png" alt="Écran">
+            <div class="website" style="background-image: url('');"></div>
+        </div>
+
+        <a class="custom-button full loom" href="###" title="Aller sur LOOM">Aller sur LOOM</a>
+    </section>
+
     <section class="technoligies-wrapper padding-section">
         <h2 class="custom-title center black">Technologies</h2>
         <p class="custom-description center gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
