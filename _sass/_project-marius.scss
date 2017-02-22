@@ -17,6 +17,7 @@ body.marius {
     font-size: 0;
     padding-right: 14%;
     padding-left: 14%;
+    @media #{$mobile} { padding: $section-padding-mobile 7%; }
 
     .content-inner {
       display: inline-block;
@@ -24,40 +25,41 @@ body.marius {
       font-size: 1rem;
       margin-right: 10%;
       vertical-align: top;
-background-color: rgba(255, 255, 255, 0.8);
-      .custom-description { max-width: 70%; }
+      .custom-description { max-width: 80%; }
 
-
+      @media #{$mobile} {
+        width: 100%;
+        .custom-description { max-width: 100%; }
+      }
     }
-
-
 
     .technoligies-list {
       display: inline-block;
       width: 30%;
       font-size: 1rem;
-      text-align: right;
+      text-align: center;
       vertical-align: top;
-      background-color: rgba(255, 142, 255, 0.8);
-      @media #{$mobile} { margin-top: 40px; }
+      @media #{$mobile} { margin-top: 40px; width: 100%; }
 
       .item {
         display: block;
-        text-align: center;
-        margin-bottom: 50px;
+        margin-top: 80px;
         img { height: 100%; }
 
-        &.shopify { height: 130px; }
-        &.sass    { height: 100px; }
-        &.stripe  { height: 90px; }
+        &.symfony { height: 130px; }
+        &.sonata  { height: 120px; }
+        &.less    { height: 60px; }
+        &:first-of-type { margin-top: 0; }
 
         @media #{$mobile} {
-          margin-bottom: 40px;
-          margin-left: 8%;
-          margin-right: 8%;
-          &.shopify { height: 60px; }
-          &.sass    { height: 60px; }
-          &.stripe  { height: 50px; }
+          display: inline-block;
+          margin-top: 40px !important;
+          margin-left: 6%;
+          margin-right: 6%;
+          vertical-align: middle;
+          &.symfony { height: 82px; }
+          &.sonata  { height: 80px; }
+          &.less    { height: 50px; }
         }
       }
     }

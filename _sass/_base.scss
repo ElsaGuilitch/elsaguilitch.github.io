@@ -146,6 +146,7 @@ body {
       }
     }
 
+    @media #{$mobile} { width: 90%; height: auto; line-height: 1.8em; padding: 10px !important; }
 
     // &.border.black {
     //   color: @black;
@@ -172,6 +173,6 @@ body {
     //   &:hover { color: @black; background-color: @white; }
     // }
 
-    // @media @mobile { width: 90%; height: auto; line-height: 1.4em; padding: 10px !important; }
+    
   }
 }
