@@ -19,7 +19,7 @@ body.marius {
     font-size: 0;
     padding-right: 14%;
     padding-left: 14%;
-    @media #{$mobile} { padding: $section-padding-mobile 7%; }
+    @media #{$mobile} { padding: $section-padding-top-mobile 7%; }
 
     .content-inner {
       display: inline-block;
@@ -121,9 +121,9 @@ body.marius {
 
   section.typographies-wrapper {
     background-color: #d28a39;
-    padding: $section-padding 7% $section-padding 20%;
-    @media #{$mobile} { padding: $section-padding-mobile 7%; }
-    @media #{$ipad} { padding: $section-padding-mobile 7% $section-padding-mobile 12%; }
+    padding: $section-padding-top 7% $section-padding-top 20%;
+    @media #{$mobile} { padding: $section-padding-top-mobile 7%; }
+    @media #{$ipad} { padding: $section-padding-top-mobile 7% $section-padding-top-mobile 12%; }
 
     .custom-title {
       display: inline-block;
@@ -165,6 +165,91 @@ body.marius {
         color: $white;
         font-weight: 300;
         line-height: 1.8em;
+      }
+    }
+  }
+
+  section.mosaic-wrapper {
+
+    ul.mosaic-list {
+      li.mosaic-item {
+        
+        &:first-of-type {
+          width: 56%;
+          vertical-align: top;
+          @media #{$mobile} { width: 100%; }
+        }
+
+        &:nth-child(2) {
+          width: 56%;
+          vertical-align: top;
+          @media #{$mobile-portrait} { width: 100%; }
+        }
+
+        &:last-of-type {
+          width: 44%; vertical-align: top;
+        }
+      }
+
+      div.mosaic-item-image {
+
+        &.description {
+          @media #{$mobile} { width: 100%; }
+
+          .content-inner {
+            padding: 90px 0;
+            max-width: 64%;
+            margin: 0 auto;
+            .custom-description { max-width: 100%; }
+            
+            @media #{$mobile} {
+              max-width: 100%;
+              padding: $section-padding-top-mobile 7%;
+            }
+          }
+        }
+
+        &.tools1:before {
+          $height: 430px;
+          $width: 800px;
+          padding-top: ($height / $width) * 100%;
+        }
+
+        &.tools2  {
+          display: inline-block;
+          width: 50%;
+          vertical-align: top;
+
+           &:before {
+            $height: 380px;
+            $width: 396px;
+            padding-top: ($height / $width) * 100%;
+          }
+        }
+
+        &.tools3 {
+          display: inline-block;
+          width: 50%;
+          vertical-align: top;
+
+          &:before {
+            $height: 630px;
+            $width: 396px;
+            padding-top: ($height / $width) * 100%;
+          }
+        }
+
+        &.car {
+          margin-top: -160px;
+          @media #{$mobile-landscape} { margin-top: -50px; }
+          @media #{$mobile-portrait} { display: none; }
+
+          &:before {
+            $height: 990px;
+            $width: 570px;
+            padding-top: ($height / $width) * 100%;
+          }
+        }
       }
     }
   }

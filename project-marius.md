@@ -96,3 +96,33 @@ body_class: marius project-page
         <p class="custom-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude.</p>
     </div>
 </section>
+
+<section class="mosaic-wrapper full-width">
+    <ul class="mosaic-list">
+        <li class="mosaic-item">
+            <div class="mosaic-item-image description">
+                <div class="content-inner">
+                    <h2 class="custom-title left black">Technologies</h2>
+                    <p class="custom-description left gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="mosaic-item">
+            <div class="mosaic-item-image tools1">
+                <div class="content" style="background-image:url('/static/images/projects/marius/marius-tools1.jpg');"></div>
+            </div>
+            <div class="mosaic-item-image tools2">
+                <div class="content" style="background-image:url('/static/images/projects/marius/marius-tools2.jpg');"></div>
+            </div>
+            <div class="mosaic-item-image tools3">
+                <div class="content" style="background-image:url('/static/images/projects/marius/marius-tools3.jpg');"></div>
+            </div>
+        </li>
+        <li class="mosaic-item">
+            <div class="mosaic-item-image car">
+                <div class="content" style="background-image:url('/static/images/projects/marius/marius-car.jpg');"></div>
+            </div>
+        </li>
+    </ul>
+</section>

@@ -1,5 +1,8 @@
-$section-padding: 150px;
-$section-padding-mobile: 80px;
+$section-padding-top: 150px;
+$section-padding-top-mobile: 80px;
+$section-padding-sides: 7%;
+$section-padding-sides-mobile: 7%;
+
 $margin-mosaic: 3px;
 
 body.project-page {
@@ -7,14 +10,14 @@ body.project-page {
   section.padding-section {
     margin-top: 4px;
     background-color: $gray;
-    padding: $section-padding 7%;
-    @media #{$mobile} { padding: $section-padding-mobile 7%; }
+    padding: $section-padding-top 7%;
+    @media #{$mobile} { padding: $section-padding-top-mobile 7%; }
   }
 
   section.full-width {
     margin-top: 4px;
-    padding: $section-padding 0;
-    @media #{$mobile} { padding: $section-padding-mobile 0; }
+    padding: $section-padding-top 0;
+    @media #{$mobile} { padding: $section-padding-top-mobile 0; }
   }
 
 
@@ -106,8 +109,8 @@ body.project-page {
   section.screen-insitu-wrapper {
     text-align: center;
     
-    padding-bottom: $section-padding - 20px;
-    .custom-button { margin-top: $section-padding / 2; }
+    padding-bottom: $section-padding-top - 20px;
+    .custom-button { margin-top: $section-padding-top / 2; }
 
     .screen-wrapper {
       .screen { max-width: 100%; }
