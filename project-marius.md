@@ -86,3 +86,13 @@ body_class: marius project-page
         </li>
     </ul>
 </section>
+
+<section class="typographies-wrapper padding-section">
+    <h2 class="custom-title left white">Typographies</h2>
+    
+    <div class="typographies-content">
+        <span class="alphabet">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Yy Zz - 0123456789</span>
+        <span class="label-font">Rokkit</span>
+        <p class="custom-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude.</p>
+    </div>
+</section>

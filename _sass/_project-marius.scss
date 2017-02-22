@@ -1,5 +1,7 @@
 body.marius {
   
+  @import url('https://fonts.googleapis.com/css?family=Rokkitt');
+
   section.header-project-wrapper {
     background-color: $marius-color;
   }
@@ -70,7 +72,7 @@ body.marius {
     .marius-logo {
       width: 32%;
       margin: 60px auto 120px;
-      @media #{$mobile-portrait} { width: 82%; }
+      @media #{$mobile-portrait}  { width: 82%; }
       @media #{$mobile-landscape} { width: 62%; }
     }
 
@@ -113,6 +115,56 @@ body.marius {
           font-weight: 300;
           color: #8a8a8a;
         }
+      }
+    }
+  }
+
+  section.typographies-wrapper {
+    background-color: #d28a39;
+    padding: $section-padding 7% $section-padding 20%;
+    @media #{$mobile} { padding: $section-padding-mobile 7%; }
+    @media #{$ipad} { padding: $section-padding-mobile 7% $section-padding-mobile 12%; }
+
+    .custom-title {
+      display: inline-block;
+      width: 40%;
+      vertical-align: top;
+    }
+
+    .typographies-content {
+      display: inline-block;
+      width: 56%;
+      vertical-align: top;
+      @media #{$mobile} { width: 100%; }
+
+      .alphabet {
+        font-family: 'Rokkitt', "Times New Roman", serif;
+        font-size: 58px;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        line-height: 1.2em;
+        @media #{$mobile-portrait} { font-size: 30px; }
+        @media #{$mobile-landscape} { font-size: 40px; }
+      }
+
+      .label-font {
+        display: block;
+        font-family: 'Rokkitt', "Times New Roman", serif;
+        font-size: 18px;
+        color: $white;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin: 26px 0 24px;
+        @media #{$mobile} { font-size: 14px; }
+      }
+
+      .custom-description {
+        max-width: 100%;
+        font-size: 13px;
+        color: $white;
+        font-weight: 300;
+        line-height: 1.8em;
       }
     }
   }
