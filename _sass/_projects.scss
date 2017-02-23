@@ -129,10 +129,12 @@ body.project-page {
 
       li.mosaic-item {
         display: inline-block;
+
+        a { display: block; }
        
         div.mosaic-item-image {
           position: relative;
-
+          
           > .content {
             position: absolute;
             top: $margin-mosaic;

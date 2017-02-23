@@ -16,25 +16,35 @@ body_class: homepage project-page
     <h2 class="custom-title center black">Mes derniers projets</h2>
     <ul class="project-wrapper mosaic-list">
         <li class="mosaic-item">
-            <div class="mosaic-item-image cake">
-                <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cake_2.jpg');"></div>
-            </div>
+            <a href="###" title="###">
+                <div class="mosaic-item-image cake">
+                    <div class="content" style="background-image:url('');"></div>
+                </div>
+            </a>
         </li>
         <li class="mosaic-item">
-            <div class="mosaic-item-image chocolate">
-                <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></div>
-            </div>
-            <div class="mosaic-item-image oyster">
-                <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-oyster.jpg');"></div>
-            </div>
+            <a href="###" title="###">
+                <div class="mosaic-item-image chocolate">
+                    <div class="content" style="background-image:url('');"></div>
+                </div>
+            </a>
+            <a href="###" title="###">
+                <div class="mosaic-item-image oyster">
+                    <div class="content" style="background-image:url('');"></div>
+                </div>
+            </a>
         </li>
         <li class="mosaic-item">
-            <div class="mosaic-item-image fromage">
-                <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-fromage.jpg');"></div>
-            </div>
-            <div class="mosaic-item-image cookies">
-                <div class="content" style="background-image:url('/static/images/projects/martin/melanie-martin-cookies.jpg');"></div>
-            </div>
+            <a href="###" title="###">
+                <div class="mosaic-item-image fromage">
+                    <div class="content" style="background-image:url('');"></div>
+                </div>
+            </a>
+            <a href="###" title="###">
+                <div class="mosaic-item-image cookies">
+                    <div class="content" style="background-image:url('');"></div>
+                </div>
+            </a>
         </li>
     </ul>
 </section>
