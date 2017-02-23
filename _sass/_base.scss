@@ -170,6 +170,19 @@ body {
       }
     }
 
+    &.full.martin {
+      color: $white;
+      text-shadow: 0 1px 3px darken($martin-color, 0.6);
+      box-shadow: 0 4px 6px rgba($martin-color, 0.11), 0 1px 3px rgba($martin-color, 0.08);
+      background-color: $martin-color;
+
+      &:hover {
+        background-color: darken($martin-color, 3%);
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba($martin-color, 0.1), 0 3px 6px rgba($martin-color, 0.08);
+      }
+    }
+
     @media #{$mobile} { width: 90%; height: auto; line-height: 1.8em; padding: 10px !important; }
 
     // &.border.black {
