@@ -1,0 +1,72 @@
+body.homepage {
+  
+  section.header-homepage-wrapper {
+    background-color: #30b9c2 !important;
+  }
+
+  section.last-project-wrapper {
+    padding-top: 50px !important;
+
+    ul.mosaic-list {
+      
+      li.mosaic-item {
+        width: (100% / 3);
+        vertical-align: top;
+       
+        @media #{$mobile-portrait} {
+          width: 50%;
+          &:last-child { width: 100%; }
+          &:first-child { vertical-align: bottom; }
+        }
+
+        div.mosaic-item-image {
+          &.cake:before {
+            $height: 1374px;
+            $width: 716px;
+            padding-top: ($height / $width) * 100%;
+          }
+
+          &.chocolate {
+            margin-top: 90px;
+            @media #{$mobile-portrait} { margin-top: 0; }
+
+            &:before {
+              $height: 370px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+          }
+
+          &.oyster:before {
+            $height: 600px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+          }
+
+          &.fromage {
+            margin-top: 30px;
+            @media #{$mobile-portrait} { display: none; }
+
+            &:before {
+              $height: 560px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+          }
+
+          &.cookies:before {
+            $height: 360px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+
+            @media #{$mobile-portrait} {
+              $height: 300px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
