@@ -99,10 +99,11 @@ body_class: marius project-page
 
 <section class="mosaic-wrapper full-width">
     <ul class="mosaic-list">
+
         <li class="mosaic-item">
             <div class="mosaic-item-image description">
                 <div class="content-inner">
-                    <h2 class="custom-title left black">Technologies</h2>
+                    <h2 class="custom-title left black">Photographies</h2>
                     <p class="custom-description left gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>

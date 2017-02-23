@@ -1,10 +1,57 @@
-body.page-martin section.project-wrapper {
+body.martin {
 
-  section.header-wrapper { background-color: #30b9c2; }
+  section.header-project-wrapper {
+    background-color: $martin-color;
+  }
+
+  section.concept-wrapper {
+    background-color: $gray;
+  }
+
+  section.roles-wrapper {
+    background-color: $gray;
+  }
+
+  section.technoligies-wrapper {
+    background-color: $gray;
+
+    .technoligies-list {
+      text-align: center;
+      margin-top: 60px;
+      @media #{$mobile} { margin-top: 40px; }
+
+      .item {
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: 2%;
+        margin-right: 2%;
+        img { height: 100%; }
+
+        &.python    { height: 56px; }
+        &.djangocms { height: 50px; }
+        &.jquery    { height: 50px; }
+        &.less      { height: 60px; }
+
+        @media #{$mobile} {
+          margin-top: 30px;
+          margin-left: 6%;
+          margin-right: 6%;
+          &.python    { height: 46px; }
+          &.djangocms { height: 40px; }
+          &.jquery    { height: 40px; }
+          &.less      { height: 40px; }
+        }
+        @media #{$ipad} {
+          margin-left: 6%;
+          margin-right: 6%;
+        }
+      }
+    }
+  }
 
   section.typographies-wrapper {
     position: relative;
-    background-color: #30b9c2;
+    background-color: $martin-color;
 
     .typo-lato {
       display: block;
@@ -30,10 +77,12 @@ body.page-martin section.project-wrapper {
   }
 
   section.mosaic-description-wrapper {
-    background-color: white;
+    background-color: $white;
+    padding-bottom: 70px;
   }
 
   section.mosaic-wrapper {
+
     ul.mosaic-list {
       
       li.mosaic-item {

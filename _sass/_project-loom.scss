@@ -1,6 +1,16 @@
-body.loom section.project-wrapper {
+body.loom {
   
-  section.header-wrapper { background-color: $loom-color; }
+  section.header-project-wrapper {
+    background-color: $loom-color;
+  }
+
+  section.concept-wrapper {
+    background-color: $gray;
+  }
+
+  section.roles-wrapper {
+    background-color: $gray;
+  }
 
   section.technoligies-wrapper {
     background-color: $gray;
