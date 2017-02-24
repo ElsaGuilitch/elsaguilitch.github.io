@@ -12,7 +12,7 @@ body_class: martin project-page
     </span>
 </section>
 
-<!-- <section class="headband-wrapper full-width" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></section> -->
+<section class="headband-wrapper full-width" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></section>
 
 <section class="presentation-wrapper padding-section">
     <h2 class="custom-title center black">Styliste culinaire</h2>
