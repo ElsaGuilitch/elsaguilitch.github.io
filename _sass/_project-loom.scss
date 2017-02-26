@@ -4,15 +4,11 @@ body.loom {
     background-color: $loom-color;
   }
 
-  section.concept-wrapper {
-    background-color: $gray;
-  }
-
   section.roles-wrapper {
     background-color: $gray;
   }
 
-  section.technoligies-wrapper {
+  section.technology-wrapper {
     background-color: $gray;
 
     .technoligies-list {
@@ -44,6 +40,8 @@ body.loom {
   }
 
   section.mosaic-wrapper {
+    padding: $s-pad-top 0;
+    
     ul.mosaic-list {
      
       li.mosaic-item {

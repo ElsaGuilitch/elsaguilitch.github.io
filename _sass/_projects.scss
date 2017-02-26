@@ -1,23 +1,16 @@
-$section-padding-top: 150px;
-$section-padding-top-mobile: 80px;
-$section-padding-sides: 7%;
-$section-padding-sides-mobile: 7%;
-
-$margin-mosaic: 3px;
-
 body.project-page {
 
   section.padding-section {
     margin-top: 4px;
     background-color: $gray;
-    padding: $section-padding-top 7%;
-    @media #{$mobile} { padding: $section-padding-top-mobile 7%; }
+    padding: $s-pad-top $s-pad-sides;
+    @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
   }
 
   section.full-width {
     margin-top: 4px;
-    padding: $section-padding-top 0;
-    @media #{$mobile} { padding: $section-padding-top-mobile 0; }
+    padding: $s-pad-top 0;
+    @media #{$mobile} { padding: $s-pad-top-mob 0; }
   }
 
 
@@ -29,7 +22,12 @@ body.project-page {
     height: 440px;
     line-height: 440px;
     text-align: center;
-    @media #{$mobile} { height: 260px; line-height: 260px; }
+
+    @media #{$mobile} {
+      height: 260px;
+      line-height: 260px;
+      padding: 0 30px;
+    }
 
     .multiline {
       display: inline-block;
@@ -41,7 +39,7 @@ body.project-page {
       font-family: 'Lato', sans-serif;
       font-size: 60px;
       color: white;
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: 0.05em;
       text-align: center;
       line-height: 1.4em;
@@ -50,13 +48,29 @@ body.project-page {
     }
   }
 
-  // Presentation
-  section.concept-wrapper {
-    $size-mobile: 260px;
+  section.headband-wrapper {
+    display: none;
+    height: 240px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
 
+  section.presentation-wrapper {
+    background-color: $white;
+    text-align: center;
+    .custom-button { margin-top: 40px; }
+    .custom-description {
+      max-width: 60%;
+      @media #{$mobile} { max-width: 100%; }
+    }
+  }
+
+  section.roles-wrapper {
     position: relative;
     padding: 0;
-    @media #{$mobile} { width: 100%; margin-left: 0; padding-bottom: $size-mobile; }
+    @media #{$mobile} { width: 100%; margin-left: 0; }
 
     .background {
       position: absolute;
@@ -71,11 +85,9 @@ body.project-page {
       vertical-align: top;
 
       @media #{$mobile} {
-        top: auto;
-        bottom: 0;
-        right: 0;
+        position: static;
         width: 100%;
-        height: $size-mobile;
+        height: 260px;
       }
     }
 
@@ -84,22 +96,25 @@ body.project-page {
       margin-left: 50%;
       font-size: 1rem;
       vertical-align: top;
-      padding: 210px 3% 210px 10%;
+      padding: 180px 3% 180px 8%;
       box-sizing: border-box;
-      @media #{$mobile} { width: 100%; margin-left: 0; }
+      @media #{$mobile} { width: 100%; margin-left: 0; padding: $s-pad-top-mob 7%; }
 
       .custom-description {
         max-width: 100%;
-        font-size: 18px;
+        font-size: 15px;
         color: #232323;
-        line-height: 1.7em;
-        
-        span {
-          display: block;
-          font-size: 15px;
-          font-weight: 300;
-          color: #424141;
-          line-height: 1.7em;
+        line-height: 2.5em;
+        padding-left: 40px;
+
+        .bullet {
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          background-color: #000;
+          border-radius: 5px;
+          margin-right: 10px;
+          vertical-align: middle;
         }
       }
     }
@@ -107,14 +122,22 @@ body.project-page {
 
   // In Situ
   section.screen-insitu-wrapper {
-    text-align: center;
-    
-    padding-bottom: $section-padding-top - 20px;
-    .custom-button { margin-top: $section-padding-top / 2; }
+    background-color: $white;
 
     .screen-wrapper {
+      position: relative;
+
       .screen { max-width: 100%; }
-      .website {}
+      .website {
+        position: absolute;
+        top: 6.4%;
+        left: 11.8%;
+        width: 76.4%;
+        height: 82%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
     }
   }
 

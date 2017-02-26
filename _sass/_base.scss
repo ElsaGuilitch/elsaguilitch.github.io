@@ -4,12 +4,12 @@ body { min-height: 100%; }
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  color: black;
+  color: $black;
   font-weight: 400;
+
   border-right:  20px solid white;
   border-left:   20px solid white;
   border-bottom: 20px solid white;
-  
   @media #{$mobile} {
     border-right:  10px solid white;
     border-left:   10px solid white;
@@ -67,22 +67,10 @@ body {
 
   // ----------------------------------------
 
-  // .custom-main-title {
-  //   font-family: 'Lato', sans-serif;
-  //   font-size: 60px;
-  //   color: white;
-  //   font-weight: 900;
-  //   letter-spacing: 0.05em;
-  //   text-align: center;
-  //   line-height: 1.4em;
-  //   text-transform: uppercase;
-  //   @media #{$mobile} { font-size: 26px; }
-  // }
-
   .custom-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    color: black;
+    color: $black;
     font-weight: 700;
     margin-bottom: 36px;
 
@@ -90,7 +78,7 @@ body {
     &.left   { text-align: left; }
     &.right  { text-align: right; }
     &.white  { color: white; }
-    &.black  { color: black; }
+    &.black  { color: $black; }
   }
 
   .custom-description {
@@ -107,7 +95,7 @@ body {
     &.left   { text-align: left; }
     &.right  { text-align: right; }
     &.white  { color: white; }
-    &.black  { color: black; }
+    &.black  { color: $black; }
     &.gray   { color: #666666; }
   }
 
@@ -125,7 +113,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 3px;
     border: none;
     cursor: pointer;
     outline: 0;
@@ -164,14 +152,14 @@ body {
 
     &.full.marius {
       color: $white;
-      text-shadow: 0 1px 3px darken($marius-color, 0.6);
-      box-shadow: 0 4px 6px rgba($marius-color, 0.11), 0 1px 3px rgba($marius-color, 0.08);
-      background-color: $marius-color;
+      text-shadow: 0 1px 3px darken($marius-color-2, 0.6);
+      box-shadow: 0 4px 6px rgba($marius-color-2, 0.11), 0 1px 3px rgba($marius-color-2, 0.08);
+      background-color: $marius-color-2;
 
       &:hover {
-        background-color: darken($marius-color, 3%);
+        background-color: darken($marius-color-2, 3%);
         transform: translateY(-2px);
-        box-shadow: 0 7px 14px rgba($marius-color, 0.1), 0 3px 6px rgba($marius-color, 0.08);
+        box-shadow: 0 7px 14px rgba($marius-color-2, 0.1), 0 3px 6px rgba($marius-color-2, 0.08);
       }
     }
 

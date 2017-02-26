@@ -6,6 +6,12 @@ permalink: /martin/
 body_class: martin project-page
 ---
 
+<!-- ############
+    To do :
+     - scroll screen
+     - Typo
+ ############ -->
+
 <section class="header-project-wrapper">
     <span class="multiline">
         <h1 class="custom-main-title">Mélanie Martin</h1>
@@ -20,42 +26,32 @@ body_class: martin project-page
     <br><br>
     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
     </p>
-    <a class="custom-button full martin" href="###" title="Aller sur Mélanie Martin">Aller sur Mélanie Martin</a>
+    <a class="custom-button full martin" href="https://melaniemartin.fr/" title="Aller sur Mélanie Martin" target="_blank">Aller sur Mélanie Martin</a>
 </section>
 
-<section class="concept-wrapper padding-section">
-    <div class="background" style="background-image: url('https://melaniemartin.fr/media/filer_public_thumbnails/filer_public/22/d5/22d5c505-ebcc-43e0-b4a8-4da6e93d557c/plaqueminischaussonsnectarine.jpg__640x960_q85_crop_subsampling-2_upscale.jpg');"></div>
+<section class="roles-wrapper padding-section">
+    <div class="background" style="background-image: url('/static/images/projects/martin/martin-bonbons.jpg');"></div>
 
     <div class="content-inner">
         <h2 class="custom-title">Mes rôles</h2>
-        <p class="custom-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-        <br><br>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+        <p class="custom-description">
+            <span class="bullet"></span>Gestion de projet technique<br>
+            <span class="bullet"></span>Création et intégration de la stack e-commerce<br>
+            <span class="bullet"></span>Intégration du service de logistique<br>
+            <span class="bullet"></span>Création d’opérations commeriales<br>
+            <span class="bullet"></span>UX Designer
         </p>
     </div>
 </section>
 
-<!-- <section class="roles-wrapper padding-section">
-    <h2 class="custom-title">Le projet</h2>
-    <p class="custom-description">
-        Gestion de projet technique<br>
-        Création et intégration de la stack e-commerce<br>
-        Intégration du service de logistique<br>
-        Création d’opérations commeriales<br>
-        UX Designer
-    </p>
-</section> -->
-
 <section class="screen-insitu-wrapper padding-section">
     <div class="screen-wrapper">
         <img class="screen" src="/static/images/projects/screen.png" alt="Écran">
-        <div class="website" style="background-image: url('');"></div>
+        <div class="website" style="background-image: url('/static/images/projects/martin/website.jpg');"></div>
     </div>
-
-    <!-- <a class="custom-button full martin" href="###" title="Aller sur Mélanie Martin">Aller sur Mélanie Martin</a> -->
 </section>
 
-<section class="technoligies-wrapper padding-section">
+<section class="technology-wrapper padding-section">
     <div class="content-inner">
         <h2 class="custom-title center black">Technologies</h2>
         <p class="custom-description center gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -70,10 +66,11 @@ body_class: martin project-page
 </section>
 
 <section class="typographies-wrapper padding-section">
-    <h2 class="custom-title center white">Technologies</h2>
+    <h2 class="custom-title center white">Typographies</h2>
     <p class="custom-description center white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-    <p class="typo-lato">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Yy Zz - 0123456789
+    <p class="typo-lato">
+        Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Yy Zz - 0123456789
         <span>Lato Light</span>
     </p>
 </section>

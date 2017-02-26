@@ -1,60 +1,51 @@
 ---
 layout: default
-title: Marius Affuteur
+title: Marius Affûteur
 description: lakrjflkajer
 permalink: /marius/
 body_class: marius project-page
 ---
 
+<!-- ############
+    To do :
+     - scroll screen
+ ############ -->
+
 <section class="header-project-wrapper">
     <span class="multiline">
-        <h1 class="custom-main-title">Marius</h1>
+        <h1 class="custom-main-title">Marius Affûteur</h1>
     </span>
 </section>
 
-<section class="concept-wrapper padding-section">
-    <div class="background" style="background-image: url('http://bit.ly/2m0axvo');"></div>
+<section class="headband-wrapper full-width" style="background-image:url('http://marius-affuteur.fr/medias/thin_band/0001/01/thumb_92_thin_band_large.jpeg');"></section>
 
-    <div class="content-inner">
-        <h2 class="custom-title">Le projet</h2>
-        <p class="custom-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-        <br><br>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
-        </p>
-    </div>
+<section class="presentation-wrapper padding-section">
+    <h2 class="custom-title center black">Mais c'est quoi un affûteur ?</h2>
+    <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    </p>
+    <a class="custom-button full marius" href="http://marius-affuteur.fr/" title="Aller sur Marius Affûteur" target="_blank">Aller sur Marius Affûteur</a>
 </section>
 
 <section class="roles-wrapper padding-section">
-    <h2 class="custom-title">Le projet</h2>
-    <p class="custom-description">
-        Gestion de projet technique<br>
-        Création et intégration de la stack e-commerce<br>
-        Intégration du service de logistique<br>
-        Création d’opérations commeriales<br>
-        UX Designer
-    </p>
+    <div class="background" style="background-image: url('/static/images/projects/marius/marius-affuteur.jpg');"></div>
+
+    <div class="content-inner">
+        <h2 class="custom-title">Mes rôles</h2>
+        <p class="custom-description">
+            <span class="bullet"></span>Gestion de projet technique<br>
+            <span class="bullet"></span>Création et intégration de la stack e-commerce<br>
+            <span class="bullet"></span>Intégration du service de logistique<br>
+            <span class="bullet"></span>Création d’opérations commeriales<br>
+            <span class="bullet"></span>UX Designer
+        </p>
+    </div>
 </section>
 
 <section class="screen-insitu-wrapper padding-section">
     <div class="screen-wrapper">
         <img class="screen" src="/static/images/projects/screen.png" alt="Écran">
-        <div class="website" style="background-image: url('');"></div>
+        <div class="website" style="background-image: url('/static/images/projects/martin/website.jpg');"></div>
     </div>
-
-    <a class="custom-button full marius" href="###" title="Aller sur Marius Affuteur">Aller sur Marius Affuteur</a>
-</section>
-
-<section class="technoligies-wrapper padding-section">
-    <div class="content-inner">
-        <h2 class="custom-title left black">Technologies</h2>
-        <p class="custom-description left gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-    <ul class="technoligies-list">
-        <li class="item symfony"><img src="/static/images/projects/symfony.png" alt="Symfony"></li>
-        <li class="item sonata"><img src="/static/images/projects/sonata.png" alt="Sonata"></li>
-        <li class="item less"><img src="/static/images/projects/less.png" alt="Less"></li>
-    </ul>
 </section>
 
 <section class="identity-wrapper padding-section">
@@ -125,5 +116,18 @@ body_class: marius project-page
                 <div class="content" style="background-image:url('/static/images/projects/marius/marius-car.jpg');"></div>
             </div>
         </li>
+    </ul>
+</section>
+
+<section class="technology-wrapper padding-section">
+    <div class="content-inner">
+        <h2 class="custom-title left black">Technologies</h2>
+        <p class="custom-description left gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <ul class="technoligies-list">
+        <li class="item symfony"><img src="/static/images/projects/symfony.png" alt="Symfony"></li>
+        <li class="item sonata"><img src="/static/images/projects/sonata.png" alt="Sonata"></li>
+        <li class="item less"><img src="/static/images/projects/less.png" alt="Less"></li>
     </ul>
 </section>

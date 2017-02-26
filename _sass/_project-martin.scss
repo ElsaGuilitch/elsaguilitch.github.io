@@ -3,35 +3,12 @@ body.martin {
   section.header-project-wrapper {
     background-color: $martin-color;
   }
-
-  section.headband-wrapper {
-    display: none;
-    height: 240px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-  }
-
-  section.presentation-wrapper {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    background-color: $white;
-    .custom-description { max-width: 60%; }
-    .custom-button { margin-top: 40px;}
-  }
-
-  section.concept-wrapper {
-    background-color: $gray;
-    .content-inner { padding: 150px 3% 150px 10%; }
-  }
-
+  
   section.roles-wrapper {
-    background-color: $gray;
+    background-color: #fcfdfe;
   }
 
-  section.technoligies-wrapper {
+  section.technology-wrapper {
     background-color: $gray;
 
     .technoligies-list {
@@ -52,7 +29,7 @@ body.martin {
         &.less      { height: 60px; }
 
         @media #{$mobile} {
-          margin-top: 30px;
+          margin-top: 40px;
           margin-left: 6%;
           margin-right: 6%;
           &.python    { height: 46px; }

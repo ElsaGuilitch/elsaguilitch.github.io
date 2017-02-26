@@ -3,23 +3,19 @@ body.marius {
   @import url('https://fonts.googleapis.com/css?family=Rokkitt');
 
   section.header-project-wrapper {
-    background-color: $marius-color;
-  }
-
-  section.concept-wrapper {
-    background-color: $gray;
+    background-color: $marius-color-2;
   }
 
   section.roles-wrapper {
     background-color: $gray;
   }
 
-  section.technoligies-wrapper {
+  section.technology-wrapper {
     background-color: $gray;
     font-size: 0;
     padding-right: 14%;
     padding-left: 14%;
-    @media #{$mobile} { padding: $section-padding-top-mobile 7%; }
+    @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
 
     .content-inner {
       display: inline-block;
@@ -120,10 +116,11 @@ body.marius {
   }
 
   section.typographies-wrapper {
-    background-color: #d28a39;
-    padding: $section-padding-top 7% $section-padding-top 20%;
-    @media #{$mobile} { padding: $section-padding-top-mobile 7%; }
-    @media #{$ipad} { padding: $section-padding-top-mobile 7% $section-padding-top-mobile 12%; }
+    background-color: $marius-color-2;
+    padding: $s-pad-top $s-pad-sides $s-pad-top 20%;
+
+    @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
+    @media #{$ipad} { padding: $s-pad-top-mob $s-pad-sides $s-pad-top-mob 12%; }
 
     .custom-title {
       display: inline-block;
@@ -204,7 +201,7 @@ body.marius {
             
             @media #{$mobile} {
               max-width: 100%;
-              padding: $section-padding-top-mobile 7%;
+              padding: $s-pad-top-mob $s-pad-sides;
             }
           }
         }
