@@ -18,7 +18,7 @@ body_class: loom project-page
 </section>
 
 <section class="presentation-wrapper padding-section">
-    <h2 class="custom-title center black">Le projet</h2>
+    <h2 class="custom-title center black">Moins mais mieux</h2>
     <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
     </p>
     <a class="custom-button full loom" href="https://www.loom.fr/" title="Aller sur Loom" target="_blank">Aller sur Loom</a>
