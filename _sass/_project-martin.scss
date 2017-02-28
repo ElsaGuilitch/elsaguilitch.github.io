@@ -48,26 +48,29 @@ body.martin {
   section.typographies-wrapper {
     position: relative;
     background-color: $martin-color;
+    padding-bottom: 0;
+    line-height: 0;
 
-    .typo-lato {
-      display: block;
-      max-width: 60%;
+    .primer-lato {
+      width: 76%;
+      margin: 100px auto 0;
+      text-align: center;
+      @media #{$mobile} { width: 100%; margin-top: 50px; }
 
-      font-family: 'Lato', sans-serif;
-      font-size: 30px;
-      color: #218288;
-      font-weight: 300;
-      line-height: 1.8em;
-      letter-spacing: normal;
-      text-align: justify;
-      margin: 80px auto 0;
-      @media #{$mobile} { max-width: 100%; }
-
-      span {
+      .lato {
         display: block;
+        float: right;
+        width: 14%;
+        margin-top: 20px;
         text-align: right;
-        font-size: 14px;
-        text-transform: uppercase
+        @media #{$mobile} { width: 27%; }
+      }
+
+      .mm {
+        display: block;
+        width: 80%;
+        margin: 100px auto 0;
+        @media #{$mobile} { width: 86%; margin-top: 50px; }
       }
     }
   }
