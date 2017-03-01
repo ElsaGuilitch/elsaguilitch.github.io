@@ -43,4 +43,73 @@ body.edieetwatson {
       }
     }
   }
+
+  section.mosaic-wrapper {
+    ul.mosaic-list {
+
+      li.mosaic-item {
+        width: (100% / 3);
+        vertical-align: top;
+       
+        @media #{$mobile-portrait} {
+          width: 50%;
+          &:last-child { width: 100%; }
+          &:first-child { vertical-align: bottom; }
+        }
+
+        div.mosaic-item-image {
+          
+          &.face-m:before {
+            $height: 990px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+          }
+
+          &.skate:before {
+            $height: 440px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+          }
+
+          &.building {
+            margin-top: 80px;
+            @media #{$mobile-portrait} { margin-top: 0; }
+
+            &:before {
+              $height: 536px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+          }
+
+          &.susu:before {
+            $height: 960px;
+            $width: 450px;
+            padding-top: ($height / $width) * 100%;
+          }
+
+          &.face-f {
+            margin-top: 140px;
+            @media #{$mobile-portrait} { display: none; }
+
+            &:before {
+              $height: 720px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+          } 
+
+          &.child {
+            @media #{$mobile-portrait} { display: none; }
+
+            &:before {
+              $height: 440px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }

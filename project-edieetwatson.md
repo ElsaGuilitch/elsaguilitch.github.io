@@ -61,24 +61,27 @@ body_class: edieetwatson project-page
 <section class="mosaic-wrapper full-width">
     <ul class="mosaic-list">
         <li class="mosaic-item">
-            <div class="mosaic-item-image hanger">
-                <div class="content" style="background-image:url('/static/images/projects/loom/loom-hanger.jpg');"></div>
+            <div class="mosaic-item-image face-m">
+                <div class="content" style="background-image:url('/static/images/projects/edieetwatson/edieetwatson-face-m.jpg');"></div>
             </div>
-            <div class="mosaic-item-image shirt-w">
-                <div class="content" style="background-image:url('/static/images/projects/loom/loom-shirt-w.jpg');"></div>
-            </div>
-            <div class="mosaic-item-image shirt-b">
-                <div class="content" style="background-image:url('/static/images/projects/loom/loom-shirt-b.jpg');"></div>
+            <div class="mosaic-item-image skate">
+                <div class="content" style="background-image:url('/static/images/projects/edieetwatson/edieetwatson-skate.jpg');"></div>
             </div>
         </li>
         <li class="mosaic-item">
-            <div class="mosaic-item-image shirt-g">
-                <div class="content" style="background-image:url('/static/images/projects/loom/loom-shirt-g.jpg');"></div>
+            <div class="mosaic-item-image building">
+                <div class="content" style="background-image:url('/static/images/projects/edieetwatson/edieetwatson-building.jpg');"></div>
+            </div>
+            <div class="mosaic-item-image susu">
+                <div class="content" style="background-image:url('/static/images/projects/edieetwatson/edieetwatson-susu.jpg');"></div>
             </div>
         </li>
         <li class="mosaic-item">
-            <div class="mosaic-item-image coil">
-                <div class="content" style="background-image:url('/static/images/projects/loom/loom-coil.jpg');"></div>
+            <div class="mosaic-item-image face-f">
+                <div class="content" style="background-image:url('/static/images/projects/edieetwatson/edieetwatson-face-f.jpg');"></div>
+            </div>
+            <div class="mosaic-item-image child">
+                <div class="content" style="background-image:url('/static/images/projects/edieetwatson/edieetwatson-child.jpg');"></div>
             </div>
         </li>
     </ul>
