@@ -6,6 +6,7 @@ body.martin {
   
   section.roles-wrapper {
     background-color: #fcfdfe;
+    .bullet { background-color: $martin-color; }
   }
 
   section.technology-wrapper {
@@ -95,9 +96,8 @@ body.martin {
   }
 
   section.mosaic-wrapper {
-
     ul.mosaic-list {
-      
+
       li.mosaic-item {
         width: (100% / 3);
         vertical-align: top;
@@ -109,6 +109,7 @@ body.martin {
         }
 
         div.mosaic-item-image {
+          
           &.cake:before {
             $height: 1374px;
             $width: 716px;

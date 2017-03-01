@@ -8,6 +8,7 @@ body.marius {
 
   section.roles-wrapper {
     background-color: $gray;
+    .bullet { background-color: $marius-color-2; }
   }
 
   section.technology-wrapper {

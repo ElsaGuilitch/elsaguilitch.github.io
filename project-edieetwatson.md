@@ -18,11 +18,10 @@ body_class: edieetwatson project-page
     </span>
 </section>
 
-
 <section class="presentation-wrapper padding-section">
     <h2 class="custom-title center black">Live Wild Open</h2>
-    <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    </p>
+    <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
     <a class="custom-button full edieetwatson" href="https://www.edie-et-watson.com/" title="Aller sur Edie & Watson" target="_blank">Aller sur Edie & Watson</a>
 </section>
 
@@ -31,7 +30,7 @@ body_class: edieetwatson project-page
 
     <div class="content-inner">
         <h2 class="custom-title">Le projet</h2>
-        <p class="custom-description">
+        <p class="custom-description roles">
             <span class="bullet"></span>Gestion de projet technique<br>
             <span class="bullet"></span>Création et intégration de la stack e-commerce<br>
             <span class="bullet"></span>Intégration du service de logistique<br>

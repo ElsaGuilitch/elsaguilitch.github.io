@@ -9,7 +9,6 @@ body_class: martin project-page
 <!-- ############
     To do :
      - scroll screen
-     - Typo
  ############ -->
 
 <section class="header-project-wrapper">
@@ -22,10 +21,8 @@ body_class: martin project-page
 
 <section class="presentation-wrapper padding-section">
     <h2 class="custom-title center black">Styliste culinaire</h2>
-    <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-    <br><br>
-    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
-    </p>
+    <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
     <a class="custom-button full martin" href="https://melaniemartin.fr/" title="Aller sur Mélanie Martin" target="_blank">Aller sur Mélanie Martin</a>
 </section>
 
@@ -34,13 +31,14 @@ body_class: martin project-page
 
     <div class="content-inner">
         <h2 class="custom-title">Mes rôles</h2>
-        <p class="custom-description">
-            <span class="bullet"></span>Gestion de projet technique<br>
-            <span class="bullet"></span>Création et intégration de la stack e-commerce<br>
-            <span class="bullet"></span>Intégration du service de logistique<br>
-            <span class="bullet"></span>Création d’opérations commeriales<br>
-            <span class="bullet"></span>UX Designer
+        <p class="custom-description roles">
+            <span class="bullet"></span>Définition d’une stratégie web<br>
+            <span class="bullet"></span>Création d’une identité graphique complète (logotype, webdesign)<br>
+            <span class="bullet"></span>Déclinaison d’une charte graphique<br>
+            <span class="bullet"></span>Gestion de projet<br>
+            <span class="bullet"></span>Developpement Front-end
         </p>
+        <p class="custom-description about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude.</p>
     </div>
 </section>
 
@@ -119,7 +117,6 @@ body_class: martin project-page
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
-    
 </script>
 
 

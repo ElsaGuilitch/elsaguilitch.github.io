@@ -6,8 +6,9 @@ body.loom {
 
   section.roles-wrapper {
     background-color: $gray;
+    .bullet { background-color: $loom-color; }
   }
-
+  
   section.technology-wrapper {
     background-color: $gray;
 
