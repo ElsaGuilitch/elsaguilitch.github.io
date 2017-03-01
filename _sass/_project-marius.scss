@@ -125,7 +125,7 @@ body.marius {
 
     .custom-title {
       display: inline-block;
-      width: 40%;
+      width: 38%;
       vertical-align: top;
     }
 
@@ -133,28 +133,13 @@ body.marius {
       display: inline-block;
       width: 56%;
       vertical-align: top;
-      @media #{$mobile} { width: 100%; }
+      @media #{$mobile} { width: 100%; margin-top: 30px; }
+      @media #{$ipad-portrait} { width: 50%; margin-left: 6%; }
 
-      .alphabet {
-        font-family: 'Rokkitt', "Times New Roman", serif;
-        font-size: 58px;
-        color: $white;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
-        line-height: 1.2em;
-        @media #{$mobile-portrait} { font-size: 30px; }
-        @media #{$mobile-landscape} { font-size: 40px; }
-      }
-
-      .label-font {
-        display: block;
-        font-family: 'Rokkitt', "Times New Roman", serif;
-        font-size: 18px;
-        color: $white;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        margin: 26px 0 24px;
-        @media #{$mobile} { font-size: 14px; }
+      .rokkit {
+        width: 13%;
+        margin-top: 44px;
+        margin-bottom: 30px;
       }
 
       .custom-description {
