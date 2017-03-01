@@ -9,7 +9,6 @@ body_class: edieetwatson project-page
 <!-- ############
     To do :
      - scroll screen
-     - Mosaic
  ############ -->
 
 <section class="header-project-wrapper">

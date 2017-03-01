@@ -15,6 +15,7 @@ body.edieetwatson {
 
   section.technology-wrapper {
     background-color: $gray;
+    padding-left: 20%;
 
     .technoligies-list {
       text-align: left;
@@ -31,6 +32,7 @@ body.edieetwatson {
         &.shopify { height: 130px; }
         &.sass    { height: 100px; }
         &.stripe  { height: 90px; }
+        &:first-of-type { margin-left: 0; }
 
         @media #{$mobile} {
           margin-top: 40px;
@@ -45,8 +47,10 @@ body.edieetwatson {
   }
 
   section.mosaic-wrapper {
-    ul.mosaic-list {
+    padding-top: $s-pad-top;
+    @media #{$mobile} { padding-top: $s-pad-top-mob; }
 
+    ul.mosaic-list {
       li.mosaic-item {
         width: (100% / 3);
         vertical-align: top;
