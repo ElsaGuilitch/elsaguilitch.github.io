@@ -57,20 +57,34 @@ body.martin {
       text-align: center;
       @media #{$mobile} { width: 100%; margin-top: 50px; }
 
+      .primer {
+        margin: 0 auto;
+
+        &.desktop { display: block; }
+        &.mobile  { display: none; }
+
+        @media #{$mobile} {
+          &.desktop { display: none; }
+          &.mobile  { display: block; width: 88%; }
+        }   
+        @media #{$mobile-landscape} {
+          &.mobile  { width: 62%; }
+        }  
+      }
+
       .lato {
-        display: block;
         float: right;
         width: 14%;
         margin-top: 20px;
-        text-align: right;
-        @media #{$mobile} { width: 27%; }
+        @media #{$mobile-portrait}  { width: 22%; }
+        @media #{$mobile-landscape} { float: none; width: 18%; }
       }
 
       .mm {
         display: block;
         width: 80%;
         margin: 100px auto 0;
-        @media #{$mobile} { width: 86%; margin-top: 50px; }
+        @media #{$mobile} { width: 72%; margin-top: 60px; }
       }
     }
   }
