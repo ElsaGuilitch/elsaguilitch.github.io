@@ -61,8 +61,22 @@ body {
   }
 
   footer.footer {
-    height: 40px;
-    background-color: #c1c1c1;
+    $color: #ebebeb;
+
+    padding: 60px 0 10px;
+    background-color: $color;
+    text-align: center;
+
+    span {
+      font-family: 'Lato', sans-serif;
+      font-size: 10px;
+      font-weight: 300;
+      color: darken($color, 22%);
+      line-height: 1.6em;
+      letter-spacing: 0.03em;
+
+      .email { font-size: 14px; }
+    }
   }
 
   // ----------------------------------------
