@@ -49,13 +49,13 @@
 //   transition: transform @transition;
 // }
 
-// .transform (@transform) {
-//   -webkit-transform: @transform;
-//   -moz-transform: @transform;
-//   -ms-transform: @transform;
-//   -o-transform: @transform;
-//   transform: @transform;
-// }
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
 
 // .transform-origin (@origin: 50% 50%) {
 //   -webkit-transform-origin: @origin;

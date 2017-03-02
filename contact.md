@@ -15,6 +15,6 @@ body_class: contact
 <section class="contact-wrapper">
     <h1 class="custom-title center black">Keep in touch</h1>
     <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-    <a class="contact-link" href="mailto:hello@elsaguilitch.fr">hello@elsaguilitch.fr</a>
+    
+    <a href="mailto:hello@elsaguilitch.fr"><span>hello@elsaguilitch.fr</span><span>Contactez-moi</span></a>
 </section>
