@@ -12,12 +12,7 @@ body.homepage {
       li.mosaic-item {
         width: (100% / 3);
         vertical-align: top;
-       
-        @media #{$mobile-portrait} {
-          width: 50%;
-          &:last-child { width: 100%; }
-          &:first-child { vertical-align: bottom; }
-        }
+        @media #{$mobile-portrait} { width: 100%; }
 
         div.mosaic-item-image {
           &.cake:before {
@@ -45,7 +40,7 @@ body.homepage {
 
           &.fromage {
             margin-top: 30px;
-            @media #{$mobile-portrait} { display: none; }
+            @media #{$mobile-portrait} { margin-top: 0; }
 
             &:before {
               $height: 560px;
