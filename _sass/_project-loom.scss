@@ -5,8 +5,10 @@ body.loom {
   }
 
   section.roles-wrapper {
-    background-color: $gray;
-    .bullet { background-color: $loom-color; }
+    background-color: $loom-color;
+    .bullet { background-color: $white; }
+    .custom-title, .roles { color: $white !important; }
+    .about { color: $white; }
   }
   
   section.technology-wrapper {
