@@ -66,6 +66,8 @@ body {
     padding: 60px 0 10px;
     background-color: $color;
     text-align: center;
+    border-top: 4px solid $white;
+    box-sizing: border-box;
 
     span {
       font-family: 'Lato', sans-serif;
