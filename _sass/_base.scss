@@ -16,71 +16,6 @@ body {
     border-bottom: 10px solid white;
   }
 
-  header.header {
-    $padding: 20px;
-
-    background-color: $white;
-    padding: 20px;
-    box-sizing: border-box;
-    @include clearfix();
-
-    .logo {
-      float: left;
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      font-weight: 900;
-      letter-spacing: 0.03em;
-      color: $black;
-      text-decoration: none;
-      text-transform: uppercase;
-      vertical-align: middle;
-    }
-
-    .nav-wrapper {
-      float: right;
-      font-family: 'Lato', sans-serif;
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 0.08em;
-      text-align: right;
-      vertical-align: middle;
-
-      li {
-        display: inline-block;
-        margin-right: 24px;
-        // &:first-of-type { margin-right: 18px; }
-
-        a {
-          color: #c2c2c2;
-          text-transform: uppercase;
-          text-decoration: none;
-          &:hover { color: $black; }
-        }
-      }
-    }
-  }
-
-  footer.footer {
-    $color: #ebebeb;
-
-    padding: 60px 0 10px;
-    background-color: $color;
-    text-align: center;
-    border-top: 4px solid $white;
-    box-sizing: border-box;
-
-    span {
-      font-family: 'Lato', sans-serif;
-      font-size: 10px;
-      font-weight: 300;
-      color: darken($color, 22%);
-      line-height: 1.6em;
-      letter-spacing: 0.03em;
-
-      .email { font-size: 14px; }
-    }
-  }
-
   // ----------------------------------------
 
   .custom-title {
@@ -138,7 +73,7 @@ body {
     vertical-align: middle;
     box-sizing: border-box;
     @include appearance(none);
-    @include transition(all 0.224s ease-in-out); 
+    @include transition(all 0.224s ease-in-out);
 
     &.full.loom {
       color: $white;

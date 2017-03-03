@@ -1,12 +1,10 @@
 <header class="header">
-    <a class="logo" href="/" title="Elsa Guilitch">
-        Elsa <span>Guilitch</span>
-    </a>
+    <a class="logo" href="/" title="Elsa Guilitch">Elsa <span>Guilitch</span></a>
 
     <nav class="nav-wrapper">
         <ul>
-            <li><a href="/" title="Home">Home</a></li>
-            <li><a href="/contact" title="Contact">Contact</a></li>
+            <li><a class="{% if page.url != '/contact/' %}active{% endif %}" href="/" title="Projets">Projets</a></li>
+            <li><a class="{% if page.url == '/contact/' %}active{% endif %}" href="/contact" title="Contact">Contact</a></li>
         </ul>
     </nav>
 </header>
