@@ -48,19 +48,10 @@ body.project-page {
     }
   }
 
-  section.headband-wrapper {
-    display: none;
-    height: 240px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-  }
-
   section.presentation-wrapper {
     background-color: $white;
     text-align: center;
-    padding: $s-pad-top - 70px $s-pad-sides;
+    padding: $s-pad-top - 40px $s-pad-sides;
     @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
 
     .custom-button { margin-top: 40px; }

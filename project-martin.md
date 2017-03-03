@@ -6,18 +6,11 @@ permalink: /martin/
 body_class: martin project-page
 ---
 
-<!-- ############
-    To do :
-     - scroll screen
- ############ -->
-
 <section class="header-project-wrapper">
     <span class="multiline">
         <h1 class="custom-main-title">Mélanie Martin</h1>
     </span>
 </section>
-
-<section class="headband-wrapper full-width" style="background-image:url('/static/images/projects/martin/melanie-martin-chocolate.jpg');"></section>
 
 <section class="presentation-wrapper padding-section">
     <h2 class="custom-title center black">Styliste culinaire</h2>

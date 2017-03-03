@@ -6,11 +6,6 @@ permalink: /edie-et-watson/
 body_class: edieetwatson project-page
 ---
 
-<!-- ############
-    To do :
-     - scroll screen
- ############ -->
-
 <section class="header-project-wrapper">
     <span class="multiline">
         <h1 class="custom-main-title">Edie & Watson</h1>

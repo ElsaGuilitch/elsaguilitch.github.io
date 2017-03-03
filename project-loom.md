@@ -6,11 +6,6 @@ permalink: /loom/
 body_class: loom project-page
 ---
 
-<!-- ############
-    To do :
-     - scroll screen
- ############ -->
-
 <section class="header-project-wrapper">
     <span class="multiline">
         <h1 class="custom-main-title">Loom</h1>
@@ -26,7 +21,7 @@ body_class: loom project-page
 </section>
 
 <section class="roles-wrapper padding-section">
-    <div class="background" style="background-image: url('http://bit.ly/2m0axvo');"></div>
+    <div class="background" style="background-image: url('/static/images/projects/loom/loom-presentation.jpg');"></div>
 
     <div class="content-inner">
         <h2 class="custom-title">Mes rôles</h2>

@@ -6,11 +6,6 @@ permalink: /marius/
 body_class: marius project-page
 ---
 
-<!-- ############
-    To do :
-     - scroll screen
- ############ -->
-
 <section class="header-project-wrapper">
     <span class="multiline">
         <h1 class="custom-main-title">Marius Affûteur</h1>
