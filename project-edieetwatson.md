@@ -80,3 +80,10 @@ body_class: edieetwatson project-page
         </li>
     </ul>
 </section>
+
+{% contentfor javascript %}
+<script>
+    animateLaptop($('section.screen-insitu-wrapper'));
+    loadImages($('.mosaic-item-image'));
+</script>
+{% endcontentfor %}

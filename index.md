@@ -21,6 +21,11 @@ body_class: homepage project-page
                     <div class="content" style="background-image:url('');"></div>
                 </div>
             </a>
+            <a href="###" title="###">
+                <div class="mosaic-item-image cake">
+                    <div class="content" style="background-image:url('');"></div>
+                </div>
+            </a>
         </li>
         <li class="mosaic-item">
             <a href="###" title="###">

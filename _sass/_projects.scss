@@ -94,7 +94,7 @@ body.project-page {
       vertical-align: top;
       padding: $s-pad-top 3% $s-pad-top 8%;
       box-sizing: border-box;
-      
+
       @media #{$mobile} {
         width: 100%;
         margin-left: 0;
@@ -104,7 +104,7 @@ body.project-page {
       @media #{$ipad-portrait} {
         width: 64%;
         margin-left: 36%;
-      } 
+      }
 
       .custom-description {
         max-width: 100%;
@@ -149,6 +149,10 @@ body.project-page {
   section.screen-insitu-wrapper {
     background-color: $white;
 
+    opacity: 0;
+    @include transition(all 1s ease-in-out);
+    @include transform(translate(0, 30px));
+
     .screen-wrapper {
       position: relative;
 
@@ -156,7 +160,7 @@ body.project-page {
         max-width: 100%;
         @media #{$mobile} { display: none; }
       }
-      
+
       .website {
         position: absolute;
         top: 6.4%;
@@ -176,6 +180,11 @@ body.project-page {
         }
       }
     }
+
+    &.show {
+      opacity: 1;
+      @include transform(translate(0, 0));
+    }
   }
 
   // Photographies
@@ -191,10 +200,18 @@ body.project-page {
         display: inline-block;
 
         a { display: block; }
-       
+
         div.mosaic-item-image {
           position: relative;
-          
+          opacity: 0;
+          @include transition(all 0.5s ease-out);
+          @include transform(translate(0, 20px));
+
+          &.show {
+            opacity: 1;
+            @include transform(translate(0, 0));
+          }
+
           > .content {
             position: absolute;
             top: $margin-mosaic;

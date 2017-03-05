@@ -78,3 +78,10 @@ body_class: loom project-page
         </li>
     </ul>
 </section>
+
+{% contentfor javascript %}
+<script>
+    animateLaptop($('section.screen-insitu-wrapper'));
+    loadImages($('.mosaic-item-image'));
+</script>
+{% endcontentfor %}

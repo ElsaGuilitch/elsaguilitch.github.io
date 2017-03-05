@@ -1,7 +1,8 @@
 body.marius {
-  
+
   section.header-project-wrapper {
     background-color: $marius-color-2;
+    .custom-main-title { text-shadow: 0.03em 0.06em 0.05em darken($marius-color-2, 10); }
   }
 
   section.roles-wrapper {
@@ -63,7 +64,7 @@ body.marius {
   }
 
   section.identity-wrapper {
-    
+
     .marius-logo {
       width: 32%;
       margin: 60px auto 120px;
@@ -154,7 +155,7 @@ body.marius {
 
     ul.mosaic-list {
       li.mosaic-item {
-        
+
         &:first-of-type {
           width: 56%;
           vertical-align: top;
@@ -182,7 +183,7 @@ body.marius {
             max-width: 64%;
             margin: 0 auto;
             .custom-description { max-width: 100%; }
-            
+
             @media #{$mobile} {
               max-width: 100%;
               padding: $s-pad-top-mob $s-pad-sides;

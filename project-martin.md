@@ -108,9 +108,9 @@ body_class: martin project-page
     </ul>
 </section>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+{% contentfor javascript %}
 <script>
+    animateLaptop($('section.screen-insitu-wrapper'));
+    loadImages($('.mosaic-item-image'));
 </script>
-
-
-
+{% endcontentfor %}

@@ -78,7 +78,7 @@ body {
 
     &.full.loom {
       color: $white;
-      text-shadow: 0 1px 3px darken($loom-color, 0.6);
+      text-shadow: 0 1px 3px darken($loom-color, 10);
       box-shadow: 0 4px 6px rgba($loom-color, 0.11), 0 1px 3px rgba($loom-color, 0.08);
       background-color: $loom-color;
 
@@ -91,7 +91,7 @@ body {
 
     &.full.edieetwatson {
       color: $white;
-      text-shadow: 0 1px 3px darken($edieetwatson-color, 0.6);
+      text-shadow: 0 1px 3px darken($edieetwatson-color, 10);
       box-shadow: 0 4px 6px rgba($edieetwatson-color, 0.11), 0 1px 3px rgba($edieetwatson-color, 0.08);
       background-color: $edieetwatson-color;
 
@@ -104,7 +104,7 @@ body {
 
     &.full.marius {
       color: $white;
-      text-shadow: 0 1px 3px darken($marius-color-2, 0.6);
+      text-shadow: 0.03em 0.06em 0.05em darken($marius-color-2, 10);
       box-shadow: 0 4px 6px rgba($marius-color-2, 0.11), 0 1px 3px rgba($marius-color-2, 0.08);
       background-color: $marius-color-2;
 
@@ -117,7 +117,7 @@ body {
 
     &.full.martin {
       color: $white;
-      text-shadow: 0 1px 3px darken($martin-color, 0.6);
+      text-shadow: 0 1px 3px darken($martin-color, 10);
       box-shadow: 0 4px 6px rgba($martin-color, 0.11), 0 1px 3px rgba($martin-color, 0.08);
       background-color: $martin-color;
 
@@ -133,7 +133,7 @@ body {
     // &.border.black {
     //   color: @black;
     //   border: 1px solid @black;
-    //   background-color: @white; 
+    //   background-color: @white;
     //   margin: 20px auto 30px;
     //   padding: 0 50px;
     //   .font-smoothing();
@@ -142,6 +142,6 @@ body {
     //   .transition(@transition);
     //   &:hover { color: @white; background-color: @black; }
     //   @media @mobile { width: 90%; height: auto; line-height: 1.4em; padding: 14px 10px !important; }
-    // }    
+    // }
   }
 }

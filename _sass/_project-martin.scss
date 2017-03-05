@@ -3,7 +3,7 @@ body.martin {
   section.header-project-wrapper {
     background-color: $martin-color;
   }
-  
+
   section.roles-wrapper {
     background-color: #fcfdfe;
     .bullet { background-color: $martin-color; }
@@ -67,10 +67,10 @@ body.martin {
         @media #{$mobile} {
           &.desktop { display: none; }
           &.mobile  { display: block; width: 88%; }
-        }   
+        }
         @media #{$mobile-landscape} {
           &.mobile  { width: 62%; }
-        }  
+        }
       }
 
       .lato {
@@ -101,7 +101,7 @@ body.martin {
       li.mosaic-item {
         width: (100% / 3);
         vertical-align: top;
-       
+
         @media #{$mobile-portrait} {
           width: 50%;
           &:last-child { width: 100%; }
@@ -109,7 +109,7 @@ body.martin {
         }
 
         div.mosaic-item-image {
-          
+
           &.cake:before {
             $height: 1374px;
             $width: 716px;

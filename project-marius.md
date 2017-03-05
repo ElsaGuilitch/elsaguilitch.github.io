@@ -133,3 +133,10 @@ body_class: marius project-page
         <li class="item less"><img src="/static/images/projects/less.png" alt="Less"></li>
     </ul>
 </section>
+
+{% contentfor javascript %}
+<script>
+    animateLaptop($('section.screen-insitu-wrapper'));
+    loadImages($('.mosaic-item-image'));
+</script>
+{% endcontentfor %}
