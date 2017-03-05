@@ -1,7 +1,8 @@
 body.loom {
-  
+
   section.header-project-wrapper {
     background-color: $loom-color;
+    .custom-main-title { text-shadow: 0.03em 0.06em 0.05em darken($loom-color, 10); }
   }
 
   section.roles-wrapper {
@@ -10,7 +11,7 @@ body.loom {
     .custom-title, .roles { color: $white !important; }
     .about { color: $white; }
   }
-  
+
   section.technology-wrapper {
     background-color: $gray;
 
@@ -44,11 +45,11 @@ body.loom {
 
   section.mosaic-wrapper {
     padding: $s-pad-top 0;
-    
+
     ul.mosaic-list {
-     
+
       li.mosaic-item {
-        
+
         &:first-of-type {
           width: 60%;
           vertical-align: bottom;

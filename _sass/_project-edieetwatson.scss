@@ -1,7 +1,8 @@
 body.edieetwatson {
-  
+
   section.header-project-wrapper {
     background-color: $edieetwatson-color;
+    .custom-main-title { text-shadow: 0.03em 0.06em 0.05em darken($edieetwatson-color, 10); }
   }
 
   section.concept-wrapper {
@@ -54,7 +55,7 @@ body.edieetwatson {
       li.mosaic-item {
         width: (100% / 3);
         vertical-align: top;
-       
+
         @media #{$mobile-portrait} {
           width: 50%;
           &:last-child { width: 100%; }
@@ -62,7 +63,7 @@ body.edieetwatson {
         }
 
         div.mosaic-item-image {
-          
+
           &.face-m:before {
             $height: 990px;
             $width: 450px;
@@ -101,7 +102,7 @@ body.edieetwatson {
               $width: 450px;
               padding-top: ($height / $width) * 100%;
             }
-          } 
+          }
 
           &.child {
             @media #{$mobile-portrait} { display: none; }

@@ -1,13 +1,13 @@
 body.marius {
 
   section.header-project-wrapper {
-    background-color: $marius-color-2;
-    .custom-main-title { text-shadow: 0.03em 0.06em 0.05em darken($marius-color-2, 10); }
+    background-color: $marius-color;
+    .custom-main-title { text-shadow: 0.03em 0.06em 0.05em darken($marius-color, 10); }
   }
 
   section.roles-wrapper {
     background-color: $gray;
-    .bullet { background-color: $marius-color-2; }
+    .bullet { background-color: $marius-color; }
   }
 
   section.technology-wrapper {
@@ -116,7 +116,7 @@ body.marius {
   }
 
   section.typographies-wrapper {
-    background-color: $marius-color-2;
+    background-color: $marius-color;
     padding: $s-pad-top $s-pad-sides $s-pad-top 20%;
 
     @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
