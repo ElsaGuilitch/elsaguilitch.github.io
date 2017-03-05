@@ -2,6 +2,13 @@ body.homepage {
 
   section.header-homepage-wrapper {
     background-color: #30b9c2 !important;
+
+    .custom-title {
+      font-size: 50px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
   }
 
   section.last-project-wrapper {
@@ -16,8 +23,68 @@ body.homepage {
         vertical-align: top;
         @media #{$mobile-portrait} { width: 100%; }
 
-        a:hover {
-          opacity: 0.6;
+        div.mosaic-item-image .hover {
+          position: absolute;
+          top: $margin-mosaic;
+          left: $margin-mosaic;
+          right: $margin-mosaic;
+          bottom: $margin-mosaic;
+
+          .title {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1em;
+            line-height: 1em;
+            margin-top: -0.5em;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            color: #FFF;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0;
+            @include transition(opacity 0.2s ease-in-out);
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #000;
+            opacity: 0;
+            @include transition(opacity 0.2s ease-in-out);
+          }
+
+          .cross {
+            $width: 40%;
+            $height: 2px;
+
+            &:before, &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: $width;
+              height: $height;
+              margin-top: -$height / 2;
+              margin-left: -$width / 2;
+              background-color: #FFF;
+              opacity: 0;
+              @include transition(all 0.2s ease-in-out);
+            }
+          }
+        }
+        div.mosaic-item-image:hover  .hover {
+          .title { opacity: 1; }
+          &:before { opacity: 0.2; }
+          .cross:before, .cross:after { opacity: 0.4; }
+          .cross:before { @include transform(rotate(-45deg)); }
+          .cross:after { @include transform(rotate(45deg)); }
         }
 
         div.mosaic-item-image {
