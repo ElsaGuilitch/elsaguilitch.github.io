@@ -104,14 +104,14 @@ body {
 
     &.full.marius {
       color: $white;
-      text-shadow: 0.03em 0.06em 0.05em darken($marius-color-2, 10);
-      box-shadow: 0 4px 6px rgba($marius-color-2, 0.11), 0 1px 3px rgba($marius-color-2, 0.08);
-      background-color: $marius-color-2;
+      text-shadow: 0.03em 0.06em 0.05em darken($marius-color, 10);
+      box-shadow: 0 4px 6px rgba($marius-color, 0.11), 0 1px 3px rgba($marius-color, 0.08);
+      background-color: $marius-color;
 
       &:hover {
-        background-color: darken($marius-color-2, 3%);
+        background-color: darken($marius-color, 3%);
         transform: translateY(-2px);
-        box-shadow: 0 7px 14px rgba($marius-color-2, 0.1), 0 3px 6px rgba($marius-color-2, 0.08);
+        box-shadow: 0 7px 14px rgba($marius-color, 0.1), 0 3px 6px rgba($marius-color, 0.08);
       }
     }
 
