@@ -1,8 +1,8 @@
 body.edieetwatson {
 
   section.header-project-wrapper {
-    background-color: $edieetwatson-color;
-    .custom-main-title { text-shadow: 0em 0.05em 0.05em darken($edieetwatson-color, 6%); }
+    background-color: $ew-color;
+    .custom-main-title { text-shadow: 0em 0.05em 0.05em darken($ew-color, 6%); }
   }
 
   section.concept-wrapper {
@@ -11,7 +11,7 @@ body.edieetwatson {
 
   section.roles-wrapper {
     background-color: $gray;
-    .bullet { background-color: $edieetwatson-color; }
+    .bullet { background-color: $ew-color; }
   }
 
   section.technology-wrapper {
@@ -19,7 +19,7 @@ body.edieetwatson {
     padding-left: 20%;
     @media #{$mobile} { padding-left: $s-pad-sides-mob; }
 
-    .technoligies-list {
+    .technology-list {
       text-align: left;
       margin-top: 60px;
       @media #{$mobile} { margin-top: 40px; text-align: center; }

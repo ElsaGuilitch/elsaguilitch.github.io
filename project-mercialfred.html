@@ -1,0 +1,64 @@
+---
+layout: default
+title: Merci Alfred
+description: lakrjflkajer
+permalink: /mercialfred/
+body_class: ma project-page
+---
+
+<section class="header-project-wrapper">
+    <span class="multiline">
+        <h1 class="custom-main-title">Merci Alfred</h1>
+    </span>
+</section>
+
+<section class="presentation-wrapper padding-section">
+    <h2 class="custom-title center black">Le projet</h2>
+    <p class="custom-description center black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+    <a class="custom-button full ma" href="http://www.mylittleparis.com/" title="Aller sur Merci Alfred" target="_blank">Aller sur Merci Alfred</a>
+</section>
+
+<section class="roles-wrapper padding-section">
+    <div class="background" style="background-image: url('/static/images/projects/marius/marius-affuteur.jpg');"></div>
+
+    <div class="content-inner">
+        <h2 class="custom-title">Mes rôles</h2>
+        <p class="custom-description roles">
+            <span class="bullet"></span>Définition d’une stratégie web<br>
+            <span class="bullet"></span>Création d’une identité graphique complète (logotype, webdesign)<br>
+            <span class="bullet"></span>Déclinaison d’une charte graphique<br>
+            <span class="bullet"></span>Gestion de projet<br>
+            <span class="bullet"></span>Developpement Front-end
+        </p>
+        <p class="custom-description about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrude.</p>
+    </div>
+</section>
+
+<section class="screen-insitu-wrapper padding-section">
+    <div class="screen-wrapper">
+        <img class="screen" src="/static/images/projects/screen.png" alt="Écran">
+        <div class="website" style="background-image: url('/static/images/projects/martin/website.jpg');"></div>
+    </div>
+</section>
+
+<section class="technology-wrapper padding-section">
+    <div class="content-inner">
+        <h2 class="custom-title left black">Technologies</h2>
+        <p class="custom-description left gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <ul class="technology-list">
+        <li class="item symfony"><img src="/static/images/projects/symfony.png" alt="Symfony"></li>
+        <li class="item sonata"><img src="/static/images/projects/sonata.png" alt="Sonata"></li>
+        <li class="item less"><img src="/static/images/projects/less.png" alt="Less"></li>
+    </ul>
+</section>
+
+
+{% contentfor javascript %}
+<script>
+    animateLaptop($('section.screen-insitu-wrapper'));
+    loadImages($('.mosaic-item-image'));
+</script>
+{% endcontentfor %}
