@@ -4,10 +4,16 @@ body.homepage {
     background-color: #30b9c2 !important;
 
     .custom-title {
-      font-size: 50px;
-      font-weight: 400;
+      font-family: 'Lato', sans-serif;
+      font-size: 60px;
+      color: $white;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-align: center;
+      line-height: 1.4em;
       text-transform: uppercase;
       margin-bottom: 24px;
+      text-shadow: 0em 0.05em 0.05em darken(#30b9c2, 6%);
     }
   }
 
@@ -24,7 +30,6 @@ body.homepage {
         @media #{$mobile-portrait} { width: 100%; }
 
         div.mosaic-item-image {
-          opacity: 1 !important;
 
           &.marius{
             margin-top: 110px;

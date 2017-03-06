@@ -84,3 +84,9 @@ body_class: homepage project-page
         </li>
     </ul>
 </section>
+
+{% contentfor javascript %}
+<script>
+    loadImages($('.mosaic-item-image'));
+</script>
+{% endcontentfor %}
