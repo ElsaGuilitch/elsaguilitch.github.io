@@ -14,7 +14,7 @@ body.ma {
     background-color: $gray;
     font-size: 0;
     padding-right: 14%;
-    padding-left: 14%;
+    padding-left: 12%;
     @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
 
     .content-inner {
@@ -27,7 +27,10 @@ body.ma {
 
       @media #{$mobile} {
         width: 100%;
+        margin-right: 0;
         .custom-description { max-width: 100%; }
+        .custom-description,
+        .custom-title { text-align: center; }
       }
     }
 
@@ -51,7 +54,7 @@ body.ma {
 
         @media #{$mobile} {
           display: inline-block;
-          margin-top: 40px !important;
+          margin-top: 30px !important;
           margin-left: 6%;
           margin-right: 6%;
           vertical-align: middle;
@@ -60,6 +63,20 @@ body.ma {
           &.less    { height: 50px; }
         }
       }
+    }
+  }
+
+  section.newsletter-wrapper {
+    background-color: $ma-color;
+
+    .newsletter-capture img {
+      box-shadow: -3em -3em darken($ma-color, 10%);
+      @media #{$mobile} { box-shadow: -1.5em -1.5em darken($ma-color, 10%); }
+    }
+
+    @media #{$mobile} {
+      .custom-description,
+      .custom-title { text-align: center; }
     }
   }
 }

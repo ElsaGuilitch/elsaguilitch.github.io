@@ -25,6 +25,7 @@ body {
     font-weight: 700;
     line-height: 1.5em;
     margin-bottom: 36px;
+    @media #{$mobile} { font-size: 26px; margin-bottom: 30px; }
 
     &.center { text-align: center; }
     &.left   { text-align: left; }
@@ -49,7 +50,7 @@ body {
     &.right  { text-align: right; }
     &.white  { color: white; }
     &.black  { color: $black; }
-    &.gray   { color: #666666; }
+    &.gray   { color: #565656; }
   }
 
   .custom-button {

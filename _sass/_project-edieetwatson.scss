@@ -17,7 +17,19 @@ body.edieetwatson {
   section.technology-wrapper {
     background-color: $gray;
     padding-left: 20%;
-    @media #{$mobile} { padding-left: $s-pad-sides-mob; }
+    padding-right: 20%;
+    @media #{$mobile} { padding-left: $s-pad-sides-mob; padding-right: $s-pad-sides-mob; }
+    @media #{$ipad-portrait} { padding-left: 10%; padding-right: 10%; }
+
+    .custom-title {
+      @media #{$mobile} { text-align: center; }
+    }
+
+    .custom-description {
+      max-width: 70%;
+      @media #{$mobile} { max-width: 100%; text-align: center; }
+      @media #{$ipad-portrait} { max-width: 80%; }
+    }
 
     .technology-list {
       text-align: left;
@@ -38,11 +50,12 @@ body.edieetwatson {
 
         @media #{$mobile} {
           margin-top: 40px;
-          margin-left: 8%;
-          margin-right: 8%;
+          margin-left: 10%;
+          margin-right: 10%;
           &.shopify { height: 60px; }
           &.sass    { height: 60px; }
           &.stripe  { height: 50px; }
+          &:first-of-type { margin-left: 10%; }
         }
       }
     }

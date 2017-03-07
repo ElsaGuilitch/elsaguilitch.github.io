@@ -27,6 +27,8 @@ body.marius {
 
       @media #{$mobile} {
         width: 100%;
+        .custom-title,
+        .custom-description { text-align: center; }
         .custom-description { max-width: 100%; }
       }
     }
@@ -70,6 +72,7 @@ body.marius {
       margin: 60px auto 120px;
       @media #{$mobile-portrait}  { width: 82%; }
       @media #{$mobile-landscape} { width: 62%; }
+      @media #{$mobile} { margin-bottom: 90px; }
     }
 
     ul.colors-list {
@@ -147,6 +150,7 @@ body.marius {
         color: $white;
         font-weight: 300;
         line-height: 1.8em;
+        @media #{$mobile} { font-size: 12px; line-height: 1.6em; }
       }
     }
   }
