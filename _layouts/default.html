@@ -9,7 +9,7 @@
         <meta name="geo.placename" content="Paris, Île de France, France">
         <meta name="robots" content="index,follow">
 
-        <meta property="place:street_adress" content="Boulevard de Rochechouart">
+        <meta property="place:street_adress" content="Paris">
         <meta property="place:locality" content="Paris">
         <meta property="place:region" content="Ile-de-France">
         <meta property="place:country_name" content="France">
@@ -17,7 +17,7 @@
         <meta name="author" content="{{ site.author }}" />
         <meta name="copyright" content="{{ site.author }}" />
 
-        <link rel="icon" href="/static/images/favicon/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/static/images/favicon/favicon.ico">
         <link rel="icon" href="/static/images/favicon/favicon-32x32.png" sizes="32x32">
         <link rel="icon" href="/static/images/favicon/favicon-16x16.png" sizes="16x16">
         <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png">
@@ -25,8 +25,25 @@
         <link rel="mask-icon" href="/static/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
-        <!-- OG Fb -->
-        <!-- OG twitter -->
+        <meta property="og:title" content="{{ site.author }}" />
+        <meta property="og:description" content="{{ site.description }}" />
+        <meta property="og:url" content="{{ site.url }}" />
+        <meta property="og:image" content="" />
+        <meta property="og:updated_time" content="{{ site.time | date: '%Y' }}" />
+        <meta property="og:site_name" content="{{ site.author }}" />
+        <meta property="og:street-address" content="Paris" />
+        <meta property="og:locality" content="Paris" />
+        <meta property="og:postal-code" content="7500" 0/>
+        <meta property="og:country-name" content="France" />
+        <meta property="og:email" content="{{ site.email }}" />
+        <meta property="og:locale" content="fr_FR">
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="{{ site.author }}" />
+        <meta name="twitter:description" content="{{ site.description }}" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:creator" content="{{ site.author }}" />
 
         <link rel="stylesheet" href="/static/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
