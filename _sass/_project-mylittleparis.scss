@@ -42,4 +42,18 @@ body.mlp {
       }
     }
   }
+
+  section.newsletter-wrapper {
+    background-color: $mlp-color;
+
+    .newsletter-capture img {
+      box-shadow: -3em -3em darken($mlp-color, 10%);
+      @media #{$mobile} { box-shadow: -1.5em -1.5em darken($mlp-color, 10%); }
+    }
+
+    @media #{$mobile} {
+      .custom-description,
+      .custom-title { text-align: center; }
+    }
+  }
 }
