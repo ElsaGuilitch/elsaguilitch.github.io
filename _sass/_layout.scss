@@ -1,13 +1,20 @@
  header.header {
-  height: $header-size;
-  line-height: $header-size;
+  height: $header-height;
+  line-height: $header-height;
   font-size: 0;
   padding: 0 20px;
   box-sizing: border-box;
   background-color: $white;
   @include clearfix();
 
-  @media #{$mobile} { padding: 0 0 0 10px; }
+  @media #{$mobile} { padding-right: 10px; }
+
+  .flotting-header & {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 
   .logo {
     float: left;
@@ -25,7 +32,7 @@
 
   .nav-wrapper {
     float: right;
-    ul, li { height: $header-size; }
+    ul, li { height: $header-height; }
 
     li {
       display: inline-block;

@@ -1,23 +1,23 @@
 body.contact {
-background-color: teal;
-@media #{$mobile} { background-color: $white; }
+  background-color: teal;
+  @media #{$mobile} { background-color: $white; }
 
   section.contact-page-wrapper {
     height: 100vh;
     line-height: 100vh;
-    min-height: 540px;
-    margin-top: -$header-size - 4px;
 
     font-size: 0;
     text-align: center;
     padding: 0 $s-pad-sides;
+    border-bottom: 4px solid #FFF;
+    padding-top: $header-height;
+    box-sizing: border-box;
 
     @media #{$mobile} {
       height: auto;
       line-height: normal;
-      min-height: auto;
       margin-top: 0;
-      padding: $s-pad-top-mob $s-pad-sides  $s-pad-top-mob + 30px;
+      padding: ($header-height + $s-pad-top-mob) $s-pad-sides  $s-pad-top-mob + 30px;
       background-color: teal;
     }
 
@@ -26,7 +26,7 @@ background-color: teal;
       vertical-align: middle;
       line-height: normal;
       font-size: 1rem;
-      margin-top: -$header-size;
+      margin-top: -$header-height;
       @media #{$mobile} { margin-top: 0; }
     }
 
