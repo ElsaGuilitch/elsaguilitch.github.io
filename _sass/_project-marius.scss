@@ -2,7 +2,7 @@ body.marius {
 
   section.header-project-wrapper {
     background-color: $marius-color;
-    .custom-main-title { text-shadow: 0.03em 0.06em 0.05em darken($marius-color, 10); }
+    .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%); }
   }
 
   section.roles-wrapper {

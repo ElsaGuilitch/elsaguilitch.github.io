@@ -78,10 +78,10 @@ body {
     &.full.loom {
       background-color: $loom-color;
       color: $white;
-      text-shadow: 0em 0.05em 0.05em darken($loom-color, 10%);
+      text-shadow: 0.05em 0.08em 0 darken($loom-color, 14%);
 
       &:hover {
-        background-color: darken($loom-color, 3%);
+        background-color: darken($loom-color, 90%);
         transform: translateY(-2px);
       }
     }
@@ -89,10 +89,10 @@ body {
     &.full.edieetwatson {
       background-color: $ew-color;
       color: $white;
-      text-shadow: 0em 0.05em 0.05em darken($ew-color, 12%);
+      text-shadow: 0.05em 0.08em 0 darken($ew-color, 14%);
 
       &:hover {
-        background-color: darken($ew-color, 3%);
+        background-color: darken($ew-color, 90%);
         transform: translateY(-2px);
       }
     }
@@ -100,10 +100,10 @@ body {
     &.full.marius {
       background-color: $marius-color;
       color: $white;
-      text-shadow: 0.03em 0.06em 0.05em darken($marius-color, 10%);
+      text-shadow: 0.05em 0.08em 0 darken($marius-color, 14%);
 
       &:hover {
-        background-color: darken($marius-color, 3%);
+        background-color: darken($marius-color, 90%);
         transform: translateY(-2px);
       }
     }
@@ -111,10 +111,10 @@ body {
     &.full.martin {
       background-color: $martin-color;
       color: $white;
-      text-shadow: 0em 0.05em 0.05em darken($martin-color, 10%);
+      text-shadow: 0.05em 0.08em 0 darken($martin-color, 14%);
 
       &:hover {
-        background-color: darken($martin-color, 3%);
+        background-color: darken($martin-color, 90%);
         transform: translateY(-2px);
       }
     }
@@ -122,10 +122,10 @@ body {
     &.full.mlp {
       background-color: $mlp-color;
       color: $white;
-      text-shadow: 0em 0.05em 0.05em darken($mlp-color, 10%);
+      text-shadow: 0.05em 0.08em 0 darken($mlp-color, 14%);
 
       &:hover {
-        background-color: darken($mlp-color, 3%);
+        background-color: darken($mlp-color, 90%);
         transform: translateY(-2px);
       }
     }
@@ -133,10 +133,10 @@ body {
     &.full.ma {
       background-color: $ma-color;
       color: $white;
-      text-shadow: 0em 0.05em 0.05em darken($ma-color, 10%);
+      text-shadow: 0.05em 0.08em 0 darken($ma-color, 14%);
 
       &:hover {
-        background-color: darken($ma-color, 3%);
+        background-color: darken($ma-color, 90%);
         transform: translateY(-2px);
       }
     }
