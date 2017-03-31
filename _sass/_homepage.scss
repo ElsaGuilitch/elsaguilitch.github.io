@@ -1,7 +1,8 @@
 body.homepage {
 
   section.header-homepage-wrapper {
-    background-color: #30b9c2 !important;
+    $color: #2fb5ca;
+    background-color: $color !important;
     padding: 220px $s-pad-sides !important;
     @media #{$mobile} { padding: 110px $s-pad-sides !important; }
 
@@ -15,7 +16,7 @@ body.homepage {
       line-height: 1.4em;
       text-transform: uppercase;
       margin-bottom: 0;
-      text-shadow: 0.05em 0.08em 0 darken(#30b9c2, 6%);
+      text-shadow: 0.05em 0.08em 0 darken($color, 5%);
       @media #{$mobile} { font-size: 38px; }
     }
 
@@ -28,7 +29,7 @@ body.homepage {
       text-align: center;
       line-height: 1.4em;
       text-transform: uppercase;
-      text-shadow: 0.05em 0.08em 0 darken(#30b9c2, 6%);
+      text-shadow: 0.05em 0.08em 0 darken($color, 5%);
       @media #{$mobile} { font-size: 15px; }
     }
   }
