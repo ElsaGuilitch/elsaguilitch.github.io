@@ -1,10 +1,32 @@
 body.homepage {
 
-  section.header-homepage-wrapper {
+section.header-homepage-wrapper {
     $color: #2fb5ca;
+    height: 78vh;
+    line-height: 78vh;
+    font-size: 0;
+    text-align: center;
+    padding: $header-height $s-pad-sides 0;
     background-color: $color !important;
-    padding: 220px $s-pad-sides !important;
-    @media #{$mobile} { padding: 110px $s-pad-sides !important; }
+    box-sizing: border-box;
+
+    @media #{$mobile} {
+      height: auto;
+      line-height: normal;
+      margin-top: 0;
+      // padding: 110px $s-pad-sides !important;
+      padding: ($header-height + $s-pad-top-mob) $s-pad-sides  $s-pad-top-mob + 30px;
+      background-color: teal;
+    }
+
+    .content-inner {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      font-size: 1rem;
+      margin-top: -$header-height;
+      @media #{$mobile} { margin-top: 0; }
+    }
 
     .custom-title {
       font-family: 'Lato', sans-serif;
