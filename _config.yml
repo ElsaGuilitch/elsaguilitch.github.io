@@ -21,14 +21,14 @@ job: Développeuse web Front / UX
 description: > # this means to ignore newlines until "baseurl:"
   Elsa Guilitch · Développeuse web Front / UX à Paris.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# url: https://elsaguilitch.com # the base hostname & protocol for your site, e.g. http://example.com
 host: 0.0.0.0
 
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
-  - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
