@@ -10,10 +10,7 @@ body.loom {
     .bullet { background-color: $white; }
     .custom-title, .roles { color: $white !important; }
     .about { color: $white; }
-
-    @media #{$mobile} {
-      .background { background-position: center top; }
-    }
+    .background { background-position: top center; }
   }
 
   section.technology-wrapper {
