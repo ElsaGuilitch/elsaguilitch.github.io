@@ -76,7 +76,7 @@ body.martin {
 
       .lato {
         float: right;
-        width: 14%;
+        width: 11%;
         margin-top: 20px;
         @media #{$mobile-portrait}  { width: 22%; }
         @media #{$mobile-landscape} { float: none; width: 18%; }
