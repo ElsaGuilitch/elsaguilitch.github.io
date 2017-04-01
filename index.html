@@ -3,13 +3,15 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
-title: Développeur Web Front / UX
-body_class: homepage project-page
+title: Développeuse web Front / UX
+body_class: homepage project-page flotting-header
 ---
 
-<section class="header-homepage-wrapper padding-section">
-    <h1 class="custom-title white center">Elsa Guilitch</h1>
-    <p class='custom-subtitle white center'>Développeur Web Front / UX</p>
+<section class="header-homepage-wrapper">
+    <div class="content-inner">
+        <h1 class="custom-title white center">Elsa Guilitch</h1>
+        <p class='custom-subtitle white center'>{{ site.job }}</p>
+    </div>
 </section>
 
 <section class="last-project-wrapper mosaic-wrapper full-width">
