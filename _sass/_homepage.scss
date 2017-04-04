@@ -102,7 +102,7 @@ section.header-homepage-wrapper {
                 bottom: 0;
                 right: 0;
                 margin: auto;
-                height: 60%;
+                height: 66%;
               }
             }
           }
@@ -217,7 +217,7 @@ section.header-homepage-wrapper {
             color: $white;
             text-transform: uppercase;
             letter-spacing: 0.06em;
-            text-shadow: 0.01em 0.02em 0.01em darken($white, 50);
+            text-shadow: 0.03em 0.03em 0 lighten($black, 10%);
             opacity: 0;
             @include transition(opacity 0.224s ease-out);
             @media #{$mobile} { font-size: 20px; }
@@ -257,7 +257,7 @@ section.header-homepage-wrapper {
 
         div.mosaic-item-image:hover .hover {
           .title { opacity: 1; }
-          &:before { opacity: 0.1; }
+          &:before { opacity: 0.5; }
           .cross:before, .cross:after { opacity: 0.6; }
           .cross:before { @include transform(rotate(-45deg)); }
           .cross:after { @include transform(rotate(45deg)); }
