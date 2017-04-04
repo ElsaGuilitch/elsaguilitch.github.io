@@ -2,21 +2,20 @@ body.homepage {
 
 section.header-homepage-wrapper {
     $color: #2fb5ca;
-    height: 78vh;
-    line-height: 78vh;
+
+    height: 82vh;
+    line-height: 82vh;
     font-size: 0;
     text-align: center;
     padding: $header-height $s-pad-sides 0;
     background-color: $color !important;
     box-sizing: border-box;
+    margin-top: 0;
 
     @media #{$mobile} {
       height: auto;
       line-height: normal;
-      margin-top: 0;
-      // padding: 110px $s-pad-sides !important;
-      padding: ($header-height + $s-pad-top-mob) $s-pad-sides  $s-pad-top-mob + 30px;
-      background-color: teal;
+      padding: ($s-pad-top + $s-pad-top-mob) $s-pad-sides $s-pad-top + 30px;
     }
 
     .content-inner {
@@ -57,8 +56,9 @@ section.header-homepage-wrapper {
   }
 
   section.last-project-wrapper {
-    padding: 100px 0 !important;
-    @media #{$mobile} { padding: 60px 0 !important; }
+    padding: 60px 0;
+    margin-top: 0;
+    @media #{$mobile} { padding: 60px 0; }
 
     ul.mosaic-list {
       margin-top: 60px;
