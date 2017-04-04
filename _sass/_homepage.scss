@@ -70,16 +70,44 @@ section.header-homepage-wrapper {
 
         div.mosaic-item-image {
 
-          &.marius:before {
-            $height: 500px;
-            $width: 450px;
-            padding-top: ($height / $width) * 100%;
-          }
-
-          &.loom {
+          &.marius {
             margin-top: 110px;
             @media #{$mobile-portrait} { margin-top: 0; }
 
+            &:before {
+              $height: 500px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+
+            .content {
+              background-color: $marius-color;
+
+              &:before {
+                $margin: 10px;
+
+                content: "";
+                position: absolute;
+                top: $margin;
+                left: $margin;
+                right: $margin;
+                bottom: $margin;
+                border: 2px solid $white;
+              }
+
+              svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                height: 60%;
+              }
+            }
+          }
+
+          &.loom {
             &:before {
               $height: 650px;
               $width: 450px;
