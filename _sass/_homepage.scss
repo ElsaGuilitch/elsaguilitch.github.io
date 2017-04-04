@@ -8,15 +8,15 @@ section.header-homepage-wrapper {
     font-size: 0;
     text-align: center;
     padding: $header-height $s-pad-sides 0;
-    background-color: $color !important;
+    background-color: $color;
     box-sizing: border-box;
     margin-top: 0;
 
-    @media #{$mobile} {
-      height: auto;
-      line-height: normal;
-      padding: ($s-pad-top + $s-pad-top-mob) $s-pad-sides $s-pad-top + 30px;
-    }
+    // @media #{$mobile} {
+    //   height: auto;
+    //   line-height: normal;
+    //   padding: ($s-pad-top + $s-pad-top-mob) $s-pad-sides $s-pad-top + 30px;
+    // }
 
     .content-inner {
       display: inline-block;
@@ -72,6 +72,7 @@ section.header-homepage-wrapper {
 
           &.marius {
             margin-top: 110px;
+            opacity: 1 !important;
             @media #{$mobile-portrait} { margin-top: 0; }
 
             &:before {
