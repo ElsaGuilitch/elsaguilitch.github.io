@@ -87,9 +87,10 @@ body.project-page {
 
       @media #{$ipad-portrait} { width: 36%; }
       @media #{$mobile} {
-        position: static;
-        width: 100%;
-        height: 260px;
+        display: none;
+        // position: static;
+        // width: 100%;
+        // height: 260px;
       }
     }
 
