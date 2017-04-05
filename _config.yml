@@ -19,7 +19,7 @@ author: Elsa Guilitch
 email: hello@elsaguilitch.com
 job: Développeuse web Front / UX
 description: > # this means to ignore newlines until "baseurl:"
-  Elsa Guilitch · Développeuse web Front / UX à Paris.
+  Elsa Guilitch · Développeuse web Front / UX à Paris · Une question, un projet, vous pensez que nous pouvons travailler ensemble ? N’hésitez pas à me contacter !
 baseurl: "" # the subpath of your site, e.g. /blog
 # url: https://elsaguilitch.com # the base hostname & protocol for your site, e.g. http://example.com
 host: 0.0.0.0
