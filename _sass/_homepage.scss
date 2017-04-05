@@ -3,27 +3,15 @@ body.homepage {
 section.header-homepage-wrapper {
     $color: #2fb5ca;
 
-    height: 80vh;
-    line-height: 80vh;
+    height: calc(100vh - 140px);
+    line-height: calc(100vh - 140px - #{$header-height});
 
     font-size: 0;
     text-align: center;
     padding: 0 $s-pad-sides;
+    padding-top: $header-height;
     background-color: $color;
     box-sizing: border-box;
-
-    @media #{$mobile-portrait} {
-      height: calc(80vh);
-      line-height: calc(80vh - #{$header-height});
-      margin-top: 0;
-    }
-
-    @media #{$mobile-landscape} {
-      height: auto;
-      line-height: normal;
-      margin-top: 0;
-      padding: ($header-height + $s-pad-top-mob) $s-pad-sides-mob $s-pad-top-mob + 30px;
-    }
 
     .content-inner {
       display: inline-block;
