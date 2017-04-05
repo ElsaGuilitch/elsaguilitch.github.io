@@ -22,9 +22,15 @@ body.project-page {
     line-height: 440px;
     text-align: center;
 
-    @media #{$mobile} {
-      height: 260px;
-      line-height: 260px;
+    @media #{$mobile-portrait} {
+      height: 320px;
+      line-height: 320px;
+      padding: 0 30px;
+    }
+
+    @media #{$mobile-landscape} {
+      height: 240px;
+      line-height: 240px;
       padding: 0 30px;
     }
 
@@ -43,7 +49,7 @@ body.project-page {
       text-align: center;
       line-height: 1.4em;
       text-transform: uppercase;
-      @media #{$mobile} { font-size: 30px; }
+      @media #{$mobile} { font-size: 44px; }
     }
   }
 
