@@ -84,7 +84,12 @@ body.contact {
       opacity: 0;
       $transition: transform 0.3s, opacity 0.3s;
       @include transition($transition); 
-      @include transform(translateY(-22px)); 
+      @include transform(translateY(-22px));
+
+      @media #{$mobile}, #{$ipad} {
+        opacity: 0.2;
+        @include transform(translateY(0px));
+      }
     }
 
     a span:first-child {
@@ -110,7 +115,12 @@ body.contact {
       opacity: 0;
       $transition: transform 0.3s, opacity 0.3s;
       @include transition($transition); 
-      @include transform(translateY(-100%)); 
+      @include transform(translateY(-100%));
+      
+      @media #{$mobile}, #{$ipad} {
+        opacity: 0.5;
+        @include transform(translateY(0%));
+      }
     }
 
     a:hover::before,
