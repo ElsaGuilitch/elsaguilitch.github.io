@@ -9,8 +9,8 @@ body.contact {
     font-size: 0;
     text-align: center;
     padding: 0 $s-pad-sides;
-    border-bottom: 4px solid #FFF;
     padding-top: $header-height;
+    border-bottom: 4px solid #FFF;
     box-sizing: border-box;
 
     @media #{$mobile-portrait} {
