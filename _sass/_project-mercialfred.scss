@@ -55,12 +55,12 @@ body.ma {
         @media #{$mobile} {
           display: inline-block;
           margin-top: 30px !important;
-          margin-left: 6%;
-          margin-right: 6%;
           vertical-align: middle;
-          &.symfony { height: 82px; }
-          &.sonata  { height: 80px; }
-          &.less    { height: 50px; }
+          margin-left: 4%;
+          margin-right: 4%;
+          &.symfony { height: 102px; }
+          &.sonata  { height: 100px; }
+          &.less    { height: 54px; }
         }
       }
     }

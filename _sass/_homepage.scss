@@ -3,8 +3,8 @@ body.homepage {
 section.header-homepage-wrapper {
     $color: #2fb5ca;
 
-    height: calc(100vh - 140px);
-    line-height: calc(100vh - 140px - #{$header-height});
+    height: calc(100vh - #{$s-pad-top});
+    line-height: calc(100vh - #{$s-pad-top} - #{$header-height});
 
     font-size: 0;
     text-align: center;
@@ -12,6 +12,11 @@ section.header-homepage-wrapper {
     padding-top: $header-height;
     background-color: $color;
     box-sizing: border-box;
+
+    @media #{$mobile-landscape} {
+      height: calc(90vh);
+      line-height: calc(90vh - #{$header-height});
+    }
 
     .content-inner {
       display: inline-block;

@@ -54,12 +54,12 @@ body.marius {
         @media #{$mobile} {
           display: inline-block;
           margin-top: 40px !important;
-          margin-left: 6%;
-          margin-right: 6%;
+          margin-left: 4%;
+          margin-right: 4%;
           vertical-align: middle;
-          &.symfony { height: 82px; }
-          &.sonata  { height: 80px; }
-          &.less    { height: 50px; }
+          &.symfony { height: 102px; }
+          &.sonata  { height: 100px; }
+          &.less    { height: 54px; }
         }
       }
     }
