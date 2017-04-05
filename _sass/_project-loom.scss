@@ -45,7 +45,8 @@ body.loom {
   }
 
   section.mosaic-wrapper {
-    padding: $s-pad-top 0;
+    padding-top: $s-pad-top;
+    @media #{$mobile} { padding-top: $s-pad-top-mob; }
 
     ul.mosaic-list {
 
