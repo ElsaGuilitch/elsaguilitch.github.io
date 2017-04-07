@@ -219,7 +219,8 @@ section.header-homepage-wrapper {
             text-shadow: 0.03em 0.03em lighten($black, 30%);
             opacity: 0;
             @include transition(opacity 0.224s ease-out);
-            @media #{$mobile} { font-size: 20px; }
+            @media #{$mobile-portrait} { font-size: 20px; }
+            @media #{$mobile-landscape} { font-size: 17px; }
           }
 
           &:before {
@@ -261,6 +262,16 @@ section.header-homepage-wrapper {
           .cross:before { @include transform(rotate(-45deg)); }
           .cross:after { @include transform(rotate(45deg)); }
         }
+
+        div.mosaic-item-image .hover {
+          @media #{$mobile} { 
+            .title { opacity: 1; }
+            &:before { opacity: 0.1; }
+            .cross:before, .cross:after { opacity: 0.6; }
+            .cross:before { @include transform(rotate(-45deg)); }
+            .cross:after { @include transform(rotate(45deg)); }
+          }
+        } 
       }
     }
   }
