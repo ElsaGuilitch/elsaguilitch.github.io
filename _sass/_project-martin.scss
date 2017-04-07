@@ -7,7 +7,7 @@ body.martin {
 
   section.roles-wrapper {
     background-color: #fcfdfe;
-    .bullet { background-color: $martin-color; }
+    .roles-item:before { background-color: $martin-color; }
   }
 
   section.technology-wrapper {

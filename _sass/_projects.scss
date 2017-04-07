@@ -117,26 +117,38 @@ body.project-page {
         max-width: 100%;
 
         &.roles {
+          $bullet-size: 10px;
+          $line-height: 1.4em;
+
           font-size: 16px;
           color: $black;
-          line-height: 2.7em;
+          line-height: $line-height;
           font-weight: 600;
           padding-left: 8%;
 
           @media #{$mobile-portrait} {
             font-size: 14px;
             padding-left: 5%;
-            line-height: 2.2em;
           }
 
-          .bullet {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 10px;
-            margin-right: 18px;
-            vertical-align: middle;
-            @media #{$mobile-portrait} { margin-right: 12px; }
+          .roles-item {
+            position: relative;
+            padding-left: $bullet-size + 16px;
+
+            margin-bottom: 16px;
+            &:last-child { margin-bottom: 0; }
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: $line-height / 2;
+              left: 0;
+              margin-top: -$bullet-size * 0.52;
+              width: $bullet-size;
+              height: $bullet-size;
+              border-radius: $bullet-size / 2;
+              @media #{$mobile-portrait} { margin-right: 12px; }
+            }
           }
         }
 
@@ -157,7 +169,7 @@ body.project-page {
     opacity: 0;
     @include transition(all 1s ease-in-out);
     @include transform(translate(0, 30px));
-    
+
     @media #{$mobile-portrait} { padding-left: 0; padding-right: 0; }
 
     .screen-wrapper {

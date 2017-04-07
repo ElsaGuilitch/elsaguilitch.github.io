@@ -7,7 +7,7 @@ body.mlp {
 
   section.roles-wrapper {
     background-color: $gray;
-    .bullet { background-color: $mlp-color; }
+    .roles-item:before { background-color: $mlp-color; }
   }
 
   section.technology-wrapper {
