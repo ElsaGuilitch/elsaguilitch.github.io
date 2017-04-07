@@ -11,7 +11,7 @@ body.edieetwatson {
 
   section.roles-wrapper {
     background-color: $gray;
-    .bullet { background-color: $ew-color; }
+    .roles-item:before { background-color: $ew-color; }
   }
 
   section.technology-wrapper {

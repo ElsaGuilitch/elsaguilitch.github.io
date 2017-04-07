@@ -7,7 +7,7 @@ body.marius {
 
   section.roles-wrapper {
     background-color: $gray;
-    .bullet { background-color: $marius-color; }
+    .roles-item:before { background-color: $marius-color; }
   }
 
   section.technology-wrapper {

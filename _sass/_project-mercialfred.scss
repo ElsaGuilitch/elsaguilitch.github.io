@@ -7,7 +7,7 @@ body.ma {
 
   section.roles-wrapper {
     background-color: $gray;
-    .bullet { background-color: $ma-color; }
+    .roles-item:before { background-color: $ma-color; }
   }
 
   section.technology-wrapper {

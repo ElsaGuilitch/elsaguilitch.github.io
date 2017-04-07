@@ -7,7 +7,7 @@ body.loom {
 
   section.roles-wrapper {
     background-color: $loom-color;
-    .bullet { background-color: $white; }
+    .roles-item:before { background-color: $white; }
     .custom-title, .roles { color: $white !important; }
     .about { color: $white; }
     .background { background-position: top center; }
