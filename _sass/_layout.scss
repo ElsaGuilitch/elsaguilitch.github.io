@@ -2,7 +2,7 @@
   height: $header-height;
   line-height: $header-height;
   font-size: 0;
-  padding: 0 20px;
+  padding: 0 8px 0 20px;
   box-sizing: border-box;
   background-color: $white;
   @include clearfix();
@@ -92,6 +92,7 @@ footer.footer {
       letter-spacing: 0.06em;
       text-transform: uppercase;
       line-height: 1.4em;
+      padding: 0 20px;
       @media #{$mobile} { color: darken($color, 36%); }
     }
   }

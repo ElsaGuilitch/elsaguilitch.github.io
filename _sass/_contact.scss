@@ -1,8 +1,12 @@
 body.contact {
-  background-color: teal;
+  $color: teal;
+  
+  background-color: $color;
   @media #{$mobile} { background-color: $white; }
 
   section.contact-page-wrapper {
+    
+
     height: 100vh;
     line-height: 100vh;
 
@@ -17,7 +21,7 @@ body.contact {
       height: calc(100vh - 4px);
       line-height: calc(100vh - #{$header-height} - 4px);
       margin-top: 0;
-      background-color: teal;
+      background-color: $color;
     }
 
     @media #{$mobile-landscape} {
@@ -25,7 +29,7 @@ body.contact {
       line-height: normal;
       margin-top: 0;
       padding: ($header-height + $s-pad-top-mob) $s-pad-sides-mob $s-pad-top-mob + 30px;
-      background-color: teal;
+      background-color: $color;
     }
 
     .content-inner {
@@ -48,6 +52,7 @@ body.contact {
       line-height: 1.4em;
       text-transform: uppercase;
       @media #{$mobile} { font-size: 26px; }
+      text-shadow: 0.05em 0.08em 0 darken($color, 5%);
     }
 
     .custom-description {
