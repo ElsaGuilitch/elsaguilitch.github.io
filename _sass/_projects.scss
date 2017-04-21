@@ -281,7 +281,8 @@ body.project-page {
       height: 80px;
       line-height: 80px;
       font-size: 1rem;
-      
+      @include transition(background-color 0.4s ease-out);
+
       @media #{$mobile} {
         width: 100%;
         height: 60px;
@@ -292,7 +293,7 @@ body.project-page {
         display: inline-block;
         line-height: normal;
         vertical-align: middle;
-        padding: 0 20px;
+        padding: 0 30px;
         box-sizing: border-box;
       }
 
@@ -300,6 +301,8 @@ body.project-page {
         width: 20px;
         vertical-align: middle;
         @media #{$mobile} { width: 16px; }
+        @include transition(all 0.5s ease-out);
+
       }
 
       .custom-little-title {
@@ -314,6 +317,7 @@ body.project-page {
         line-height: 1.4em;
         text-transform: uppercase;
         @media #{$mobile} { font-size: 18px; }
+        
       }
 
       a { display: block; text-decoration: none; }
@@ -321,50 +325,60 @@ body.project-page {
       &.loom {
         background-color: $loom-color;
         .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%); }
+        &:hover { background-color: darken($loom-color, 4%); }
       }
 
       &.edieetwatson {
         background-color: $ew-color;
-        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($ew-color, 10%); }
+        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($ew-color, 10%); }
+        &:hover { background-color: darken($ew-color, 4%); }
       }
 
       &.martin {
         background-color: $martin-color;
-        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($martin-color, 10%); }
+        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($martin-color, 10%); }
+        &:hover { background-color: darken($martin-color, 4%); }
       }
 
       &.marius {
         background-color: $marius-color;
-        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%); }
+        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%); }
+        &:hover { background-color: darken($marius-color, 4%); }
       }
 
       &.ma {
         background-color: $ma-color;
-        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($ma-color, 10%); }
+        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($ma-color, 10%); }
+        &:hover { background-color: darken($ma-color, 4%); }
       }
 
       &.mlp {
         background-color: $mlp-color;
-        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%); }
-      }
-
-      &:hover svg {
-        @include animation(bounce-left 1s linear infinite alternate);
+        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%); }
+        &:hover { background-color: darken($mlp-color, 4%); }
       }
     }
 
     .previous-project {
       margin-right: 2px;
       text-align: left;
-      svg { margin-right: 12px; }
+      svg { margin-right: 10px; }
       @media #{$mobile} { margin-right: 0; margin-bottom: 4px; }
+
+      &:hover svg {
+        @include transform(translateX(-8px));
+      }
     }
 
     .next-project {
       margin-left: 2px;
       text-align: right;
-      svg { margin-left: 12px; }
-      @media #{$mobile} { margin-left: 0;  }
+      svg { margin-left: 10px; }
+      @media #{$mobile} { margin-left: 0; }
+
+      &:hover svg {
+        @include transform(translateX(8px));
+      }
     }
   }
 }
