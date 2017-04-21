@@ -347,6 +347,10 @@ body.project-page {
         background-color: $mlp-color;
         .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%); }
       }
+
+      &:hover svg {
+        @include animation(bounce-left 1s linear infinite alternate);
+      }
     }
 
     .previous-project {

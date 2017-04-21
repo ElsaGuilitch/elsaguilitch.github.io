@@ -49,6 +49,14 @@
   transform: $transform;
 }
 
+@mixin animation ($transition) {
+  -webkit-animation: $transition;
+  -moz-animation: $transition;
+  -ms-animation: $transition;
+  -o-animation: $transition;
+  animation: $transition;
+}
+
 @mixin appearance($state) {
   -moz-appearance: $state;
   -webkit-appearance: $state;
