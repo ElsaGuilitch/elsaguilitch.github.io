@@ -40,7 +40,7 @@ body.project-page {
       vertical-align: middle;
     }
 
-    h1 {
+    .custom-main-title {
       font-family: 'Lato', sans-serif;
       font-size: 60px;
       color: $white;
@@ -265,6 +265,102 @@ body.project-page {
           }
         }
       }
+    }
+  }
+
+
+  // ---------------------------------------------
+
+  .related-project-wrapper {
+    font-size: 0;
+
+    .previous-project,
+    .next-project {
+      display: inline-block;
+      width: calc(50% - 4px);
+      height: 80px;
+      line-height: 80px;
+      font-size: 1rem;
+      
+      @media #{$mobile} {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+      }
+
+      .multiline {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+
+      svg {
+        width: 20px;
+        vertical-align: middle;
+        @media #{$mobile} { width: 16px; }
+      }
+
+      .custom-little-title {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        color: $white;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        line-height: 1.4em;
+        text-transform: uppercase;
+        @media #{$mobile} { font-size: 18px; }
+      }
+
+      a { display: block; text-decoration: none; }
+
+      &.loom {
+        background-color: $loom-color;
+        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%); }
+      }
+
+      &.edieetwatson {
+        background-color: $ew-color;
+        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($ew-color, 10%); }
+      }
+
+      &.martin {
+        background-color: $martin-color;
+        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($martin-color, 10%); }
+      }
+
+      &.marius {
+        background-color: $marius-color;
+        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%); }
+      }
+
+      &.ma {
+        background-color: $ma-color;
+        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($ma-color, 10%); }
+      }
+
+      &.mlp {
+        background-color: $mlp-color;
+        .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%); }
+      }
+    }
+
+    .previous-project {
+      margin-right: 2px;
+      text-align: left;
+      svg { margin-right: 12px; }
+      @media #{$mobile} { margin-right: 0; margin-bottom: 4px; }
+    }
+
+    .next-project {
+      margin-left: 2px;
+      text-align: right;
+      svg { margin-left: 12px; }
+      @media #{$mobile} { margin-left: 0;  }
     }
   }
 }
