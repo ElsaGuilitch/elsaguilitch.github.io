@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "SFRounded-Regular";
+  src: url() format("woff");
+  src: url("/static/fonts/SFRounded-Regular.woff2") format("woff2"),
+    url("/static/fonts/avenir/SFRounded-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFRounded-Bold";
+  src: url("/static/fonts/SFRounded-Bold.woff2") format("woff2"),
+    url("/static/fonts/avenir/SFRounded-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFRounded-Light";
+  src: url("/static/fonts/SFRounded-Light.woff2") format("woff2"),
+    url("/static/fonts/avenir/SFRounded-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
