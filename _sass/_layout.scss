@@ -20,17 +20,18 @@ header.header {
 
   .logo {
     float: left;
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    span {
-      font-weight: 400;
-    }
-    letter-spacing: 0.03em;
+    font-family: "SFRounded-Bold", sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.1em;
     color: $black;
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
+
+    span {
+      font-family: "SFRounded-Light", sans-serif;
+    }
+
     @media #{$mobile-portrait} {
       font-size: 14px;
     }
@@ -38,6 +39,7 @@ header.header {
 
   .nav-wrapper {
     float: right;
+
     ul,
     li {
       height: $header-height;
@@ -49,17 +51,19 @@ header.header {
       a {
         display: block;
         color: #c2c2c2;
-        font-family: "Lato", sans-serif;
-        font-size: 12px;
+        font-family: "SFRounded-Bold", sans-serif;
+        font-size: 13px;
         font-weight: 400;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         text-decoration: none;
         padding: 0 12px;
         @include transition(color 0.224s ease-in-out);
+
         &:hover {
           color: $black;
         }
+
         @media #{$mobile-portrait} {
           font-size: 11px;
           padding: 0 10px;
