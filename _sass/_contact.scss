@@ -1,7 +1,7 @@
 body.contact {
   $color: teal;
-
   background-color: $color;
+
   @media #{$mobile} {
     background-color: $white;
   }
@@ -9,12 +9,10 @@ body.contact {
   section.contact-page-wrapper {
     height: 100vh;
     line-height: 100vh;
-
     font-size: 0;
     text-align: center;
-    padding: 0 $s-pad-sides;
-    padding-top: $header-height;
-    border-bottom: 4px solid #fff;
+    padding: $header-height $s-pad-sides 0;
+    border-bottom: 16px solid #fff;
     box-sizing: border-box;
 
     @media #{$mobile-portrait} {
@@ -39,27 +37,30 @@ body.contact {
       line-height: normal;
       font-size: 1rem;
       margin-top: -$header-height;
+
       @media #{$mobile} {
         margin-top: 0;
       }
+
       @media #{$mobile-landscape} {
         max-width: 80%;
       }
     }
 
     h1 {
-      font-family: "Lato", sans-serif;
+      font-family: "SFRounded-Bold", sans-serif;
       font-size: 60px;
       color: white;
       font-weight: 700;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
       text-align: center;
       line-height: 1.4em;
       text-transform: uppercase;
+      text-shadow: 0.05em 0.08em 0 darken($color, 5%);
+
       @media #{$mobile} {
         font-size: 26px;
       }
-      text-shadow: 0.05em 0.08em 0 darken($color, 5%);
     }
 
     .custom-description {
