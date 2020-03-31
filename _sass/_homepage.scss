@@ -2,73 +2,63 @@ body.homepage {
   section.header-homepage-wrapper {
     $color: #2fb5ca;
 
-    height: calc(100vh - #{$s-pad-top});
-    line-height: calc(100vh - #{$s-pad-top} - #{$header-height});
-
-    font-size: 0;
-    text-align: center;
-    padding: 0 $s-pad-sides;
-    padding-top: $header-height;
+    display: flex;
+    height: 540px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: $header-height $s-pad-sides 0;
     background-color: $color;
-    box-sizing: border-box;
 
-    @media #{$mobile-landscape} {
-      height: calc(90vh);
-      line-height: calc(90vh - #{$header-height});
+    @media #{$mobile} {
+      height: 340px;
     }
 
-    .content-inner {
-      display: inline-block;
-      vertical-align: middle;
-      line-height: normal;
-      font-size: 1rem;
-    }
-
-    .custom-title {
-      font-family: "Lato", sans-serif;
+    .name {
+      font-family: "SFRounded-Bold", sans-serif;
       font-size: 60px;
       color: $white;
       font-weight: 700;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
       text-align: center;
       line-height: 1.4em;
       text-transform: uppercase;
       margin-bottom: 0;
       text-shadow: 0.05em 0.08em 0 darken($color, 5%);
+
       @media #{$mobile} {
         font-size: 38px;
       }
     }
 
-    .custom-subtitle {
-      font-family: "Lato", sans-serif;
-      font-size: 19px;
+    .job {
+      font-family: "SFRounded-Light", sans-serif;
+      font-size: 18px;
       color: $white;
       font-weight: 300;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.2em;
       text-align: center;
-      line-height: 1.4em;
       text-transform: uppercase;
-      text-shadow: 0.05em 0.08em 0 darken($color, 5%);
+
       @media #{$mobile} {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.6em;
       }
     }
   }
 
+  // --------------------------------------------------------
+
   section.last-project-wrapper {
-    padding: 60px 0;
-    margin-top: 0;
+    padding: 100px 0;
 
     ul.mosaic-list {
-      margin-top: 60px;
-      @media #{$mobile-portrait} {
-        margin-top: 54px;
-      }
+      margin-top: 80px;
 
       li.mosaic-item {
         width: (100% / 3);
         vertical-align: top;
+
         @media #{$mobile-portrait} {
           width: 100%;
         }
@@ -77,6 +67,7 @@ body.homepage {
           &.marius {
             margin-top: 110px;
             opacity: 1 !important;
+
             @media #{$mobile-portrait} {
               margin-top: 0;
             }
@@ -124,6 +115,7 @@ body.homepage {
 
           &.edieetwatson {
             margin-top: 0px;
+
             @media #{$mobile-portrait} {
               margin-top: 0;
             }
@@ -143,6 +135,7 @@ body.homepage {
 
           &.mercialfred {
             margin-top: 60px;
+
             @media #{$mobile-portrait} {
               margin-top: 0;
             }
@@ -221,19 +214,21 @@ body.homepage {
             height: 1em;
             line-height: 1em;
             margin-top: -0.5em;
-            font-family: "Lato", sans-serif;
-            font-size: 28px;
+            font-family: "SFRounded-Bold", sans-serif;
+            font-size: 30px;
             font-weight: 700;
             text-align: center;
             color: $white;
             text-transform: uppercase;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.08em;
             text-shadow: 0.03em 0.03em lighten($black, 30%);
             opacity: 0;
             @include transition(opacity 0.224s ease-out);
+
             @media #{$mobile-portrait} {
               font-size: 20px;
             }
+
             @media #{$mobile-landscape} {
               font-size: 17px;
             }
