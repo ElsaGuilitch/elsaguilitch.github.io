@@ -1,13 +1,16 @@
 body.mlp {
-
   section.header-project-wrapper {
     background-color: $mlp-color;
-    .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%); }
+    .custom-main-title {
+      text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%);
+    }
   }
 
   section.roles-wrapper {
     background-color: $gray;
-    .roles-item:before { background-color: $mlp-color; }
+    .roles-item:before {
+      background-color: $mlp-color;
+    }
   }
 
   section.technology-wrapper {
@@ -16,7 +19,9 @@ body.mlp {
     .technology-list {
       text-align: center;
       margin-top: 60px;
-      @media #{$mobile} { margin-top: 40px; }
+      @media #{$mobile} {
+        margin-top: 40px;
+      }
 
       .item {
         display: inline-block;
@@ -24,20 +29,34 @@ body.mlp {
         margin-left: 3%;
         margin-right: 3%;
         vertical-align: middle;
-        img { height: 100%; }
+        img {
+          height: 100%;
+        }
 
-        &.symfony { height: 130px; }
-        &.sonata  { height: 120px; }
-        &.less    { height: 60px; }
+        &.symfony {
+          height: 130px;
+        }
+        &.sonata {
+          height: 120px;
+        }
+        &.less {
+          height: 60px;
+        }
 
         @media #{$mobile} {
           display: inline-block;
           margin-top: 40px !important;
           margin-left: 4%;
           margin-right: 4%;
-          &.symfony { height: 102px; }
-          &.sonata  { height: 100px; }
-          &.less    { height: 54px; }
+          &.symfony {
+            height: 102px;
+          }
+          &.sonata {
+            height: 100px;
+          }
+          &.less {
+            height: 54px;
+          }
         }
       }
     }
@@ -49,12 +68,16 @@ body.mlp {
 
     .newsletter-capture img {
       box-shadow: -3em -3em darken($mlp-color, 10%);
-      @media #{$mobile} { box-shadow: -1.5em -1.5em darken($mlp-color, 10%); }
+      @media #{$mobile} {
+        box-shadow: -1.5em -1.5em darken($mlp-color, 10%);
+      }
     }
 
     @media #{$mobile} {
       .custom-description,
-      .custom-title { text-align: center; }
+      .custom-title {
+        text-align: center;
+      }
     }
   }
 }

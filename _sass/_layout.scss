@@ -1,4 +1,4 @@
- header.header {
+header.header {
   height: $header-height;
   line-height: $header-height;
   font-size: 0;
@@ -7,7 +7,9 @@
   background-color: $white;
   @include clearfix();
 
-  @media #{$mobile} { padding: 0 0 0 10px; }
+  @media #{$mobile} {
+    padding: 0 0 0 10px;
+  }
 
   .flotting-header & {
     position: absolute;
@@ -18,21 +20,28 @@
 
   .logo {
     float: left;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    span { font-weight: 400; }
+    span {
+      font-weight: 400;
+    }
     letter-spacing: 0.03em;
     color: $black;
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
-    @media #{$mobile-portrait} { font-size: 14px; }
+    @media #{$mobile-portrait} {
+      font-size: 14px;
+    }
   }
 
   .nav-wrapper {
     float: right;
-    ul, li { height: $header-height; }
+    ul,
+    li {
+      height: $header-height;
+    }
 
     li {
       display: inline-block;
@@ -40,7 +49,7 @@
       a {
         display: block;
         color: #c2c2c2;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         font-size: 12px;
         font-weight: 400;
         letter-spacing: 0.08em;
@@ -48,10 +57,17 @@
         text-decoration: none;
         padding: 0 12px;
         @include transition(color 0.224s ease-in-out);
-        &:hover { color: $black; }
-        @media #{$mobile-portrait} { font-size: 11px; padding: 0 10px; }
+        &:hover {
+          color: $black;
+        }
+        @media #{$mobile-portrait} {
+          font-size: 11px;
+          padding: 0 10px;
+        }
 
-        &.active { color: $black; }
+        &.active {
+          color: $black;
+        }
       }
     }
   }
@@ -68,7 +84,7 @@ footer.footer {
 
   span {
     display: block;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 
     &.email {
       font-size: 20px;
@@ -76,12 +92,16 @@ footer.footer {
       line-height: 1.6em;
       letter-spacing: 0.06em;
       margin-bottom: 10px;
-      @media #{$mobile} { font-size: 16px;}
+      @media #{$mobile} {
+        font-size: 16px;
+      }
 
       a {
         text-decoration: none;
         color: darken($color, 20%);
-        &:hover { color: darken($color, 50%); }
+        &:hover {
+          color: darken($color, 50%);
+        }
       }
     }
 
@@ -93,7 +113,9 @@ footer.footer {
       text-transform: uppercase;
       line-height: 1.4em;
       padding: 0 20px;
-      @media #{$mobile} { color: darken($color, 36%); }
+      @media #{$mobile} {
+        color: darken($color, 36%);
+      }
     }
   }
 }

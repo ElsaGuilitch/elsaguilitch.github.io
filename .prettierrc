@@ -1,0 +1,13 @@
+{
+  "printWidth": 80,
+  "jsxBracketSameLine": true,
+  "semi": false,
+  "overrides": [
+    {
+      "files": ["**/*.html"],
+      "options": {
+        "printWidth": 300
+      }
+    }
+  ]
+}

@@ -1,13 +1,16 @@
 body.marius {
-
   section.header-project-wrapper {
     background-color: $marius-color;
-    .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%); }
+    .custom-main-title {
+      text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%);
+    }
   }
 
   section.roles-wrapper {
     background-color: $gray;
-    .roles-item:before { background-color: $marius-color; }
+    .roles-item:before {
+      background-color: $marius-color;
+    }
   }
 
   section.technology-wrapper {
@@ -15,7 +18,9 @@ body.marius {
     font-size: 0;
     padding-right: 14%;
     padding-left: 14%;
-    @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
+    @media #{$mobile} {
+      padding: $s-pad-top-mob $s-pad-sides;
+    }
 
     .content-inner {
       display: inline-block;
@@ -23,13 +28,19 @@ body.marius {
       font-size: 1rem;
       margin-right: 10%;
       vertical-align: top;
-      .custom-description { max-width: 80%; }
+      .custom-description {
+        max-width: 80%;
+      }
 
       @media #{$mobile} {
         width: 100%;
         .custom-title,
-        .custom-description { text-align: center; }
-        .custom-description { max-width: 100%; }
+        .custom-description {
+          text-align: center;
+        }
+        .custom-description {
+          max-width: 100%;
+        }
       }
     }
 
@@ -39,17 +50,30 @@ body.marius {
       font-size: 1rem;
       text-align: center;
       vertical-align: top;
-      @media #{$mobile} { margin-top: 40px; width: 100%; }
+      @media #{$mobile} {
+        margin-top: 40px;
+        width: 100%;
+      }
 
       .item {
         display: block;
         margin-top: 80px;
-        img { height: 100%; }
+        img {
+          height: 100%;
+        }
 
-        &.symfony { height: 130px; }
-        &.sonata  { height: 120px; }
-        &.less    { height: 60px; }
-        &:first-of-type { margin-top: 0; }
+        &.symfony {
+          height: 130px;
+        }
+        &.sonata {
+          height: 120px;
+        }
+        &.less {
+          height: 60px;
+        }
+        &:first-of-type {
+          margin-top: 0;
+        }
 
         @media #{$mobile} {
           display: inline-block;
@@ -57,22 +81,33 @@ body.marius {
           margin-left: 4%;
           margin-right: 4%;
           vertical-align: middle;
-          &.symfony { height: 102px; }
-          &.sonata  { height: 100px; }
-          &.less    { height: 54px; }
+          &.symfony {
+            height: 102px;
+          }
+          &.sonata {
+            height: 100px;
+          }
+          &.less {
+            height: 54px;
+          }
         }
       }
     }
   }
 
   section.identity-wrapper {
-
     .marius-logo {
       width: 32%;
       margin: 60px auto 120px;
-      @media #{$mobile-portrait}  { width: 82%; }
-      @media #{$mobile-landscape} { width: 62%; }
-      @media #{$mobile} { margin-bottom: 90px; }
+      @media #{$mobile-portrait} {
+        width: 82%;
+      }
+      @media #{$mobile-landscape} {
+        width: 62%;
+      }
+      @media #{$mobile} {
+        margin-bottom: 90px;
+      }
     }
 
     ul.colors-list {
@@ -83,11 +118,13 @@ body.marius {
       li.item {
         display: inline-block;
         font-size: 1rem;
-        @media #{$mobile} { margin-bottom: 30px; }
+        @media #{$mobile} {
+          margin-bottom: 30px;
+        }
 
         .title {
           display: block;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 14px;
           font-weight: 700;
         }
@@ -100,16 +137,24 @@ body.marius {
           height: $size;
           border-radius: $size / 2;
           margin: 26px 28px 18px;
-          @media #{$mobile} { margin: 26px 24px 18px; }
+          @media #{$mobile} {
+            margin: 26px 24px 18px;
+          }
 
-          &.black { background-color: $black; }
-          &.white { background-color: $white; }
-          &.anthracite { background-color: #5d5d5d; }
+          &.black {
+            background-color: $black;
+          }
+          &.white {
+            background-color: $white;
+          }
+          &.anthracite {
+            background-color: #5d5d5d;
+          }
         }
 
         .hexa {
           display: block;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 10px;
           font-weight: 300;
           color: #8a8a8a;
@@ -122,8 +167,12 @@ body.marius {
     background-color: $marius-color;
     padding: $s-pad-top $s-pad-sides $s-pad-top 20%;
 
-    @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
-    @media #{$ipad} { padding: $s-pad-top-mob $s-pad-sides $s-pad-top-mob 12%; }
+    @media #{$mobile} {
+      padding: $s-pad-top-mob $s-pad-sides;
+    }
+    @media #{$ipad} {
+      padding: $s-pad-top-mob $s-pad-sides $s-pad-top-mob 12%;
+    }
 
     .custom-title {
       display: inline-block;
@@ -135,8 +184,14 @@ body.marius {
       display: inline-block;
       width: 56%;
       vertical-align: top;
-      @media #{$mobile} { width: 100%; margin-top: 30px; }
-      @media #{$ipad-portrait} { width: 50%; margin-left: 6%; }
+      @media #{$mobile} {
+        width: 100%;
+        margin-top: 30px;
+      }
+      @media #{$ipad-portrait} {
+        width: 50%;
+        margin-left: 6%;
+      }
 
       .rokkit {
         width: 13%;
@@ -150,43 +205,52 @@ body.marius {
         color: $white;
         font-weight: 300;
         line-height: 1.8em;
-        @media #{$mobile} { font-size: 12px; line-height: 1.6em; }
+        @media #{$mobile} {
+          font-size: 12px;
+          line-height: 1.6em;
+        }
       }
     }
   }
 
   section.mosaic-wrapper {
-
     ul.mosaic-list {
       li.mosaic-item {
-
         &:first-of-type {
           width: 56%;
           vertical-align: top;
-          @media #{$mobile} { width: 100%; }
+          @media #{$mobile} {
+            width: 100%;
+          }
         }
 
         &:nth-child(2) {
           width: 56%;
           vertical-align: top;
-          @media #{$mobile-portrait} { width: 100%; }
+          @media #{$mobile-portrait} {
+            width: 100%;
+          }
         }
 
         &:last-of-type {
-          width: 44%; vertical-align: top;
+          width: 44%;
+          vertical-align: top;
         }
       }
 
       div.mosaic-item-image {
-
         &.description {
-          @media #{$mobile} { width: 100%; }
+          @media #{$mobile} {
+            width: 100%;
+          }
 
           .content-inner {
             padding: 90px 0;
             max-width: 64%;
             margin: 0 auto;
-            .custom-description { max-width: 100%; }
+            .custom-description {
+              max-width: 100%;
+            }
 
             @media #{$mobile} {
               max-width: 100%;
@@ -201,12 +265,12 @@ body.marius {
           padding-top: ($height / $width) * 100%;
         }
 
-        &.tools2  {
+        &.tools2 {
           display: inline-block;
           width: 50%;
           vertical-align: top;
 
-           &:before {
+          &:before {
             $height: 380px;
             $width: 396px;
             padding-top: ($height / $width) * 100%;
@@ -227,8 +291,12 @@ body.marius {
 
         &.car {
           margin-top: -160px;
-          @media #{$mobile-landscape} { margin-top: -50px; }
-          @media #{$mobile-portrait} { display: none; }
+          @media #{$mobile-landscape} {
+            margin-top: -50px;
+          }
+          @media #{$mobile-portrait} {
+            display: none;
+          }
 
           &:before {
             $height: 990px;

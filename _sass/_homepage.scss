@@ -1,6 +1,5 @@
 body.homepage {
-
-section.header-homepage-wrapper {
+  section.header-homepage-wrapper {
     $color: #2fb5ca;
 
     height: calc(100vh - #{$s-pad-top});
@@ -26,7 +25,7 @@ section.header-homepage-wrapper {
     }
 
     .custom-title {
-      font-family: 'Lato', sans-serif;
+      font-family: "Lato", sans-serif;
       font-size: 60px;
       color: $white;
       font-weight: 700;
@@ -36,11 +35,13 @@ section.header-homepage-wrapper {
       text-transform: uppercase;
       margin-bottom: 0;
       text-shadow: 0.05em 0.08em 0 darken($color, 5%);
-      @media #{$mobile} { font-size: 38px; }
+      @media #{$mobile} {
+        font-size: 38px;
+      }
     }
 
     .custom-subtitle {
-      font-family: 'Lato', sans-serif;
+      font-family: "Lato", sans-serif;
       font-size: 19px;
       color: $white;
       font-weight: 300;
@@ -49,7 +50,9 @@ section.header-homepage-wrapper {
       line-height: 1.4em;
       text-transform: uppercase;
       text-shadow: 0.05em 0.08em 0 darken($color, 5%);
-      @media #{$mobile} { font-size: 15px; }
+      @media #{$mobile} {
+        font-size: 15px;
+      }
     }
   }
 
@@ -59,19 +62,24 @@ section.header-homepage-wrapper {
 
     ul.mosaic-list {
       margin-top: 60px;
-      @media #{$mobile-portrait} { margin-top: 54px; }
+      @media #{$mobile-portrait} {
+        margin-top: 54px;
+      }
 
       li.mosaic-item {
         width: (100% / 3);
         vertical-align: top;
-        @media #{$mobile-portrait} { width: 100%; }
+        @media #{$mobile-portrait} {
+          width: 100%;
+        }
 
         div.mosaic-item-image {
-
           &.marius {
             margin-top: 110px;
             opacity: 1 !important;
-            @media #{$mobile-portrait} { margin-top: 0; }
+            @media #{$mobile-portrait} {
+              margin-top: 0;
+            }
 
             &:before {
               $height: 500px;
@@ -116,7 +124,9 @@ section.header-homepage-wrapper {
 
           &.edieetwatson {
             margin-top: 0px;
-            @media #{$mobile-portrait} { margin-top: 0; }
+            @media #{$mobile-portrait} {
+              margin-top: 0;
+            }
 
             &:before {
               $height: 550px;
@@ -133,7 +143,9 @@ section.header-homepage-wrapper {
 
           &.mercialfred {
             margin-top: 60px;
-            @media #{$mobile-portrait} { margin-top: 0; }
+            @media #{$mobile-portrait} {
+              margin-top: 0;
+            }
 
             &:before {
               $height: 560px;
@@ -209,7 +221,7 @@ section.header-homepage-wrapper {
             height: 1em;
             line-height: 1em;
             margin-top: -0.5em;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             font-size: 28px;
             font-weight: 700;
             text-align: center;
@@ -219,8 +231,12 @@ section.header-homepage-wrapper {
             text-shadow: 0.03em 0.03em lighten($black, 30%);
             opacity: 0;
             @include transition(opacity 0.224s ease-out);
-            @media #{$mobile-portrait} { font-size: 20px; }
-            @media #{$mobile-landscape} { font-size: 17px; }
+            @media #{$mobile-portrait} {
+              font-size: 20px;
+            }
+            @media #{$mobile-landscape} {
+              font-size: 17px;
+            }
           }
 
           &:before {
@@ -239,7 +255,8 @@ section.header-homepage-wrapper {
             $width: 70%;
             $height: 2px;
 
-            &:before, &:after {
+            &:before,
+            &:after {
               content: "";
               position: absolute;
               top: 50%;
@@ -256,22 +273,44 @@ section.header-homepage-wrapper {
         }
 
         div.mosaic-item-image:hover .hover {
-          .title { opacity: 1; }
-          &:before { opacity: 0.5; }
-          .cross:before, .cross:after { opacity: 0.6; }
-          .cross:before { @include transform(rotate(-45deg)); }
-          .cross:after { @include transform(rotate(45deg)); }
+          .title {
+            opacity: 1;
+          }
+          &:before {
+            opacity: 0.5;
+          }
+          .cross:before,
+          .cross:after {
+            opacity: 0.6;
+          }
+          .cross:before {
+            @include transform(rotate(-45deg));
+          }
+          .cross:after {
+            @include transform(rotate(45deg));
+          }
         }
 
         div.mosaic-item-image .hover {
-          @media #{$mobile} { 
-            .title { opacity: 1; }
-            &:before { opacity: 0.1; }
-            .cross:before, .cross:after { opacity: 0.6; }
-            .cross:before { @include transform(rotate(-45deg)); }
-            .cross:after { @include transform(rotate(45deg)); }
+          @media #{$mobile} {
+            .title {
+              opacity: 1;
+            }
+            &:before {
+              opacity: 0.1;
+            }
+            .cross:before,
+            .cross:after {
+              opacity: 0.6;
+            }
+            .cross:before {
+              @include transform(rotate(-45deg));
+            }
+            .cross:after {
+              @include transform(rotate(45deg));
+            }
           }
-        } 
+        }
       }
     }
   }

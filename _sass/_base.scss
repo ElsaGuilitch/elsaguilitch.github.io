@@ -1,51 +1,89 @@
-html { height: 100%; background-color: white; }
-body { min-height: 100%; }
+html {
+  height: 100%;
+  background-color: white;
+}
+body {
+  min-height: 100%;
+}
 
 body {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: $black;
   font-weight: 400;
 
   margin: 0 20px 20px 20px;
-  @media #{$mobile} { margin: 0 10px 10px 10px; }
+  @media #{$mobile} {
+    margin: 0 10px 10px 10px;
+  }
 
   // ----------------------------------------
 
   .custom-title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
     color: $black;
     font-weight: 700;
     line-height: 1.5em;
     margin-bottom: 36px;
-    @media #{$mobile} { font-size: 26px; margin-bottom: 30px; }
+    @media #{$mobile} {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
 
-    &.center { text-align: center; }
-    &.left   { text-align: left; }
-    &.right  { text-align: right; }
-    &.white  { color: white; }
-    &.black  { color: $black; }
+    &.center {
+      text-align: center;
+    }
+    &.left {
+      text-align: left;
+    }
+    &.right {
+      text-align: right;
+    }
+    &.white {
+      color: white;
+    }
+    &.black {
+      color: $black;
+    }
   }
 
   .custom-description {
     max-width: 50%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     color: #000000;
     font-weight: 400;
     line-height: 1.6em;
     letter-spacing: 0.03em;
-    strong { font-weight: 700; }
-    @media #{$mobile} { max-width: 100%; font-size: 14px; }
+    strong {
+      font-weight: 700;
+    }
+    @media #{$mobile} {
+      max-width: 100%;
+      font-size: 14px;
+    }
 
-    &.center { text-align: center; margin: 0 auto; }
-    &.left   { text-align: left; }
-    &.right  { text-align: right; }
-    &.white  { color: white; }
-    &.black  { color: $black; }
-    &.gray   { color: #565656; }
+    &.center {
+      text-align: center;
+      margin: 0 auto;
+    }
+    &.left {
+      text-align: left;
+    }
+    &.right {
+      text-align: right;
+    }
+    &.white {
+      color: white;
+    }
+    &.black {
+      color: $black;
+    }
+    &.gray {
+      color: #565656;
+    }
   }
 
   .custom-button {
@@ -55,7 +93,7 @@ body {
     width: auto;
     height: $size;
     line-height: $size;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 2px;
@@ -139,6 +177,11 @@ body {
       }
     }
 
-    @media #{$mobile} { width: 90%; height: auto; line-height: 1.8em; padding: 16px !important; }
+    @media #{$mobile} {
+      width: 90%;
+      height: auto;
+      line-height: 1.8em;
+      padding: 16px !important;
+    }
   }
 }

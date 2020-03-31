@@ -8,85 +8,85 @@ body_class: homepage project-page flotting-header
 ---
 
 <section class="header-homepage-wrapper">
-    <div class="content-inner">
-        <h1 class="custom-title white center">Elsa Guilitch</h1>
-        <p class='custom-subtitle white center'>{{ site.job }}</p>
-    </div>
+  <div class="content-inner">
+    <h1 class="custom-title white center">Elsa Guilitch</h1>
+    <p class="custom-subtitle white center">{{ site.job }}</p>
+  </div>
 </section>
 
 <section class="last-project-wrapper mosaic-wrapper full-width">
-    <h2 class="custom-title center black">Mes derniers projets</h2>
+  <h2 class="custom-title center black">Mes derniers projets</h2>
 
-    <ul class="project-wrapper mosaic-list">
-        <li class="mosaic-item">
-            <a href="/marius-affuteur" title="Marius Affûteur">
-                <div class="mosaic-item-image marius">
-                    <div class="content">
-                        {% include svg/marius.svg %}
-                    </div>
-                    <div class="hover">
-                      <div class="cross"></div>
-                      <div class="title">Marius Affûteur</div>
-                    </div>
-                </div>
-            </a>
-            <a href="/loom" title="Loom">
-                <div class="mosaic-item-image loom">
-                    <div class="content" style="background-image:url('/static/images/projects/homepage/loom.jpg');"></div>
-                    <div class="hover">
-                      <div class="cross"></div>
-                      <div class="title">Loom</div>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="mosaic-item">
-            <a href="/edie-et-watson" title="Edie & Watson">
-                <div class="mosaic-item-image edieetwatson">
-                    <div class="content" style="background-image:url('/static/images/projects/homepage/edie-et-watson.jpg');"></div>
-                    <div class="hover">
-                        <div class="cross"></div>
-                        <div class="title">Edie & Watson</div>
-                    </div>
-                </div>
-            </a>
-            <a href="melanie-martin" title="Mélanie Martin">
-                <div class="mosaic-item-image martin">
-                    <div class="content" style="background-image:url('/static/images/projects/homepage/melanie-martin.jpg');"></div>
-                    <div class="hover">
-                        <div class="cross"></div>
-                        <div class="title">Mélanie Martin</div>
-                    </div>
-                </div>
-            </a>
-        </li>
-        <li class="mosaic-item">
-            <a href="mercialfred" title="Merci Alfred">
-                <div class="mosaic-item-image mercialfred">
-                    <div class="content">
-                        {% include svg/mercialfred.svg %}
-                    </div>
-                    <div class="hover">
-                        <div class="cross"></div>
-                        <div class="title">Merci Alfred</div>
-                    </div>
-                </div>
-            </a>
-            <a href="mylittleparis" title="My Little Paris">
-                <div class="mosaic-item-image mylittleparis">
-                    <div class="content">
-                        {% include svg/mylittleparis.svg %}
-                    </div>
-                    <div class="hover">
-                        <div class="cross"></div>
-                        <div class="title">My Little Paris</div>
-                    </div>
-                </div>
-            </a>
-        </li>
-    </ul>
+  <ul class="project-wrapper mosaic-list">
+    <li class="mosaic-item">
+      <a href="/marius-affuteur" title="Marius Affûteur">
+        <div class="mosaic-item-image marius">
+          <div class="content">
+            {% include svg/marius.svg %}
+          </div>
+          <div class="hover">
+            <div class="cross"></div>
+            <div class="title">Marius Affûteur</div>
+          </div>
+        </div>
+      </a>
+      <a href="/loom" title="Loom">
+        <div class="mosaic-item-image loom">
+          <div class="content" style="background-image: url('/static/images/projects/homepage/loom.jpg');"></div>
+          <div class="hover">
+            <div class="cross"></div>
+            <div class="title">Loom</div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="mosaic-item">
+      <a href="/edie-et-watson" title="Edie & Watson">
+        <div class="mosaic-item-image edieetwatson">
+          <div class="content" style="background-image: url('/static/images/projects/homepage/edie-et-watson.jpg');"></div>
+          <div class="hover">
+            <div class="cross"></div>
+            <div class="title">Edie & Watson</div>
+          </div>
+        </div>
+      </a>
+      <a href="melanie-martin" title="Mélanie Martin">
+        <div class="mosaic-item-image martin">
+          <div class="content" style="background-image: url('/static/images/projects/homepage/melanie-martin.jpg');"></div>
+          <div class="hover">
+            <div class="cross"></div>
+            <div class="title">Mélanie Martin</div>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="mosaic-item">
+      <a href="mercialfred" title="Merci Alfred">
+        <div class="mosaic-item-image mercialfred">
+          <div class="content">
+            {% include svg/mercialfred.svg %}
+          </div>
+          <div class="hover">
+            <div class="cross"></div>
+            <div class="title">Merci Alfred</div>
+          </div>
+        </div>
+      </a>
+      <a href="mylittleparis" title="My Little Paris">
+        <div class="mosaic-item-image mylittleparis">
+          <div class="content">
+            {% include svg/mylittleparis.svg %}
+          </div>
+          <div class="hover">
+            <div class="cross"></div>
+            <div class="title">My Little Paris</div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
 </section>
 
 <script>
-    loadImages($('.mosaic-item-image'));
+  loadImages($(".mosaic-item-image"))
 </script>

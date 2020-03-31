@@ -1,21 +1,22 @@
 body.project-page {
-
   section.padding-section {
     margin-top: 4px;
     background-color: $gray;
     padding: $s-pad-top $s-pad-sides;
-    @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
+    @media #{$mobile} {
+      padding: $s-pad-top-mob $s-pad-sides;
+    }
   }
 
   section.full-width {
     margin-top: 4px;
     padding: $s-pad-top 0;
-    @media #{$mobile} { padding: $s-pad-top-mob 0; }
+    @media #{$mobile} {
+      padding: $s-pad-top-mob 0;
+    }
   }
 
-
   // ---------------------------------------------
-
 
   section.header-project-wrapper {
     height: 440px;
@@ -41,7 +42,7 @@ body.project-page {
     }
 
     .custom-main-title {
-      font-family: 'Lato', sans-serif;
+      font-family: "Lato", sans-serif;
       font-size: 60px;
       color: $white;
       font-weight: 700;
@@ -49,7 +50,9 @@ body.project-page {
       text-align: center;
       line-height: 1.4em;
       text-transform: uppercase;
-      @media #{$mobile} { font-size: 44px; }
+      @media #{$mobile} {
+        font-size: 44px;
+      }
     }
   }
 
@@ -57,21 +60,32 @@ body.project-page {
     background-color: $white;
     text-align: center;
     padding: ($s-pad-top - 40px) $s-pad-sides;
-    @media #{$mobile} { padding: $s-pad-top-mob $s-pad-sides; }
+    @media #{$mobile} {
+      padding: $s-pad-top-mob $s-pad-sides;
+    }
 
-    .custom-button { margin-top: 40px; }
+    .custom-button {
+      margin-top: 40px;
+    }
 
     .custom-description {
       max-width: 60%;
-      @media #{$mobile} { max-width: 100%; }
-      @media #{$ipad-portrait} { max-width: 70%; }
+      @media #{$mobile} {
+        max-width: 100%;
+      }
+      @media #{$ipad-portrait} {
+        max-width: 70%;
+      }
     }
   }
 
   section.roles-wrapper {
     position: relative;
     padding: 0;
-    @media #{$mobile} { width: 100%; margin-left: 0; }
+    @media #{$mobile} {
+      width: 100%;
+      margin-left: 0;
+    }
 
     .background {
       position: absolute;
@@ -85,7 +99,9 @@ body.project-page {
       background-size: cover;
       vertical-align: top;
 
-      @media #{$ipad-portrait} { width: 36%; }
+      @media #{$ipad-portrait} {
+        width: 36%;
+      }
       @media #{$mobile} {
         display: none;
         // position: static;
@@ -136,7 +152,9 @@ body.project-page {
             padding-left: $bullet-size + 16px;
 
             margin-bottom: 16px;
-            &:last-child { margin-bottom: 0; }
+            &:last-child {
+              margin-bottom: 0;
+            }
 
             &:before {
               content: "";
@@ -147,7 +165,9 @@ body.project-page {
               width: $bullet-size;
               height: $bullet-size;
               border-radius: $bullet-size / 2;
-              @media #{$mobile-portrait} { margin-right: 12px; }
+              @media #{$mobile-portrait} {
+                margin-right: 12px;
+              }
             }
           }
         }
@@ -170,12 +190,17 @@ body.project-page {
     @include transition(all 1s ease-in-out);
     @include transform(translate(0, 30px));
 
-    @media #{$mobile-portrait} { padding-left: 0; padding-right: 0; }
+    @media #{$mobile-portrait} {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     .screen-wrapper {
       position: relative;
 
-      .screen { max-width: 100%; }
+      .screen {
+        max-width: 100%;
+      }
 
       .website {
         position: absolute;
@@ -206,9 +231,14 @@ body.project-page {
       vertical-align: top;
       text-align: right;
       margin-right: 10%;
-      img { max-width: 90%; }
+      img {
+        max-width: 90%;
+      }
 
-      @media #{$mobile} { width: 100%; margin-right: 0; }
+      @media #{$mobile} {
+        width: 100%;
+        margin-right: 0;
+      }
     }
 
     .content-inner {
@@ -216,9 +246,15 @@ body.project-page {
       width: 40%;
       font-size: 1rem;
       vertical-align: top;
-      .custom-description { max-width: 100%; font-weight: 300; }
+      .custom-description {
+        max-width: 100%;
+        font-weight: 300;
+      }
 
-      @media #{$mobile} { width: 100%; margin-top: 50px; }
+      @media #{$mobile} {
+        width: 100%;
+        margin-top: 50px;
+      }
     }
   }
 
@@ -233,7 +269,9 @@ body.project-page {
       li.mosaic-item {
         display: inline-block;
 
-        a { display: block; }
+        a {
+          display: block;
+        }
 
         div.mosaic-item-image {
           position: relative;
@@ -268,7 +306,6 @@ body.project-page {
     }
   }
 
-
   // ---------------------------------------------
 
   .related-project-wrapper {
@@ -300,70 +337,104 @@ body.project-page {
       svg {
         width: 20px;
         vertical-align: middle;
-        @media #{$mobile} { width: 16px; }
+        @media #{$mobile} {
+          width: 16px;
+        }
         @include transition(all 0.2s ease-out);
-
       }
 
       .custom-little-title {
         display: inline-block;
         vertical-align: middle;
         line-height: normal;
-        font-family: 'Lato', sans-serif;
+        font-family: "Lato", sans-serif;
         font-size: 22px;
         color: $white;
         font-weight: 700;
         letter-spacing: 0.05em;
         line-height: 1.4em;
         text-transform: uppercase;
-        @media #{$mobile} { font-size: 18px; }
-        
+        @media #{$mobile} {
+          font-size: 18px;
+        }
       }
 
-      a { display: block; text-decoration: none; }
+      a {
+        display: block;
+        text-decoration: none;
+      }
 
       &.loom {
         background-color: $loom-color;
-        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%); }
-        &:hover { background-color: darken($loom-color, 4%); }
+        .custom-little-title {
+          text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%);
+        }
+        &:hover {
+          background-color: darken($loom-color, 4%);
+        }
       }
 
       &.edieetwatson {
         background-color: $ew-color;
-        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($ew-color, 10%); }
-        &:hover { background-color: darken($ew-color, 4%); }
+        .custom-little-title {
+          text-shadow: 0.05em 0.08em 0 darken($ew-color, 10%);
+        }
+        &:hover {
+          background-color: darken($ew-color, 4%);
+        }
       }
 
       &.martin {
         background-color: $martin-color;
-        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($martin-color, 10%); }
-        &:hover { background-color: darken($martin-color, 4%); }
+        .custom-little-title {
+          text-shadow: 0.05em 0.08em 0 darken($martin-color, 10%);
+        }
+        &:hover {
+          background-color: darken($martin-color, 4%);
+        }
       }
 
       &.marius {
         background-color: $marius-color;
-        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%); }
-        &:hover { background-color: darken($marius-color, 4%); }
+        .custom-little-title {
+          text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%);
+        }
+        &:hover {
+          background-color: darken($marius-color, 4%);
+        }
       }
 
       &.ma {
         background-color: $ma-color;
-        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($ma-color, 10%); }
-        &:hover { background-color: darken($ma-color, 4%); }
+        .custom-little-title {
+          text-shadow: 0.05em 0.08em 0 darken($ma-color, 10%);
+        }
+        &:hover {
+          background-color: darken($ma-color, 4%);
+        }
       }
 
       &.mlp {
         background-color: $mlp-color;
-        .custom-little-title { text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%); }
-        &:hover { background-color: darken($mlp-color, 4%); }
+        .custom-little-title {
+          text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%);
+        }
+        &:hover {
+          background-color: darken($mlp-color, 4%);
+        }
       }
     }
 
     .previous-project {
       margin-right: 2px;
       text-align: left;
-      svg { margin-right: 10px; }
-      @media #{$mobile} { margin-right: 0; margin-bottom: 4px; }
+      svg {
+        margin-right: 10px;
+      }
+      @media #{$mobile} {
+        margin-right: 0;
+        margin-bottom: 4px;
+      }
 
       &:hover svg {
         @include transform(translateX(-8px));
@@ -373,8 +444,12 @@ body.project-page {
     .next-project {
       margin-left: 2px;
       text-align: right;
-      svg { margin-left: 10px; }
-      @media #{$mobile} { margin-left: 0; }
+      svg {
+        margin-left: 10px;
+      }
+      @media #{$mobile} {
+        margin-left: 0;
+      }
 
       &:hover svg {
         @include transform(translateX(8px));

@@ -1,22 +1,22 @@
-@mixin border-radius ($radius) {
+@mixin border-radius($radius) {
   border-radius: $radius;
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
 }
 
-@mixin box-shadow ($shadow) {
+@mixin box-shadow($shadow) {
   -moz-box-shadow: $shadow;
   -webkit-box-shadow: $shadow;
   box-shadow: $shadow;
 }
 
-@mixin text-shadow ($shadow) {
+@mixin text-shadow($shadow) {
   -moz-text-shadow: $shadow;
   -webkit-text-shadow: $shadow;
   text-shadow: $shadow;
 }
 
-@mixin rotate ($angle) {
+@mixin rotate($angle) {
   -webkit-transform: rotate($angle);
   -moz-transform: rotate($angle);
   -ms-transform: rotate($angle);
@@ -33,7 +33,7 @@
   transition: $transition;
 }
 
-@mixin transition-transform ($transition) {
+@mixin transition-transform($transition) {
   -webkit-transition: -webkit-transform $transition;
   -moz-transition: -moz-transform $transition;
   -ms-transition: -ms-transform $transition;
@@ -49,7 +49,7 @@
   transform: $transform;
 }
 
-@mixin animation ($transition) {
+@mixin animation($transition) {
   -webkit-animation: $transition;
   -moz-animation: $transition;
   -ms-animation: $transition;
@@ -65,13 +65,16 @@
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 @mixin clearfix() {
-  &:before, &:after {
+  &:before,
+  &:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden;
   }
-  &:after { clear: both; }
+  &:after {
+    clear: both;
+  }
   zoom: 1;
 }
 

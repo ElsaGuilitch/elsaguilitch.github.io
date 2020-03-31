@@ -1,16 +1,26 @@
 body.loom {
-
   section.header-project-wrapper {
     background-color: $loom-color;
-    .custom-main-title { text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%); }
+    .custom-main-title {
+      text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%);
+    }
   }
 
   section.roles-wrapper {
     background-color: $loom-color;
-    .roles-item:before { background-color: $white; }
-    .custom-title, .roles { color: $white !important; }
-    .about { color: $white; }
-    .background { background-position: top center; }
+    .roles-item:before {
+      background-color: $white;
+    }
+    .custom-title,
+    .roles {
+      color: $white !important;
+    }
+    .about {
+      color: $white;
+    }
+    .background {
+      background-position: top center;
+    }
   }
 
   section.technology-wrapper {
@@ -19,26 +29,42 @@ body.loom {
     .technology-list {
       text-align: center;
       margin-top: 60px;
-      @media #{$mobile} { margin-top: 40px; }
+      @media #{$mobile} {
+        margin-top: 40px;
+      }
 
       .item {
         display: inline-block;
         margin-top: 50px;
         margin-left: 3%;
         margin-right: 3%;
-        img { height: 100%; }
+        img {
+          height: 100%;
+        }
 
-        &.shopify { height: 130px; }
-        &.sass    { height: 100px; }
-        &.stripe  { height: 90px; }
+        &.shopify {
+          height: 130px;
+        }
+        &.sass {
+          height: 100px;
+        }
+        &.stripe {
+          height: 90px;
+        }
 
         @media #{$mobile} {
           margin-top: 40px;
           margin-left: 8%;
           margin-right: 8%;
-          &.shopify { height: 80px; }
-          &.sass    { height: 80px; }
-          &.stripe  { height: 60px; }
+          &.shopify {
+            height: 80px;
+          }
+          &.sass {
+            height: 80px;
+          }
+          &.stripe {
+            height: 60px;
+          }
         }
       }
     }
@@ -46,39 +72,47 @@ body.loom {
 
   section.mosaic-wrapper {
     padding-top: $s-pad-top;
-    @media #{$mobile} { padding-top: $s-pad-top-mob; }
+    @media #{$mobile} {
+      padding-top: $s-pad-top-mob;
+    }
 
     ul.mosaic-list {
-
       li.mosaic-item {
-
         &:first-of-type {
           width: 60%;
           vertical-align: bottom;
-          @media #{$mobile-portrait} { width: 100%; }
+          @media #{$mobile-portrait} {
+            width: 100%;
+          }
         }
 
         &:nth-child(2) {
-          width: 40%; vertical-align: bottom;
-          @media #{$mobile-portrait} { display: none; }
+          width: 40%;
+          vertical-align: bottom;
+          @media #{$mobile-portrait} {
+            display: none;
+          }
         }
 
-        &:last-of-type { width: 100%; text-align: right; vertical-align: top; }
+        &:last-of-type {
+          width: 100%;
+          text-align: right;
+          vertical-align: top;
+        }
       }
 
       div.mosaic-item-image {
-
         &.hanger:before {
           $height: 550px;
           $width: 830px;
           padding-top: ($height / $width) * 100%;
         }
 
-        &.shirt-w  {
+        &.shirt-w {
           display: inline-block;
           width: 50%;
 
-           &:before {
+          &:before {
             $height: 490px;
             $width: 412px;
             padding-top: ($height / $width) * 100%;
@@ -105,9 +139,11 @@ body.loom {
         &.coil {
           display: inline-block;
           width: 70%;
-          @media #{$mobile-portrait} { width: 100%; }
+          @media #{$mobile-portrait} {
+            width: 100%;
+          }
 
-           &:before {
+          &:before {
             $height: 245px;
             $width: 505px;
             padding-top: ($height / $width) * 100%;

@@ -6,5 +6,6 @@ $mobile: "only screen and (max-width: 767px)";
 $mobile-portrait: "only screen and (max-width: 479px)";
 $mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
 
-$retina: "only screen and (-webkit-min-device-pixel-ratio: 2)", "only screen and (min-device-pixel-ratio: 2)";
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 2)",
+  "only screen and (min-device-pixel-ratio: 2)";
 $large-screen: "only screen and (min-width: 1440px)";
