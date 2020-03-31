@@ -88,23 +88,19 @@ footer.footer {
 
   span {
     display: block;
-    font-family: "Lato", sans-serif;
+    font-family: "SFRounded-Light", sans-serif;
 
     &.email {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 300;
       line-height: 1.6em;
-      letter-spacing: 0.06em;
-      margin-bottom: 10px;
-      @media #{$mobile} {
-        font-size: 16px;
-      }
+      letter-spacing: 0.1em;
 
       a {
         text-decoration: none;
-        color: darken($color, 20%);
+        color: darken($color, 16%);
         &:hover {
-          color: darken($color, 50%);
+          color: darken($color, 40%);
         }
       }
     }
@@ -112,14 +108,11 @@ footer.footer {
     &.copyright {
       font-size: 10px;
       font-weight: 100;
-      color: darken($color, 20%);
-      letter-spacing: 0.06em;
+      color: darken($color, 16%);
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      line-height: 1.4em;
+      line-height: 1.8em;
       padding: 0 20px;
-      @media #{$mobile} {
-        color: darken($color, 36%);
-      }
     }
   }
 }
