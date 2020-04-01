@@ -2,9 +2,6 @@ html {
   height: 100%;
   background-color: white;
 }
-body {
-  min-height: 100%;
-}
 
 body {
   position: relative;
@@ -12,176 +9,180 @@ body {
   font-size: 14px;
   color: $black;
   font-weight: 400;
-
+  min-height: 100%;
   margin: 0 20px 20px 20px;
+
   @media #{$mobile} {
     margin: 0 10px 10px 10px;
   }
+}
 
-  // ----------------------------------------
+.custom-title {
+  font-family: "SFRounded-Bold", sans-serif;
+  font-size: 30px;
+  color: $black;
+  letter-spacing: 0.06em;
+  line-height: 1.5em;
+  margin-bottom: 36px;
 
-  .custom-title {
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    color: $black;
-    font-weight: 700;
-    line-height: 1.5em;
-    margin-bottom: 36px;
-    @media #{$mobile} {
-      font-size: 26px;
-      margin-bottom: 30px;
-    }
-
-    &.center {
-      text-align: center;
-    }
-    &.left {
-      text-align: left;
-    }
-    &.right {
-      text-align: right;
-    }
-    &.white {
-      color: white;
-    }
-    &.black {
-      color: $black;
-    }
-  }
-
-  .custom-description {
-    max-width: 50%;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #000000;
-    font-weight: 400;
-    line-height: 1.6em;
-    letter-spacing: 0.03em;
-    strong {
-      font-weight: 700;
-    }
-    @media #{$mobile} {
-      max-width: 100%;
-      font-size: 14px;
-    }
-
-    &.center {
-      text-align: center;
-      margin: 0 auto;
-    }
-    &.left {
-      text-align: left;
-    }
-    &.right {
-      text-align: right;
-    }
-    &.white {
-      color: white;
-    }
-    &.black {
-      color: $black;
-    }
-    &.gray {
-      color: #565656;
-    }
-  }
-
-  .custom-button {
-    $size: 50px;
-
-    display: inline-block;
-    width: auto;
-    height: $size;
-    line-height: $size;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 2px;
+  &.center {
     text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    outline: 0;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+
+  &.white {
+    color: white;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  @media #{$mobile} {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+
+.custom-description {
+  max-width: 50%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: $black;
+  font-weight: 400;
+  line-height: 1.8em;
+  letter-spacing: 0.03em;
+
+  @media #{$mobile} {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  &.center {
+    text-align: center;
     margin: 0 auto;
-    padding: 0 30px;
-    vertical-align: middle;
-    box-sizing: border-box;
-    @include appearance(none);
-    @include transition(all 0.224s ease-in-out);
+  }
 
-    &.full.loom {
-      background-color: $loom-color;
-      color: $white;
-      text-shadow: 0.05em 0.08em 0 darken($loom-color, 14%);
+  &.left {
+    text-align: left;
+  }
 
-      &:hover {
-        background-color: darken($loom-color, 6%);
-        transform: translateY(-2px);
-      }
+  &.right {
+    text-align: right;
+  }
+
+  &.white {
+    color: white;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  &.gray {
+    color: #565656;
+  }
+}
+
+.custom-button {
+  $size: 54px;
+
+  display: inline-block;
+  width: auto;
+  height: $size;
+  line-height: $size;
+  font-family: "SFRounded-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: $white;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  margin: 0 auto;
+  padding: 0 30px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  @include appearance(none);
+  @include transition(all 0.224s ease-in-out);
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &.full.loom {
+    background-color: $loom-color;
+    text-shadow: 0.05em 0.08em 0 darken($loom-color, 14%);
+
+    &:hover {
+      background-color: darken($loom-color, 6%);
     }
+  }
 
-    &.full.edieetwatson {
-      background-color: $ew-color;
-      color: $white;
-      text-shadow: 0.05em 0.08em 0 darken($ew-color, 14%);
+  &.full.edieetwatson {
+    background-color: $ew-color;
+    text-shadow: 0.05em 0.08em 0 darken($ew-color, 14%);
 
-      &:hover {
-        background-color: darken($ew-color, 6%);
-        transform: translateY(-2px);
-      }
+    &:hover {
+      background-color: darken($ew-color, 6%);
     }
+  }
 
-    &.full.marius {
-      background-color: $marius-color;
-      color: $white;
-      text-shadow: 0.05em 0.08em 0 darken($marius-color, 14%);
+  &.full.marius {
+    background-color: $marius-color;
+    text-shadow: 0.05em 0.08em 0 darken($marius-color, 14%);
 
-      &:hover {
-        background-color: darken($marius-color, 6%);
-        transform: translateY(-2px);
-      }
+    &:hover {
+      background-color: darken($marius-color, 6%);
     }
+  }
 
-    &.full.martin {
-      background-color: $martin-color;
-      color: $white;
-      text-shadow: 0.05em 0.08em 0 darken($martin-color, 14%);
+  &.full.martin {
+    background-color: $martin-color;
+    text-shadow: 0.05em 0.08em 0 darken($martin-color, 14%);
 
-      &:hover {
-        background-color: darken($martin-color, 6%);
-        transform: translateY(-2px);
-      }
+    &:hover {
+      background-color: darken($martin-color, 6%);
     }
+  }
 
-    &.full.mlp {
-      background-color: $mlp-color;
-      color: $white;
-      text-shadow: 0.05em 0.08em 0 darken($mlp-color, 14%);
+  &.full.mlp {
+    background-color: $mlp-color;
+    text-shadow: 0.05em 0.08em 0 darken($mlp-color, 14%);
 
-      &:hover {
-        background-color: darken($mlp-color, 6%);
-        transform: translateY(-2px);
-      }
+    &:hover {
+      background-color: darken($mlp-color, 6%);
     }
+  }
 
-    &.full.ma {
-      background-color: $ma-color;
-      color: $white;
-      text-shadow: 0.05em 0.08em 0 darken($ma-color, 14%);
+  &.full.ma {
+    background-color: $ma-color;
+    text-shadow: 0.05em 0.08em 0 darken($ma-color, 14%);
 
-      &:hover {
-        background-color: darken($ma-color, 6%);
-        transform: translateY(-2px);
-      }
+    &:hover {
+      background-color: darken($ma-color, 6%);
     }
+  }
 
-    @media #{$mobile} {
-      width: 90%;
-      height: auto;
-      line-height: 1.8em;
-      padding: 16px !important;
-    }
+  @media #{$mobile} {
+    width: 90%;
+    height: auto;
+    line-height: 1.8em;
+    padding: 16px !important;
   }
 }
