@@ -297,150 +297,121 @@ body.project-page {
   }
 
   .related-project-wrapper {
-    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 100px;
+    padding: 0 10%;
 
-    .previous-project,
-    .next-project {
+    @media #{$mobile} {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    svg {
       display: inline-block;
-      width: calc(50% - 4px);
-      height: 80px;
-      line-height: 80px;
-      font-size: 1rem;
-      @include transition(background-color 0.4s ease-out);
+      width: 26px;
+      fill: black;
+      vertical-align: middle;
+      @include transition(all 0.2s ease-out);
+    }
 
-      @media #{$mobile} {
-        width: 100%;
-        height: 60px;
-        line-height: 60px;
+    .related-title {
+      position: relative;
+      display: inline-block;
+      font-family: "SFRounded-Regular", sans-serif;
+      font-size: 22px;
+      color: black;
+      letter-spacing: 0.08em;
+      line-height: 1.4em;
+      text-transform: uppercase;
+      vertical-align: middle;
+
+      span {
+        position: relative;
       }
 
-      .multiline {
-        display: inline-block;
-        line-height: normal;
-        vertical-align: middle;
-        padding: 0 30px;
-        box-sizing: border-box;
-      }
-
-      svg {
-        width: 20px;
-        vertical-align: middle;
-        @media #{$mobile} {
-          width: 16px;
-        }
-        @include transition(all 0.2s ease-out);
-      }
-
-      .custom-little-title {
-        display: inline-block;
-        vertical-align: middle;
-        line-height: normal;
-        font-family: "Lato", sans-serif;
-        font-size: 22px;
-        color: $white;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        line-height: 1.4em;
-        text-transform: uppercase;
-        @media #{$mobile} {
-          font-size: 18px;
-        }
-      }
-
-      a {
-        display: block;
-        text-decoration: none;
-      }
-
-      &.loom {
-        background-color: $loom-color;
-        .custom-little-title {
-          text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%);
-        }
-        &:hover {
-          background-color: darken($loom-color, 4%);
-        }
-      }
-
-      &.edieetwatson {
-        background-color: $ew-color;
-        .custom-little-title {
-          text-shadow: 0.05em 0.08em 0 darken($ew-color, 10%);
-        }
-        &:hover {
-          background-color: darken($ew-color, 4%);
-        }
-      }
-
-      &.martin {
-        background-color: $martin-color;
-        .custom-little-title {
-          text-shadow: 0.05em 0.08em 0 darken($martin-color, 10%);
-        }
-        &:hover {
-          background-color: darken($martin-color, 4%);
-        }
-      }
-
-      &.marius {
-        background-color: $marius-color;
-        .custom-little-title {
-          text-shadow: 0.05em 0.08em 0 darken($marius-color, 10%);
-        }
-        &:hover {
-          background-color: darken($marius-color, 4%);
-        }
-      }
-
-      &.ma {
-        background-color: $ma-color;
-        .custom-little-title {
-          text-shadow: 0.05em 0.08em 0 darken($ma-color, 10%);
-        }
-        &:hover {
-          background-color: darken($ma-color, 4%);
-        }
-      }
-
-      &.mlp {
-        background-color: $mlp-color;
-        .custom-little-title {
-          text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%);
-        }
-        &:hover {
-          background-color: darken($mlp-color, 4%);
-        }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0.56em;
+        bottom: -0.2em;
+        background-color: #f1bc52;
       }
     }
 
     .previous-project {
-      margin-right: 2px;
       text-align: left;
-      svg {
-        margin-right: 10px;
-      }
-      @media #{$mobile} {
-        margin-right: 0;
-        margin-bottom: 4px;
+
+      .related-title {
+        margin-left: 16px;
+
+        &:before {
+          left: 0.5em;
+          right: -0.4em;
+        }
       }
 
       &:hover svg {
         @include transform(translateX(-8px));
       }
+
+      @media #{$mobile} {
+        width: 100%;
+        margin-bottom: 40px;
+      }
     }
 
     .next-project {
-      margin-left: 2px;
       text-align: right;
-      svg {
-        margin-left: 10px;
-      }
-      @media #{$mobile} {
-        margin-left: 0;
+
+      .related-title {
+        margin-right: 16px;
+
+        &:before {
+          left: -0.5em;
+          right: 0.4em;
+        }
       }
 
       &:hover svg {
         @include transform(translateX(8px));
+      }
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+
+    .previous-project,
+    .next-project {
+      &.loom svg {
+        fill: $loom-color;
+      }
+
+      &.edieetwatson svg {
+        fill: $ew-color;
+      }
+
+      &.martin svg {
+        fill: $martin-color;
+      }
+
+      &.marius svg {
+        fill: $marius-color;
+      }
+
+      &.ma svg {
+        fill: $ma-color;
+      }
+
+      &.mlp svg {
+        fill: $mlp-color;
       }
     }
   }
