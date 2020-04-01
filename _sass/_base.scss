@@ -18,16 +18,15 @@ body {
 }
 
 .custom-title {
+  position: relative;
+  display: inline-block;
   font-family: "SFRounded-Bold", sans-serif;
   font-size: 30px;
   color: $black;
   letter-spacing: 0.06em;
   line-height: 1.5em;
   margin-bottom: 36px;
-
-  &.center {
-    text-align: center;
-  }
+  z-index: 1;
 
   &.left {
     text-align: left;
@@ -43,6 +42,17 @@ body {
 
   &.black {
     color: $black;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0.8em;
+    left: 0.4em;
+    right: -0.4em;
+    bottom: -0.2em;
+    background-color: #f1bc52;
+    z-index: -1;
   }
 
   @media #{$mobile} {
