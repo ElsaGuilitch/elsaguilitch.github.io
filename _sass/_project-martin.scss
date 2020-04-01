@@ -14,6 +14,7 @@ body.martin {
   }
 
   section.technology-wrapper {
+    text-align: center;
     background-color: $gray;
 
     .technology-list {
@@ -72,6 +73,7 @@ body.martin {
 
   section.typographies-wrapper {
     position: relative;
+    text-align: center;
     background-color: $martin-color;
     padding-bottom: 0;
     line-height: 0;
@@ -137,6 +139,7 @@ body.martin {
   }
 
   section.mosaic-description-wrapper {
+    text-align: center;
     background-color: $white;
     padding-bottom: 70px;
   }
