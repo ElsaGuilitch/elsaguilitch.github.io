@@ -64,13 +64,19 @@ header.header {
           color: $black;
         }
 
-        @media #{$mobile-portrait} {
-          font-size: 11px;
-          padding: 0 10px;
-        }
-
         &.active {
           color: $black;
+        }
+
+        @media #{$mobile-portrait} {
+          font-size: 11px;
+          padding: 0 6px;
+        }
+      }
+
+      @media #{$mobile-portrait} {
+        &:first-of-type {
+          display: none;
         }
       }
     }
