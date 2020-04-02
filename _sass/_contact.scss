@@ -47,28 +47,12 @@ body.contact {
       }
     }
 
-    h1 {
-      font-family: "SFRounded-Bold", sans-serif;
-      font-size: 60px;
-      color: white;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-align: center;
-      line-height: 1.4em;
-      text-transform: uppercase;
+    .project-title {
       text-shadow: 0.05em 0.08em 0 darken($color, 5%);
-
-      @media #{$mobile} {
-        font-size: 26px;
-      }
     }
 
     .custom-description {
-      font-weight: 300;
       margin-top: 30px;
-      @media #{$ipad-portrait} {
-        max-width: 70%;
-      }
     }
 
     a {

@@ -30,20 +30,6 @@ body.project-page {
     @media #{$mobile} {
       height: 320px;
     }
-
-    .project-title {
-      font-family: "SFRounded-Bold", sans-serif;
-      font-size: 60px;
-      color: $white;
-      letter-spacing: 0.08em;
-      line-height: 1.4em;
-      text-align: center;
-      text-transform: uppercase;
-
-      @media #{$mobile} {
-        font-size: 44px;
-      }
-    }
   }
 
   section.presentation-wrapper {

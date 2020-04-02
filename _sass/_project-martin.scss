@@ -1,13 +1,15 @@
 body.martin {
   section.header-project-wrapper {
     background-color: $martin-color;
-    .custom-main-title {
+
+    .project-title {
       text-shadow: 0.05em 0.08em 0 darken($martin-color, 10%);
     }
   }
 
   section.roles-wrapper {
     background-color: #fcfdfe;
+
     .roles-item:before {
       background-color: $martin-color;
     }
@@ -20,6 +22,7 @@ body.martin {
     .technology-list {
       text-align: center;
       margin-top: 60px;
+
       @media #{$mobile} {
         margin-top: 40px;
       }
@@ -29,6 +32,7 @@ body.martin {
         margin-top: 50px;
         margin-left: 2%;
         margin-right: 2%;
+
         img {
           height: 100%;
         }
@@ -36,12 +40,15 @@ body.martin {
         &.python {
           height: 56px;
         }
+
         &.djangocms {
           height: 50px;
         }
+
         &.jquery {
           height: 50px;
         }
+
         &.less {
           height: 60px;
         }
@@ -50,19 +57,24 @@ body.martin {
           margin-top: 40px;
           margin-left: 6%;
           margin-right: 6%;
+
           &.python {
             height: 46px;
           }
+
           &.djangocms {
             height: 40px;
           }
+
           &.jquery {
             height: 40px;
           }
+
           &.less {
             height: 40px;
           }
         }
+
         @media #{$ipad} {
           margin-left: 6%;
           margin-right: 6%;
@@ -82,6 +94,7 @@ body.martin {
       width: 76%;
       margin: 100px auto 0;
       text-align: center;
+
       @media #{$mobile} {
         width: 100%;
         margin-top: 50px;
@@ -93,6 +106,7 @@ body.martin {
         &.desktop {
           display: block;
         }
+
         &.mobile {
           display: none;
         }
@@ -101,11 +115,13 @@ body.martin {
           &.desktop {
             display: none;
           }
+
           &.mobile {
             display: block;
             width: 88%;
           }
         }
+
         @media #{$mobile-landscape} {
           &.mobile {
             width: 62%;
@@ -117,9 +133,11 @@ body.martin {
         float: right;
         width: 11%;
         margin-top: 20px;
+
         @media #{$mobile-portrait} {
           width: 22%;
         }
+
         @media #{$mobile-landscape} {
           float: none;
           width: 18%;
@@ -130,6 +148,7 @@ body.martin {
         display: block;
         width: 80%;
         margin: 100px auto 0;
+
         @media #{$mobile} {
           width: 72%;
           margin-top: 60px;
@@ -152,9 +171,11 @@ body.martin {
 
         @media #{$mobile-portrait} {
           width: 50%;
+
           &:last-child {
             width: 100%;
           }
+
           &:first-child {
             vertical-align: bottom;
           }
@@ -169,6 +190,7 @@ body.martin {
 
           &.chocolate {
             margin-top: 90px;
+
             @media #{$mobile-portrait} {
               margin-top: 0;
             }
@@ -188,6 +210,7 @@ body.martin {
 
           &.fromage {
             margin-top: 30px;
+
             @media #{$mobile-portrait} {
               display: none;
             }

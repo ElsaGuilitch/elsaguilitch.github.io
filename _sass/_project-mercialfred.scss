@@ -1,13 +1,15 @@
 body.ma {
   section.header-project-wrapper {
     background-color: $ma-color;
-    .custom-main-title {
+
+    .project-title {
       text-shadow: 0.05em 0.08em 0 darken($ma-color, 10%);
     }
   }
 
   section.roles-wrapper {
     background-color: $gray;
+
     .roles-item:before {
       background-color: $ma-color;
     }
@@ -18,6 +20,7 @@ body.ma {
     font-size: 0;
     padding-right: 14%;
     padding-left: 12%;
+
     @media #{$mobile} {
       padding: $s-pad-top-mob $s-pad-sides;
     }
@@ -28,6 +31,7 @@ body.ma {
       font-size: 1rem;
       margin-right: 10%;
       vertical-align: top;
+
       .custom-description {
         max-width: 80%;
       }
@@ -35,9 +39,11 @@ body.ma {
       @media #{$mobile} {
         width: 100%;
         margin-right: 0;
+
         .custom-description {
           max-width: 100%;
         }
+
         .custom-description,
         .custom-title {
           text-align: center;
@@ -51,6 +57,7 @@ body.ma {
       font-size: 1rem;
       text-align: center;
       vertical-align: top;
+
       @media #{$mobile} {
         margin-top: 40px;
         width: 100%;
@@ -59,6 +66,7 @@ body.ma {
       .item {
         display: block;
         margin-top: 80px;
+
         img {
           height: 100%;
         }
@@ -66,12 +74,15 @@ body.ma {
         &.symfony {
           height: 130px;
         }
+
         &.sonata {
           height: 120px;
         }
+
         &.less {
           height: 60px;
         }
+
         &:first-of-type {
           margin-top: 0;
         }
@@ -82,12 +93,15 @@ body.ma {
           vertical-align: middle;
           margin-left: 4%;
           margin-right: 4%;
+
           &.symfony {
             height: 102px;
           }
+
           &.sonata {
             height: 100px;
           }
+
           &.less {
             height: 54px;
           }
@@ -102,6 +116,7 @@ body.ma {
 
     .newsletter-capture img {
       box-shadow: -3em -3em darken($ma-color, 10%);
+
       @media #{$mobile} {
         box-shadow: -1.5em -1.5em darken($ma-color, 10%);
       }

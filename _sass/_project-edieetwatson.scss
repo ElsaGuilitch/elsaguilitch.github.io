@@ -1,7 +1,8 @@
 body.edieetwatson {
   section.header-project-wrapper {
     background-color: $ew-color;
-    .custom-main-title {
+
+    .project-title {
       text-shadow: 0.05em 0.08em 0 darken($ew-color, 10%);
     }
   }
@@ -12,6 +13,7 @@ body.edieetwatson {
 
   section.roles-wrapper {
     background-color: $gray;
+
     .roles-item:before {
       background-color: $ew-color;
     }
@@ -21,10 +23,12 @@ body.edieetwatson {
     background-color: $gray;
     padding-left: 20%;
     padding-right: 20%;
+
     @media #{$mobile} {
       padding-left: $s-pad-sides-mob;
       padding-right: $s-pad-sides-mob;
     }
+
     @media #{$ipad-portrait} {
       padding-left: 10%;
       padding-right: 10%;
@@ -38,10 +42,12 @@ body.edieetwatson {
 
     .custom-description {
       max-width: 70%;
+
       @media #{$mobile} {
         max-width: 100%;
         text-align: center;
       }
+
       @media #{$ipad-portrait} {
         max-width: 80%;
       }
@@ -50,6 +56,7 @@ body.edieetwatson {
     .technology-list {
       text-align: left;
       margin-top: 60px;
+
       @media #{$mobile} {
         margin-top: 40px;
         text-align: center;
@@ -60,6 +67,7 @@ body.edieetwatson {
         margin-top: 50px;
         margin-left: 3%;
         margin-right: 3%;
+
         img {
           height: 100%;
         }
@@ -67,12 +75,15 @@ body.edieetwatson {
         &.shopify {
           height: 130px;
         }
+
         &.sass {
           height: 100px;
         }
+
         &.stripe {
           height: 90px;
         }
+
         &:first-of-type {
           margin-left: 0;
         }
@@ -81,15 +92,19 @@ body.edieetwatson {
           margin-top: 40px;
           margin-left: 8%;
           margin-right: 8%;
+
           &.shopify {
             height: 80px;
           }
+
           &.sass {
             height: 80px;
           }
+
           &.stripe {
             height: 60px;
           }
+
           &:first-of-type {
             margin-left: 8%;
           }
@@ -100,6 +115,7 @@ body.edieetwatson {
 
   section.mosaic-wrapper {
     padding-top: $s-pad-top;
+
     @media #{$mobile} {
       padding-top: $s-pad-top-mob;
     }
@@ -111,9 +127,11 @@ body.edieetwatson {
 
         @media #{$mobile-portrait} {
           width: 50%;
+
           &:last-child {
             width: 100%;
           }
+
           &:first-child {
             vertical-align: bottom;
           }
@@ -134,6 +152,7 @@ body.edieetwatson {
 
           &.building {
             margin-top: 80px;
+
             @media #{$mobile-portrait} {
               margin-top: 0;
             }
@@ -153,6 +172,7 @@ body.edieetwatson {
 
           &.face-f {
             margin-top: 140px;
+
             @media #{$mobile-portrait} {
               display: none;
             }

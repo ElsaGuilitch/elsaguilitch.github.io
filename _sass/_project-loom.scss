@@ -1,23 +1,28 @@
 body.loom {
   section.header-project-wrapper {
     background-color: $loom-color;
-    .custom-main-title {
+
+    .project-title {
       text-shadow: 0.05em 0.08em 0 darken($loom-color, 10%);
     }
   }
 
   section.roles-wrapper {
     background-color: $loom-color;
+
     .roles-item:before {
       background-color: $white;
     }
+
     .custom-title,
     .roles {
       color: $white !important;
     }
+
     .about {
       color: $white;
     }
+
     .background {
       background-position: top center;
     }
@@ -30,6 +35,7 @@ body.loom {
     .technology-list {
       text-align: center;
       margin-top: 60px;
+
       @media #{$mobile} {
         margin-top: 40px;
       }
@@ -39,6 +45,7 @@ body.loom {
         margin-top: 50px;
         margin-left: 3%;
         margin-right: 3%;
+
         img {
           height: 100%;
         }
@@ -46,9 +53,11 @@ body.loom {
         &.shopify {
           height: 130px;
         }
+
         &.sass {
           height: 100px;
         }
+
         &.stripe {
           height: 90px;
         }
@@ -57,12 +66,15 @@ body.loom {
           margin-top: 40px;
           margin-left: 8%;
           margin-right: 8%;
+
           &.shopify {
             height: 80px;
           }
+
           &.sass {
             height: 80px;
           }
+
           &.stripe {
             height: 60px;
           }
@@ -73,6 +85,7 @@ body.loom {
 
   section.mosaic-wrapper {
     padding-top: $s-pad-top;
+
     @media #{$mobile} {
       padding-top: $s-pad-top-mob;
     }
@@ -82,6 +95,7 @@ body.loom {
         &:first-of-type {
           width: 60%;
           vertical-align: bottom;
+
           @media #{$mobile-portrait} {
             width: 100%;
           }
@@ -90,6 +104,7 @@ body.loom {
         &:nth-child(2) {
           width: 40%;
           vertical-align: bottom;
+
           @media #{$mobile-portrait} {
             display: none;
           }
@@ -140,6 +155,7 @@ body.loom {
         &.coil {
           display: inline-block;
           width: 70%;
+
           @media #{$mobile-portrait} {
             width: 100%;
           }

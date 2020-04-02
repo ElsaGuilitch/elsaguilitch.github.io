@@ -1,13 +1,15 @@
 body.mlp {
   section.header-project-wrapper {
     background-color: $mlp-color;
-    .custom-main-title {
+
+    .project-title {
       text-shadow: 0.05em 0.08em 0 darken($mlp-color, 10%);
     }
   }
 
   section.roles-wrapper {
     background-color: $gray;
+
     .roles-item:before {
       background-color: $mlp-color;
     }
@@ -20,6 +22,7 @@ body.mlp {
     .technology-list {
       text-align: center;
       margin-top: 60px;
+
       @media #{$mobile} {
         margin-top: 40px;
       }
@@ -30,6 +33,7 @@ body.mlp {
         margin-left: 3%;
         margin-right: 3%;
         vertical-align: middle;
+
         img {
           height: 100%;
         }
@@ -37,9 +41,11 @@ body.mlp {
         &.symfony {
           height: 130px;
         }
+
         &.sonata {
           height: 120px;
         }
+
         &.less {
           height: 60px;
         }
@@ -49,12 +55,15 @@ body.mlp {
           margin-top: 40px !important;
           margin-left: 4%;
           margin-right: 4%;
+
           &.symfony {
             height: 102px;
           }
+
           &.sonata {
             height: 100px;
           }
+
           &.less {
             height: 54px;
           }
@@ -69,6 +78,7 @@ body.mlp {
 
     .newsletter-capture img {
       box-shadow: -3em -3em darken($mlp-color, 10%);
+
       @media #{$mobile} {
         box-shadow: -1.5em -1.5em darken($mlp-color, 10%);
       }
