@@ -57,16 +57,23 @@ body.homepage {
         }
 
         div.mosaic-item-image {
-          &.marius {
-            margin-top: 110px;
-            opacity: 1 !important;
+          &.pablo {
+            margin-top: 60px;
 
             @media #{$mobile-portrait} {
               margin-top: 0;
             }
 
             &:before {
-              $height: 500px;
+              $height: 450px;
+              $width: 450px;
+              padding-top: ($height / $width) * 100%;
+            }
+          }
+
+          &.marius {
+            &:before {
+              $height: 450px;
               $width: 450px;
               padding-top: ($height / $width) * 100%;
             }
@@ -99,6 +106,12 @@ body.homepage {
           }
 
           &.loom {
+            margin-top: 80px;
+
+            @media #{$mobile-portrait} {
+              margin-top: 0;
+            }
+
             &:before {
               $height: 650px;
               $width: 450px;
@@ -108,10 +121,6 @@ body.homepage {
 
           &.edieetwatson {
             margin-top: 0px;
-
-            @media #{$mobile-portrait} {
-              margin-top: 0;
-            }
 
             &:before {
               $height: 550px;
@@ -127,12 +136,6 @@ body.homepage {
           }
 
           &.mercialfred {
-            margin-top: 60px;
-
-            @media #{$mobile-portrait} {
-              margin-top: 0;
-            }
-
             &:before {
               $height: 560px;
               $width: 450px;
