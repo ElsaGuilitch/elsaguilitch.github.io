@@ -1,0 +1,145 @@
+body.pablo {
+  section.header-project-wrapper {
+    background-color: $pablo3-color;
+
+    .project-title {
+      text-shadow: 0.05em 0.08em 0 darken($pablo2-color, 10%);
+    }
+  }
+
+  section.presentation-wrapper {
+    .custom-title:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+
+  section.roles-wrapper {
+    background-color: $gray;
+
+    .background {
+      background-position: right;
+    }
+
+    .roles-item:before {
+      background-color: $pablo-color;
+    }
+  }
+
+  .screen-insitu-wrapper.padding-section {
+    padding: 0 $s-pad-sides 100px;
+    margin-top: 0;
+  }
+
+  section.star-wrapper {
+    text-align: center;
+    padding: 0 $s-pad-sides $s-pad-top;
+
+    span {
+      font-family: "SFRounded-Bold", sans-serif;
+      font-size: 80px;
+      margin-right: 20px;
+      vertical-align: middle;
+
+      @media #{$mobile} {
+        font-size: 50px;
+      }
+    }
+
+    svg {
+      width: 40px;
+      margin: 0 4px;
+      fill: $pablo4-color;
+      vertical-align: middle;
+
+      @media #{$mobile} {
+        width: 26px;
+      }
+    }
+  }
+
+  section.identity-wrapper {
+    background-color: $pablo3-color;
+    font-size: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+
+    @media #{$mobile} {
+      padding: $s-pad-top-mob $s-pad-sides;
+    }
+
+    .content-inner {
+      display: inline-block;
+      width: 60%;
+      font-size: 1rem;
+      margin-right: 10%;
+      vertical-align: middle;
+
+      .custom-description {
+        max-width: 80%;
+      }
+
+      @media #{$mobile} {
+        width: 100%;
+        text-align: center;
+
+        .custom-title,
+        .custom-description {
+          text-align: center;
+        }
+        .custom-description {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .pablo-logo {
+      display: inline-block;
+      width: 30%;
+      font-size: 1rem;
+      text-align: center;
+      vertical-align: middle;
+
+      svg {
+        width: 80%;
+      }
+
+      @media #{$mobile} {
+        display: block;
+        margin: 40px auto 0;
+
+        svg {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  section.insta-wrapper {
+    text-align: center;
+
+    img {
+      width: 70%;
+      max-width: 100%;
+      margin-top: 60px;
+      box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+  }
+
+  section.newsletter-wrapper {
+    background-color: $pablo3-color;
+    margin-bottom: 120px;
+
+    .newsletter-capture img {
+      box-shadow: -3em -3em $pablo2-color;
+      border: 1px solid white;
+
+      @media #{$mobile} {
+        box-shadow: -1.5em -1.5em $pablo2-color;
+      }
+    }
+  }
+}
