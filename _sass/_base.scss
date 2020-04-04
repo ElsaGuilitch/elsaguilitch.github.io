@@ -203,6 +203,15 @@ body {
     }
   }
 
+  &.full.pablo {
+    background-color: $pablo-color;
+    text-shadow: 0.05em 0.08em 0 darken($pablo-color, 14%);
+
+    &:hover {
+      background-color: darken($pablo-color, 6%);
+    }
+  }
+
   @media #{$mobile} {
     width: 90%;
     height: auto;
