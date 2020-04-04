@@ -382,6 +382,10 @@ body.project-page {
 
     .previous-project,
     .next-project {
+      &.pablo svg {
+        fill: $pablo2-color;
+      }
+
       &.loom svg {
         fill: $loom-color;
       }
