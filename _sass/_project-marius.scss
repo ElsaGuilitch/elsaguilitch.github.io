@@ -109,6 +109,8 @@ body.marius {
   }
 
   section.identity-wrapper {
+    text-align: center;
+
     .marius-logo {
       width: 32%;
       margin: 60px auto 120px;
@@ -195,7 +197,7 @@ body.marius {
       padding: $s-pad-top-mob $s-pad-sides $s-pad-top-mob 12%;
     }
 
-    .custom-title {
+    .title-wrapper {
       display: inline-block;
       width: 38%;
       vertical-align: top;

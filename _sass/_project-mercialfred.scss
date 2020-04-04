@@ -121,12 +121,5 @@ body.ma {
         box-shadow: -1.5em -1.5em darken($ma-color, 10%);
       }
     }
-
-    @media #{$mobile} {
-      .custom-description,
-      .custom-title {
-        text-align: center;
-      }
-    }
   }
 }

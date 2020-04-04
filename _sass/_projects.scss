@@ -222,6 +222,7 @@ body.project-page {
       width: 40%;
       font-size: 1rem;
       vertical-align: top;
+
       .custom-description {
         max-width: 100%;
         font-weight: 300;
@@ -230,6 +231,11 @@ body.project-page {
       @media #{$mobile} {
         width: 100%;
         margin-top: 50px;
+        text-align: center;
+
+        .custom-description {
+          text-align: center;
+        }
       }
     }
   }
